@@ -1,0 +1,85 @@
+Git을 공부해야 하는 이유는 무엇일까.
+Git은 방대한 소스코드를 공동으로 관리하기 위해 만들어진 시스템이다. 용도는 크게 3가지 정도 있다.
+
+1. 버전관리 : 문서나 코드를 수정 할 시, 언제 어떤것을 수정하고 변경했는지 구체적으로 기록이 가능하다.
+2. 백업하기 : 백업공간을 따로 제공하기 때문에 파일을 백업해 둘 수 있었다.
+3. 협업하기 : 누가 어느 부분을 수정했는지 깃에 기록이 남기에 오류 발생시 파악하기 용이하다.
+
+
+오늘 수업에서 사용한 앱은 Git Bash 이다.
+
+Git Bash를 처음 열면 사용자 정보를 입력해 줘야 한다.
+해당 정보를 입력함에 따라 해당 코드를 누가 언제 건드렸는지 기록할 수 있다.
+
+git config --global user.name "이름"
+git config --glabal user.email "이메일"
+
+이제 저장소를 만들어야 한다.
+디렉터리에 파일들을 만드는 형식으로, 디렉터리를 생성하는 명령어는 mkdir이다.
+나는 이미 있는 디렉토리 Fastcampus 폴더를 사용할 생각이기 때문에 mkdir은 상요하지 않을 생각이다.
+
+이미 있는 디렉토리에 접근하는 방법은 $ cd 폴더명 으로 들어갈 수 있다.
+$ cd Fastcampus
+$ cd practice
+를 입력하여 해당 폴더에 들어간다.
+혹은 원하는 폴더를 열고, 우클릭 후 Open Git Bash here을 클릭하는 방법도 있다.
+
+해당 저장소에 Git 저장(Repository)를 Clone 해야 한다.
+우리는 새로운 Repository를 생성해서 디렉토리에 넣을 생각이기 때문에 hhttp://github.com에 들어가 public repository를 생성한다.
+이때 LICENSE는 MIT로 한다.
+라이센서가 없으면 기본 저작권법이 적용되지만, 라이센스를  선택하게 됨으로써 코등의 모든 권리는 내가 가지고 다른 사람이 내 코드를 복제, 배포, 재생산을 할 수 없으니 오픈 소스 프로젝트는오픈소스 라이센스를 선택하라고 권장하고 있다.
+추가적으로 README.md 파일에 "This project is licensed under the terms of the MIT license"와 같은 식으로 기술함으로서 라이선스를 명시행야한다.
+아래는 몇가지 라이선스에 대한 설명이다.
+- BSD: 소스코드를 공개하지 않아도 되는 라이선스, 저작권을 명시해야 한다.
+- GPL: 크드를 작성할 때 GPL코드를 일부라도 사용하게 되면 GPL 라이선스를 적용받고, 프로그램은 유료로 판매가 가능하지만 전체 소스코드는 무료로 공개해야한다.
+- MIT: 라이선스 및 저작권을 명시해야하고, 상업적, 사적으로도 이용이 가능하며, 수정/배포/특허신청이 가능하다. 제약조건이 상당히 느슨해서 많이 선택 받는 라이선스이다. (자신이 만든 오픈소스를 다른 사람들이 상업적 이용을 해도 괜찮다는 표시)
+- Apache: 대부분의 안드로이드 소프트웨어가 적용하는 라이선스
+추가적으로 "Add a README file"을 선택해 주고 create repsitory를 눌러주면 새로운 repository를 github에 생성할 수 있다.
+
+이후 생성된 repostory 좌측 상단에 "<>code" 창에 "Local"항에 있는 URL을 복사해준다.
+이제 다시 열려 있는 Git Bash창을 열어 해당 디렉토리와 Github의 Repository를 clone해준다.
+$ git clone "붙여넣기한 Github repository URL"
+를 실행하면 해당 폴더에 Github repository에 있던 파일들이 폴더에 생성된 것을 확인 할 수 있다.
+이를 확인 하기 위해 $ls를 입력해보면 해당 폴더 내에 모든 파일을 확인할 수 있다.
+
+그러면 폴더안에 "TIL-today_I_Learned-라는 폴더가 생성된 것을 확인 할 수 있다.
+이제 해당 폴더 안에 들어가야 하니
+cd TIL-Today_I_Learned- 를 입력해주자.
+해당 폴더 내에서 ls -a를 통해 파일을 확인해보면 LICENSE와 README.md가 들어 있음을 확인할 수 있다.
+
+내부에 새로운 파일을 생성하기 위해서는 touch 파일을 사용할 수 있다.
+practice_1.py를 생성해 사용하기 위해서 아래와 같은 코드를 Bash 에 입력하면 된다.
+touch practice_1.py
+해당 코드를 입력후 ls -a 로 확인하면 practice_1.py가 생성된 것을 확인할 수 있다.
+
+이후 해당 파일을 수정하기 위해 vim "파일이름"코드를 입력하면 된다.
+vim practice_1.py
+그러면 해당 파일이 열리게 된다. 내부에 명령어 print("hello world")를 입력하고 ESC 키를 눌러 노멀모드로 바꾼 후 :wq를 입력해 밖으로 나올 수 있다. 여기서 :wq는 write and quit으로 저장후 나가기를 뜻한다.
+해당 파일이 잘 수정 되었는지 내부를 확인하기 위해 cat "파일이름"코드를 사용한다.
+cat practice_1.py를 입력하면 해당 파일 내부의 명령어를 보여준다.
+
+이제 이 파일을 Repository에 올리기 위해 Staging area로 옮겨야한다.
+stageing area에 있는 파일은 Github에 commit이 가능하다.
+이를 위해 코드 git add "파일이름" 코드를 사용해야한다.
+
+해당 코드를 입력했을 때 warning: in the working copy of '파일이름', LF will be replaced by CRLF the next time Git touches it 이라는 오류메시지가 나온다.
+해당 메세지는 줄바꿈을 바라보는 문자열이 LF, CR, CRLF 3가지가 모두 다르기 때문에 경고 메세지가 출력된 것이다.
+무시해도 상관 없다.
+해당 경고문이 올라와도 commit이 가능하다
+
+이제 Local Repsitory에 commit을 시키기 위해 git commit "파일이름" 코드를 시행한다
+git commit practice_1.py
+그러면 새로운 창이 나오게 되는데, 해당 창에 이제  commit의 제목을 입력해야 하는데 문장형이 아닌 구나 절의 형태로 작성하는 것을 추천한다.
+Conventional Commit 방식을 참고해서 작성하자.
+새로운 파일을 생성한 commit 이니 prefix는 기능개발 관련인 feat으로 하겠다.
+
+feat: add new python file
+
+This commit adds new python file to test
+
+를 작성후 normal mode로 돌아가 :wq를 입력해 저장하고 나가자.
+이제 Github에 들어가 확인해보면 Repository에 파일이 안들어가 있다.
+이는 아직 push를 안해 줬기 때문이다.
+
+git push origin main을 통해 해당 파일을 Remot Repository로 push해주면 Repository에 해당 파일이 올라갈 것이다.
+이걸로 24년 12월 14일에 마친 git 수업에 대한 내용정리를 마치겠다.

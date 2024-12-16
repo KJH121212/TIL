@@ -1,0 +1,20 @@
+크롤링에 대해 다시한번 공부해 보자.
+크롤링은 data를 얻는데 효과적인 방법이다.
+
+사용할 앱은 anaconda에 jupyter notebook을 통해 작업한다.
+
+일단 가상환경에서 작업을 할거기 때문에 가상환경을 만들어야 한다.
+conda create --name Fastcampus python=3..11.9
+가상환경 이름은 {Fastcampus}로 설정한다.
+이후 해당 가상환경을 키기 위해
+conda activate Fastcampus
+코드를 입력한다.
+이후 numpy, pandas 같은 라이브러리를 pip install numpy와 같은 코드로 모두 설치해 준다.
+jupyter notebook 실행을 위해 pip install jupyter도 설치해 줄것
+이후 가상환경을 킨 상태의 anaconda prompt에 "jupyter notebook" 을 입력해 해당 라이브러리를 연다.
+
+크롤링의 경우, 대부분의 사이트는 이를 싫어하기 때문에 크롤링 조건을 확인해 보아야 한다.
+뒤에 /robots.txt를 붙여 이를 확인해야 한다.
+ex) www.naver.com/robots.txt
+
+이후 코드는 chrolling_practice.iynp 파일에서 설명하도록 하겠다.
