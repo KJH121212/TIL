@@ -27,55 +27,55 @@
       "converter": "effects"
     }
   },
-  "folders": {
-    "Primal Companions": "Primal Companions",
-    "Example Characters": "Example Characters",
-    "Conjurations": "Conjurations",
-    "Summons": "Summons",
-    "Conjured Elementals": "Conjured Elementals",
-    "Vehicles": "Vehicles",
-    "Creatures": "Creatures",
-    "Companions": "Companions",
-    "Otherworldly Steeds": "Otherworldly Steeds",
-    "Fiendish Spirits": "Fiendish Spirits",
-    "Animated Objects": "Animated Objects",
-    "Aberrant Spirits": "Aberrant Spirits",
-    "Undead Spirits": "Undead Spirits",
-    "Summon Templates": "Summon Templates",
-    "Bestial Spirits": "Bestial Spirits",
-    "Construct Spirits": "Construct Spirits",
-    "Celestial Spirits": "Celestial Spirits",
-    "Fey Spirits": "Fey Spirits",
-    "Elemental Spirits": "Elemental Spirits",
-    "Giant Insects": "Giant Insects"
+"folders": {
+    "Primal Companions": "원시 동반자",
+    "Example Characters": "예시 캐릭터들",
+    "Conjurations": "소환",
+    "Summons": "소환물",
+    "Conjured Elementals": "소환된 정령",
+    "Vehicles": "탈것",
+    "Creatures": "생물들",
+    "Companions": "동반자들",
+    "Otherworldly Steeds": "저승의 말들",
+    "Fiendish Spirits": "악마의 영혼들",
+    "Animated Objects": "애니메이션된 물체들",
+    "Aberrant Spirits": "변칙적인 영혼들",
+    "Undead Spirits": "언데드 영혼들",
+    "Summon Templates": "소환 템플릿들",
+    "Bestial Spirits": "야수의 영혼들",
+    "Construct Spirits": "구축된 영혼들",
+    "Celestial Spirits": "천상의 영혼들",
+    "Fey Spirits": "요정의 영혼들",
+    "Elemental Spirits": "원소의 영혼들",
+    "Giant Insects": "거대 곤충들"
   },
   "entries": {
     "Aberrant Spirit": {
-      "name": "Aberrant Spirit",
-      "tokenName": "Aberrant Spirit",
+      "name": "변친적인 영혼(Aberrant Spirit)",
+      "tokenName": "변친적인 영혼(Aberrant Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
       "items": {
         "Regeneration": {
-          "name": "Regeneration",
-          "description": "<p>The spirit regains [[/healing 5]]{5 Hit Points} at the start of its turn if it has at least 1 Hit Point.</p>",
+          "name": "재생",
+          "description": "<p>영혼은 턴 시작 시 [[/healing 5]]{5 히트 포인트}를 회복합니다. 단, 히트 포인트가 최소 1 이상일 경우에만 가능합니다.</p>",
           "activities": {
             "heal": {
-              "condition": "start of its turn, if it has at least 1 Hit Point"
+              "condition": "턴 시작 시, 히트 포인트가 최소 1 이상일 경우"
             }
           }
         },
         "Whispering Aura": {
-          "name": "Whispering Aura",
-          "description": "<p> At the start of each of the spirit’s turns, the spirit emits psionic energy if it doesn’t have the Incapacitated condition. <em>Wisdom Saving Throw:</em> DC equals your spell save DC, each creature (other than you) within 5 feet of the spirit. <em>Failure:</em> 2d6 Psychic damage.</p>",
+          "name": "Whispering Aura(속삭이는 오라)",
+          "description": "<p>영혼의 턴 시작 시, 영혼이 무력화 상태가 아니면 정신 에너지를 방출합니다. <em>지혜 저항 판정:</em> DC는 당신의 주문 내성 DC와 같으며, 영혼의 5피트 내에 있는 각 생물(당신을 제외한)에 대해 적용됩니다. <em>실패:</em> 2d6 정신 피해.</p>",
           "activities": {
             "save": {
-              "condition": "start of its turn"
+              "condition": "턴 시작 시"
             }
           }
         },
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>영혼은 이 주문의 레벨의 절반(내림)만큼 공격을 합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
               "name": "Activate"
@@ -83,535 +83,536 @@
           }
         },
         "Claw": {
-          "name": "Claw",
-          "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Slashing damage, and the target can’t regain Hit Points until the start of the spirit’s next turn.</p>",
+          "name": "발톱(Claw)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트입니다. <em>히트:</em> 1d10 + 3 + 주문의 레벨 만큼 베기 피해를 주고, 대상은 영혼의 다음 턴 시작 전까지 히트 포인트를 회복할 수 없습니다.</p>",
           "effects": {
             "Blocked Healing": {
-              "name": "Blocked Healing"
+              "name": "회복 차단(Blocked Healing)"
             }
           }
         },
         "Eye Ray": {
-          "name": "Eye Ray",
-          "description": "<p> <em>Ranged Attack Roll:</em> Bonus equals your spell attack modifier, range 150 ft. <em>Hit:</em> 1d8 + 3 + the spell’s level Psychic damage.</p>"
+          "name": "눈빛 광선(Eye Ray)",
+          "description": "<p><em>원거리 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 150피트입니다. <em>히트:</em> 1d8 + 3 + 주문의 레벨 만큼 정신 피해.</p>"
         },
         "Psychic Slam": {
-          "name": "Psychic Slam",
-          "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit: </em>1d8 + 3 + the spell’s level Psychic damage.</p>"
+          "name": "정신 강타(Psychic Slam)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트입니다. <em>히트:</em> 1d8 + 3 + 주문의 레벨 만큼 정신 피해.</p>"
         }
       }
     },
     "Air Elemental Spirit": {
-      "name": "Air Elemental Spirit",
-      "tokenName": "Elemental Spirit",
+      "name": "공기 원소 영혼(Air Elemental Spirit)",
+      "tokenName": "원소 영혼(Elemental Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonElem caption=false]</p>",
       "items": {
         "Amorphous Form": {
-          "name": "Amorphous Form",
-          "description": "<p> The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</p>"
+          "name": "무형의 형태(Amorphous Form)",
+          "description": "<p>영혼은 1인치 너비의 좁은 공간을 통과할 수 있으며, 이는 어렵게 이동하는 지형(Difficult Terrain)으로 간주되지 않습니다.</p>"
         },
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>영혼은 이 주문의 레벨의 절반만큼 [[/item Slam]] 공격을 합니다(내림).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화(Activate)"
             }
           }
         },
         "Slam": {
-          "name": "Slam",
-          "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 4 + the spell’s level Lightning damage.</p>"
+          "name": "강타(Slam)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트입니다. <em>히트:</em> 1d10 + 4 + 주문의 레벨 만큼 번개 피해.</p>"
         }
       }
     },
     "Airship": {
-      "name": "Airship",
-      "tokenName": "Airship",
-      "description": "<p><strong>Speed:</strong> 8 mph</p><p><strong>Crew:</strong> 10</p><p><strong>Passengers:</strong> 20</p><p><strong>Cargo (Tons):</strong> 1</p><p><strong>AC:</strong> 13</p><p><strong>HP:</strong> 300</p><p><strong>Damage Threshold:</strong> —</p><p><strong>Cost:</strong> 40,000 GP</p>"
+      "name": "비행선(Airship)",
+      "tokenName": "비행선(Airship)",
+      "description": "<p><strong>속도(Speed):</strong> 8 mph</p><p><strong>승무원(Crew):</strong> 10</p><p><strong>탑승객(Passengers):</strong> 20</p><p><strong>화물(Tons):</strong> 1</p><p><strong>AC:</strong> 13</p><p><strong>HP:</strong> 300</p><p><strong>피해 임계값(Damage Threshold):</strong> —</p><p><strong>가격(Cost):</strong> 40,000 GP</p>"
+
     },
     "Ape": {
-      "name": "Ape",
-      "tokenName": "Ape",
+      "name": "유인원(Ape)",
+      "tokenName": "유인원(Ape)",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The ape makes two [[/item Fist]] attacks.</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>유인원은 두 번 [[/item Fist]] 공격을 합니다.</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화(Activate)"
             }
           }
         },
         "Fist": {
-          "name": "Fist",
-          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Bludgeoning damage.</p>"
+          "name": "주먹(Fist)",
+          "description": "<p><em>근접 공격 굴림:</em> +5, 사거리 5피트. <em>히트:</em> 5 (1d4 + 3) 타격 피해.</p>"
         },
         "Rock": {
-          "name": "Rock",
-          "description": "<p><em>Ranged Attack Roll: </em>+5, range 25/50 ft. <em>Hit:</em> 10 (2d6 + 3) Bludgeoning damage.</p>"
+          "name": "바위(Rock)",
+          "description": "<p><em>원거리 공격 굴림:</em> +5, 사거리 25/50피트. <em>히트:</em> 10 (2d6 + 3) 타격 피해.</p>"
         }
       }
     },
     "Arcane Eye": {
-      "name": "Arcane Eye",
-      "tokenName": "Arcane Eye",
+      "name": "비전의 눈(Arcane Eye)",
+      "tokenName": "비전의 눈(Arcane Eye)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplArcaneEye0 caption=false]</p>",
       "items": {
         "Move": {
-          "name": "Move",
-          "description": "<p>As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye’s movement, but the eye can pass through an opening as small as 1 inch in diameter.</p>",
+          "name": "이동(Move)",
+          "description": "<p>보너스 행동으로 눈을 최대 30피트까지 어떤 방향으로든 이동시킬 수 있습니다. 단단한 장애물은 눈의 이동을 차단하지만, 눈은 1인치 직경의 작은 구멍을 통과할 수 있습니다.</p>",
           "activities": {
             "utility": {
-              "condition": "Bonus Action used by summoner"
+              "condition": "소환자가 보너스 행동을 사용할 때"
             }
           }
         }
       }
     },
     "Avenger Spirit": {
-      "name": "Avenger Spirit",
-      "tokenName": "Celestial Spirit",
+      "name": "복수의 영혼(Avenger Spirit)",
+      "tokenName": "천상의 영혼(Celestial Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>영혼은 이 주문의 레벨의 절반만큼 공격을 합니다(내림).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화(Activate)"
             }
           }
         },
         "Radiant Bow": {
-          "name": "Radiant Bow",
-          "description": "<p> <em>Ranged Attack Roll</em>: Bonus equals your spell attack modifier, range 600 ft. <em>Hit:</em> 2d6 + 2 + the spell’s level Radiant damage.</p>"
+          "name": "광휘의 활(Radiant Bow)",
+          "description": "<p><em>원거리 공격 굴림</em>: 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 600피트. <em>히트:</em> 2d6 + 2 + 주문의 레벨 만큼 광휘 피해.</p>"
         },
         "Healing Touch": {
-          "name": "Healing Touch",
-          "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
+          "name": "치유의 손길(Healing Touch)",
+          "description": "<p>영혼이 다른 생물을 만집니다. 대상은 2d8 + 주문의 레벨만큼 체력을 회복합니다.</p>"
         }
       }
     },
     "Badger": {
-      "name": "Badger",
-      "tokenName": "Badger",
+      "name": "오소리(Badger)",
+      "tokenName": "오소리(Badger)",
       "items": {
         "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +2, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
+          "name": "물기(Bite)",
+          "description": "<p><em>근접 공격 굴림:</em> +2, 사거리 5피트. <em>히트:</em> 1 관통 피해.</p>"
         }
       }
     },
     "Barbarian": {
-      "name": "Barbarian",
-      "tokenName": "Barbarian",
-      "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBarbarian0000]{Barbarian}</td><td>Battle</td><td>Strength</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgSailor00000]{Sailor}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspGoliath0000]{Goliath}</td><td>Giant, Goblin</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrbBarbarian0]{Barbarian}</td><td>15</td><td>13</td><td>14</td><td>10</td><td>12</td><td>8</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Chaotic</td><td>Rebellious</td></tr><tr><td>Evil</td><td>Vengeful</td></tr></tbody></table>",
+      "name": "바바리안(Barbarian)",
+      "tokenName": "바바리안(Barbarian)",
+      "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{1단계: 클래스 선택}</caption><thead><tr><th scope=\"col\">클래스</th><th scope=\"col\">선호</th><th scope=\"col\">주요 능력치</th><th scope=\"col\">복잡도</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBarbarian0000]{바바리안}</td><td>전투</td><td>힘</td><td>보통</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{2단계: 출신 결정}</caption><thead><tr><th scope=\"col\">배경</th><th scope=\"col\">종족</th><th scope=\"col\">언어</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgSailor00000]{선원}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspGoliath0000]{골리앗}</td><td>거인어, 고블린어</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{3단계: 능력치 결정}</caption><thead><tr><th scope=\"col\">클래스</th><th scope=\"col\">힘</th><th scope=\"col\">민첩</th><th scope=\"col\">체력</th><th scope=\"col\">지능</th><th scope=\"col\">지혜</th><th scope=\"col\">매력</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrbBarbarian0]{바바리안}</td><td>15</td><td>13</td><td>14</td><td>10</td><td>12</td><td>8</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{4단계: 성향 선택}</caption><thead><tr><th scope=\"col\">성향</th><th scope=\"col\">성격</th></tr></thead><tbody><tr><td>혼돈</td><td>반항적</td></tr><tr><td>악</td><td>복수심 강함</td></tr></tbody></table>",
       "items": {
         "Goliath": {
-          "name": "Goliath",
-          "description": "<p>Towering over most folk, goliaths are distant descendants of giants. Each goliath bears the favors of the first giants—favors that manifest in various supernatural boons, including the ability to quickly grow and temporarily approach the height of goliaths’ gigantic kin.</p><p>Goliaths have physical characteristics that are reminiscent of the giants in their family lines. For example, some goliaths look like stone giants, while others resemble fire giants. Whatever giants they count as kin, goliaths have forged their own path in the multiverse—unencumbered by the internecine conflicts that have ravaged giantkind for ages—and seek heights above those reached by their ancestors.</p><h3 data-anchor=\"goliath-traits\">Goliath Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size: </strong>Medium (about 7–8 feet tall)</p><p><strong>Speed:</strong> 35 feet</p><p>As a Goliath, you have these special traits.</p><p><strong>Giant Ancestry.</strong> You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p><p><strong>Cloud’s Jaunt (Cloud Giant). </strong>As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p><p><strong>Fire’s Burn (Fire Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p><p><strong>Frost’s Chill (Frost Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p><p><strong>Hill’s Tumble (Hill Giant). </strong>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the &amp;Reference[Prone] condition.</p><p><strong>Stone’s Endurance (Stone Giant).</strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p><p><strong>Storm’s Thunder (Storm Giant).</strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p><p><strong>Large Form.</strong> Starting at character level 5, you can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.</p><p><strong>Powerful Build.</strong> You have Advantage on any saving throw you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.</p>",
+          "name": "골리앗(Goliath)",
+          "description": "<p>대부분의 사람들을 압도하는 골리앗은 거인의 후손들입니다. 각 골리앗은 첫 번째 거인들의 축복을 받으며, 그 축복은 다양한 초자연적인 능력으로 나타납니다. 그 중 일부는 빠르게 성장하거나 잠시 동안 거인들처럼 커지는 능력을 포함합니다.</p><p>골리앗은 그들의 가문인 거인들의 특성을 물려받았습니다. 예를 들어, 일부 골리앗은 돌거인처럼 보이며, 다른 이들은 불거인처럼 보입니다. 어떤 거인들이 그들의 친척인지는 상관없습니다. 골리앗들은 자신만의 길을 찾아 멀티버스에서 전쟁을 치르고 있습니다. 그들은 오래된 거인들 사이의 내분에 얽매이지 않으며, 그들의 선조들이 이룬 것 이상의 높이에 도달하려 합니다.</p><h3 data-anchor=\"goliath-traits\">골리앗 특성</h3><p><strong>종족 유형: </strong>인간형</p><p><strong>크기: </strong>중형 (약 7-8피트)</p><p><strong>속도:</strong> 35피트</p><p>골리앗은 다음과 같은 특별한 능력을 가집니다.</p><p><strong>거인 혈통.</strong> 거인들의 후손입니다. 아래의 혜택 중 하나를 선택하세요—초자연적인 축복; 이 혜택은 능숙도 보너스 횟수만큼 사용할 수 있으며, 긴 휴식을 마친 후 모든 사용을 회복합니다:</p><p><strong>구름의 도약 (구름 거인). </strong>보너스 행동으로 최대 30피트 떨어진 빈 공간으로 마법처럼 순간이동합니다.</p><p><strong>불의 타오름 (불 거인).</strong> 공격이 성공하면, 그 대상을 대상으로 1d10 불꽃 피해를 추가로 입힙니다.</p><p><strong>서리의 냉기 (서리 거인).</strong> 공격이 성공하면, 그 대상에게 1d6 냉기 피해를 주고, 그 대상의 속도를 다음 턴 시작까지 10피트 감소시킵니다.</p><p><strong>언덕의 구름 (언덕 거인). </strong>큰 또는 그 이하의 크기 생물을 공격하면, 그 대상을 넘어뜨릴 수 있습니다.</p><p><strong>돌의 내구성 (돌 거인).</strong> 피해를 받을 때 반응으로 1d12를 굴리고, 굴린 수에 체력 수정을 더해 그만큼 피해를 감소시킵니다.</p><p><strong>폭풍의 천둥 (폭풍 거인).</strong> 60피트 내의 생물에게 피해를 받으면, 반응으로 그 생물에게 1d8 천둥 피해를 입힙니다.</p><p><strong>큰 형태.</strong> 5레벨부터, 충분히 큰 공간에서 보너스 행동으로 큰 크기로 변할 수 있습니다. 이 변형은 10분간 지속되거나 종료될 때까지 계속되며, 그동안 힘 검사에서 유리하고, 속도가 10피트 증가합니다. 이 능력을 사용한 후에는 긴 휴식 전까지 다시 사용할 수 없습니다.</p><p><strong>강력한 체격.</strong> 몸싸움 상태에서 벗어나기 위한 저항 판정에서 유리합니다. 또한, 운반 능력을 결정할 때 한 크기 더 큰 것으로 간주합니다.</p>",
           "advancement": {
             "LETPMtBLvmzWUUb0": {
-              "hint": "Medium (about 7-8 feet tall)"
+              "hint": "중형 (약 7-8피트)"
             },
             "Goliath Traits": {
-              "title": "Goliath Traits"
+              "title": "골리앗 특성"
             },
             "Giant Ancestry": {
-              "title": "Giant Ancestry",
-              "hint": "You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+              "title": "거인 혈통",
+              "hint": "거인들의 후손입니다. 아래의 혜택 중 하나를 선택하세요—초자연적인 축복; 이 혜택은 능숙도 보너스 횟수만큼 사용할 수 있으며, 긴 휴식을 마친 후 모든 사용을 회복합니다."
             }
           }
         },
         "Giant Ancestry": {
-          "name": "Giant Ancestry",
-          "description": "<p>You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:</p><p><strong>Cloud’s Jaunt (Cloud Giant). </strong>As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.</p><p><strong>Fire’s Burn (Fire Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.</p><p><strong>Frost’s Chill (Frost Giant).</strong> When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.</p><p><strong>Hill’s Tumble (Hill Giant). </strong>When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.</p><p><strong>Stone’s Endurance (Stone Giant).</strong> When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.</p><p><strong>Storm’s Thunder (Storm Giant).</strong> When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>"
+          "name": "거인 혈통",
+          "description": "<p>당신은 거인 혈통을 이어받았습니다. 다음 중 하나의 혜택을 선택하세요—혈통에서 오는 초자연적인 축복입니다; 선택한 혜택은 능력치 보너스만큼 사용할 수 있으며, 긴 휴식을 마친 후 모두 회복됩니다:</p><p><strong>Cloud’s Jaunt (구름 거인). </strong>보너스 액션으로 마법처럼 30피트까지 보지 않는 공간으로 순간이동할 수 있습니다.</p><p><strong>Fire’s Burn (불의 거인).</strong> 공격 롤로 대상을 타격하고 피해를 입힐 때, 추가로 1d10의 화염 피해를 그 대상에게 입힐 수 있습니다.</p><p><strong>Frost’s Chill (서리 거인).</strong> 공격 롤로 대상을 타격하고 피해를 입힐 때, 추가로 1d6의 차가운 피해를 그 대상에게 입히고, 그 대상을 다음 턴이 시작될 때까지 이동 속도를 10피트 감소시킬 수 있습니다.</p><p><strong>Hill’s Tumble (언덕 거인). </strong>대상을 타격하고 피해를 입힐 때, 그 대상을 넘어뜨릴 수 있습니다. 이 효과는 대형 이하의 생물에게만 적용됩니다.</p><p><strong>Stone’s Endurance (돌 거인).</strong> 피해를 받을 때 반응으로 1d12를 굴릴 수 있습니다. 굴린 수에 자신의 체력 수정을 더해 그만큼 피해를 줄일 수 있습니다.</p><p><strong>Storm’s Thunder (폭풍 거인).</strong> 60피트 이내의 생물로부터 피해를 받을 때 반응으로 1d8의 천둥 피해를 그 생물에게 입힐 수 있습니다.</p>"
         },
         "Powerful Build": {
-          "name": "Powerful Build",
-          "description": "<p>You have Advantage on any saving throw you make to end the &amp;Reference[Grappled] condition. You also count as one size larger when determining your carrying capacity.</p><section id=\"secret-7qaTRjmRe4PD41G3\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automatically upgrades your size when determining carrying capacity.</p></section>",
+          "name": "강력한 체격 (Powerful Build)",
+          "description": "<p>당신은 &amp;Reference[Grappled]{붙잡힘} 상태를 끝내기 위한 저항 판정에 유리한 효과를 가집니다. 또한, 운반 능력을 결정할 때 자신이 한 단계 더 큰 크기로 간주됩니다.</p><section id=\"secret-7qaTRjmRe4PD41G3\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>이 특성에는 운반 능력을 결정할 때 크기를 자동으로 업그레이드하는 활성 효과가 포함됩니다.</p></section>",
           "effects": {
             "Powerful Build": {
-              "name": "Powerful Build"
+              "name": "강력한 체격 (Powerful Build)"
             }
           }
         },
         "Storm's Thunder": {
-          "name": "Storm's Thunder",
-          "description": "<p>When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.</p>",
+          "name": "폭풍의 천둥 (Storm's Thunder)",
+          "description": "<p>60피트 이내의 생물로부터 피해를 받을 때 반응으로 그 생물에게 1d8 번개 피해를 줄 수 있습니다.</p>",
           "activities": {
             "Storm's Thunder": {
-              "name": "Storm's Thunder",
-              "condition": "When you take damage from a creature within 60 feet of you"
+              "name": "폭풍의 천둥 (Storm's Thunder)",
+              "condition": "60피트 이내의 생물로부터 피해를 받을 때"
             }
           }
         },
         "Sailor": {
-          "name": "Sailor",
-          "description": "<p><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftTavernBrawl]{Tavern Brawler}</p><p><strong>Skill Proficiencies:</strong> Acrobatics and Perception</p><p><strong>Tool Proficiency:</strong> Navigator’s Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Dagger}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulNavigators]{Navigator’s Tools}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000]{Rope}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler’s Clothes}, 20 GP; or (B) 50 GP</p><p>You lived as a seafarer, wind at your back and decks swaying beneath your feet. You’ve perched on barstools in more ports of call than you can remember, faced mighty storms, and swapped stories with folk who live beneath the waves.</p>",
+          "name": "선원 (Sailor)",
+          "description": "<p><strong>능력치:</strong> 힘, 민첩, 지혜</p><p><strong>특성:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftTavernBrawl]{주점 싸움꾼}</p><p><strong>기술 숙련:</strong> 곡예술과 지각</p><p><strong>도구 숙련:</strong> 항해 도구</p><p><strong>장비:</strong> <em>A 또는 B를 선택하세요:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{단검}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulNavigators]{항해 도구}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000]{로프}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{여행자의 옷}, 20 GP; 또는 (B) 50 GP</p><p>당신은 바다에서 살며, 바람을 맞고 갑판이 흔들리는 경험을 했습니다. 기억할 수 없을 정도로 많은 항구에서 바 술집에 앉아, 거대한 폭풍을 겪었으며, 물속에서 사는 사람들과 이야기를 나누었습니다.</p>",
           "advancement": {
             "Background Ability Score Improvement": {
-              "title": "Background Ability Score Improvement",
-              "hint": "Your background allows you to increase your Strength, Dexterity, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+              "title": "배경 능력치 향상 (Background Ability Score Improvement)",
+              "hint": "당신의 배경은 힘, 민첩성, 지혜 점수를 증가시킬 수 있게 합니다. 하나는 2만큼 증가시키고, 다른 하나는 1만큼 증가시키거나, 세 개 모두 1만큼 증가시킬 수 있습니다. 이러한 증가로 점수를 20을 초과할 수 없습니다."
             },
             "Background Proficiencies": {
-              "title": "Background Proficiencies",
-              "hint": "Your background grants you proficiency in Acrobatics and Perception. It also grants you proficiency with Navigator's Tools."
+              "title": "배경 전문기술 (Background Proficiencies)",
+              "hint": "당신의 배경은 곡예와 지각에 대한 전문기술을 부여합니다. 또한 항해 도구에 대한 전문기술도 부여합니다."
             },
             "Background Feat": {
-              "title": "Background Feat",
-              "hint": "Your background grants you the Tavern Brawler feat."
+              "title": "배경 재주 (Background Feat)",
+              "hint": "당신의 배경은 '술집 싸움꾼(Tavern Brawler)' 재주를 부여합니다."
             }
           }
         },
         "Tavern Brawler": {
-          "name": "Tavern Brawler",
-          "description": "<p>You gain the following benefits.</p><p><strong>Enhanced Unarmed Strike.</strong> When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</p><p><strong>Damage Rerolls.</strong> Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</p><p><strong>Improvised Weaponry.</strong> You have proficiency with improvised weapons.</p><p><strong>Push.</strong> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn<strong>.</strong></p><section class=\"secret\" id=\"secret-XllUmSpInybNueav\"><p><strong>Foundry Note</strong></p><p>The proficiency is automatically granted by this feature.</p><p>The <strong>Enhanced Unarmed Strike</strong> activity includes the damage change.</p></section>",
+          "name": "술집 싸움꾼 (Tavern Brawler)",
+          "description": "<p>당신은 다음과 같은 혜택을 얻습니다.</p><p><strong>강화된 비무장 공격 (Enhanced Unarmed Strike).</strong> 비무장 공격으로 명중하여 피해를 줄 때, 일반적인 비무장 공격 피해 대신 1d4 + 근력 수정치만큼의 타격 피해를 줄 수 있습니다.</p><p><strong>피해 주사위 재굴림 (Damage Rerolls).</strong> 비무장 공격의 피해 주사위를 굴릴 때, 주사위 결과가 1이면 다시 굴릴 수 있으며, 새로운 결과를 사용해야 합니다.</p><p><strong>즉석 무기 사용 (Improvised Weaponry).</strong> 즉석 무기 사용에 대한 숙련을 갖습니다.</p><p><strong>밀쳐내기 (Push).</strong> 자신의 차례 동안 공격 행동의 일부로 비무장 공격으로 명중했을 때, 대상에게 피해를 주고 추가로 5피트 밀쳐낼 수 있습니다. 이 혜택은 턴당 한 번만 사용할 수 있습니다<strong>.</strong></p><section class=\"secret\" id=\"secret-XllUmSpInybNueav\"><p><strong>Foundry Note</strong></p><p>이 기능은 자동으로 숙련을 부여합니다.</p><p><strong>강화된 비무장 공격</strong> 활동이 피해 변경 사항을 포함합니다.</p></section>",
           "activities": {
             "Enhanced Unarmed Strike": {
-              "name": "Enhanced Unarmed Strike"
+              "name": "강화된 비무장 공격 (Enhanced Unarmed Strike)"
             }
           },
           "effects": {
             "New Effect": {
-              "name": "New Effect"
+              "name": "새로운 효과 (New Effect)"
             }
           }
         },
         "Dagger": {
-          "name": "Dagger"
+          "name": "단검 (Dagger)"
         },
         "Navigator’s Tools": {
-          "name": "Navigator’s Tools",
-          "description": "<p class=\"phb-meta\"><strong>Ability:</strong> Wisdom</p><p class=\"phb-meta\"><strong>Utilize:</strong> Plot a course (DC 10), or determine position by stargazing (DC 15)</p>",
+          "name": "항해 도구 (Navigator’s Tools)",
+          "description": "<p class=\"phb-meta\"><strong>능력치:</strong> 지혜 (Wisdom)</p><p class=\"phb-meta\"><strong>사용법:</strong> 항로 설정 (DC 10) 또는 별을 보고 위치 파악 (DC 15)</p>",
           "activities": {
             "Plot a Course": {
-              "name": "Plot a Course"
+              "name": "항로 설정 (Plot a Course)"
             },
             "Determine Position by Stargazing": {
-              "name": "Determine Position by Stargazing"
+              "name": "별을 보고 위치 파악 (Determine Position by Stargazing)"
             }
           }
         },
         "Rope": {
-          "name": "Rope",
-          "description": "<p>As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.</p><p>You can bind an unwilling creature with the Rope only if the creature has the &amp;Reference[Grappled], &amp;Reference[Incapacitated], or &amp;Reference[Restrained] condition. If the creature’s legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.</p>",
+          "name": "밧줄 (Rope)",
+          "description": "<p>사용 행동으로, 민첩 (손재주) 판정 DC 10을 성공하면 밧줄을 묶을 수 있습니다. 성공적인 근력 (운동) 판정 DC 20으로 밧줄을 끊을 수 있습니다.</p><p>밧줄로 저항하는 생물을 묶으려면 해당 생물이 &amp;Reference[Grappled]{붙잡힘}, &amp;Reference[Incapacitated]{행동 불가}, 또는 &amp;Reference[Restrained]{속박} 상태여야 합니다. 다리를 묶으면 해당 생물은 탈출할 때까지 속박 (Restrained) 상태가 됩니다. 밧줄에서 탈출하려면 행동을 사용하여 민첩 (곡예) 판정 DC 15를 성공해야 합니다.</p>",
           "activities": {
             "Tie Knot": {
-              "name": "Tie Knot"
+              "name": "매듭 묶기 (Tie Knot)"
             },
             "Burst Rope": {
-              "name": "Burst Rope"
+              "name": "밧줄 끊기 (Burst Rope)"
             },
             "Escape Check": {
-              "name": "Escape Check"
+              "name": "탈출 판정 (Escape Check)"
             }
           }
         },
         "Traveler's Clothes": {
-          "name": "Traveler's Clothes",
-          "description": "<p>A set of clothes worn by travellers.</p>"
+          "name": "여행자 의복 (Traveler's Clothes)",
+          "description": "<p>여행자가 착용하는 의복 한 벌.</p>"
         },
         "Handaxe": {
-          "name": "Handaxe"
+          "name": "손도끼 (Handaxe)"
         },
         "Greataxe": {
-          "name": "Greataxe"
+          "name": "대형 도끼 (Greataxe)"
         },
         "Explorer’s Pack": {
-          "name": "Explorer’s Pack",
-          "description": "<p>An Explorer’s Pack contains the following items: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, 2 flasks of @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil}, 10 days of @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]{Rations}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000]{Rope}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]{Tinderbox}, 10 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTorch000000]{Torches}, and @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}.</p>"
+          "name": "탐험가의 팩 (Explorer’s Pack)",
+          "description": "<p>탐험가의 팩에는 다음 물품이 포함되어 있습니다: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{배낭 (Backpack)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{침낭 (Bedroll)}, 기름 (Oil) 2병, 10일치 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]{식량 (Rations)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRope0000000]{밧줄 (Rope)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]{부싯돌 상자 (Tinderbox)}, 횃불 (Torches) 10개, 그리고 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{물통 (Waterskin)}.</p>"
         },
         "Bedroll": {
-          "name": "Bedroll",
-          "description": "<p>A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the <em>Dungeon Master</em> <em>’s Guide</em>).</p>"
+          "name": "침낭 (Bedroll)",
+          "description": "<p>침낭은 작은 크기 (Small) 또는 중간 크기 (Medium) 생물 한 마리를 재울 수 있습니다. 침낭 안에 있을 경우 극한의 추위에 대한 저항 판정을 자동으로 성공합니다 (자세한 내용은 <em>던전 마스터 가이드</em> 참조).</p>"
         },
         "Oil": {
-          "name": "Oil",
-          "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
+          "name": "기름 (Oil)",
+          "description": "<p>기름을 생물, 물체 또는 공간에 붓거나 연료로 사용할 수 있습니다.</p><p><strong>생물 또는 물체에 붓기.</strong> 공격 행동을 할 때, 공격 중 하나를 기름 병 던지기로 대체할 수 있습니다. 20피트 이내의 생물 또는 물체를 대상으로 합니다. 대상은 민첩 내성 굴림 (DC 8 + 민첩 수정치 + 숙련 보너스)을 성공해야 하며, 실패 시 기름에 뒤덮입니다. 기름이 마르기 전 (1분 후) 불 피해를 입으면 추가로 [[/damage 5 type=fire]]의 화염 피해를 받습니다.</p><p><strong>공간에 붓기.</strong> 활용 (Utilize) 행동을 사용하여 평평한 지면 5피트 정사각형 영역에 기름을 부을 수 있습니다. 불이 붙으면 2라운드 동안 (12초) 불타며, 해당 영역에 들어가거나 턴을 마친 생물은 5의 화염 피해를 받습니다. 한 턴에 한 번만 피해를 받을 수 있습니다.</p><p><strong>연료.</strong> 기름은 램프와 랜턴의 연료로 사용됩니다. 불을 붙이면 한 병의 기름은 램프나 랜턴에서 6시간 동안 연소합니다. 연속으로 태울 필요는 없으며, 활용 (Utilize) 행동으로 불을 끄고 총 6시간이 될 때까지 다시 사용할 수 있습니다.</p>",
           "activities": {
             "Throw": {
-              "name": "Throw"
+              "name": "던지기 (Throw)"
             },
             "Douse Space": {
-              "name": "Douse Space"
+              "name": "공간 덮기 (Douse Space)"
             }
           }
         },
         "Rations": {
-          "name": "Rations",
-          "description": "<p>Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See “Malnutrition” in the rules glossary for the risks of not eating.</p>"
+          "name": "식량 (Rations)",
+          "description": "<p>식량은 여행 중 먹을 수 있는 음식으로, 육포, 말린 과일, 하드택, 견과류 등으로 구성됩니다. 음식 섭취를 하지 않았을 때의 위험 요소는 '영양실조' 항목을 참조하세요.</p>"
         },
         "Tinderbox": {
-          "name": "Tinderbox",
-          "description": "<p>A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.</p>",
+          "name": "부싯돌 상자 (Tinderbox)",
+          "description": "<p>부싯돌 상자는 불을 붙이는 데 사용하는 작은 용기로, 부싯돌, 화강석, 그리고 불쏘시개 (보통 가벼운 기름에 적신 마른 천)가 들어 있습니다. 촛불, 램프, 랜턴, 횃불과 같은 노출된 연료가 있는 물체에 불을 붙이는 데는 보너스 액션이 필요하며, 그 외의 불을 붙이는 데는 1분이 걸립니다.</p>",
           "activities": {
             "Light": {
-              "name": "Light"
+              "name": "점화 (Light)"
             }
           }
         },
         "Torch": {
-          "name": "Torch",
-          "description": "<p>A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.</p>"
+          "name": "횃불 (Torch)",
+          "description": "<p>횃불은 1시간 동안 연소하며, 20피트 반경에 밝은 빛을 비추고 추가 20피트까지 희미한 빛을 제공합니다. 공격 행동을 할 때, 횃불을 단순 근접 무기로 사용하여 공격할 수 있습니다. 명중 시 대상은 1의 화염 피해를 입습니다.</p>"
         },
         "Waterskin": {
-          "name": "Waterskin",
-          "description": "<p>A Waterskin holds up to 4 pints. If you don’t drink sufficient water, you risk &amp;Reference[dehydration].</p>"
+          "name": "물주머니 (Waterskin)",
+          "description": "<p>물주머니는 최대 4파인트의 물을 담을 수 있습니다. 충분한 물을 마시지 않으면 &amp;Reference[탈수 (dehydration)] 위험이 있습니다.</p>"
         },
         "Water (Pint)": {
-          "name": "Water (Pint)",
-          "description": "<p>If you don’t drink sufficient water, you risk &amp;Reference[dehydration].</p>",
+          "name": "물 (파인트) (Water (Pint))",
+          "description": "<p>충분한 물을 마시지 않으면 &amp;Reference[dehydration]{탈수} 위험이 있습니다.</p>",
           "activities": {
             "Consume": {
-              "name": "Consume"
+              "name": "섭취 (Consume)"
             }
           }
         },
         "Barbarian": {
-          "name": "Barbarian",
-          "description": "<blockquote><p>A Fierce Warrior of Primal Rage</p></blockquote><h3>Core Barbarian Traits</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>Primary Ability</p></th><td><p>Strength</p></td></tr><tr><th><p><strong>Hit Point Die</strong></p></th><td><p>D12 per Barbarian level</p></td></tr><tr><th><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Strength and Constitution</p></td></tr><tr><th><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose 2:</em> Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival</p></td></tr><tr><th><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple and Martial weapons</p></td></tr><tr><th><p><strong>Armor Training</strong></p></th><td><p>Light and Medium armor and Shields</p></td></tr><tr><th><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreataxe00]{Greataxe}, 4 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepHandaxe000]{Handaxes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{Explorer’s Pack}, and [[/award 15GP]]; or (B) [[/award 75GP]]</p></td></tr></tbody></table><p>Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. More than a mere emotion—and not limited to anger—this Rage is an incarnation of a predator’s ferocity, a storm’s fury, and a sea’s turmoil.</p><p>Some Barbarians personify their Rage as a fierce spirit or revered forebear. Others see it as a connection to the pain and anguish of the world, as an impersonal tangle of wild magic, or as an expression of their own deepest self. For every Barbarian, their Rage is a power that fuels not just battle prowess, but also uncanny reflexes and heightened senses.</p><p>Barbarians often serve as protectors and leaders in their communities. They charge headlong into danger so those under their protection don’t have to. Their courage in the face of danger makes Barbarians perfectly suited for adventure.</p><h2>Becoming a Barbarian …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Barbarian Traits table.</li><li>Gain the Barbarian’s level 1 features, which are listed in the Barbarian Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Barbarian Traits table: Hit Point Die, proficiency with Martial weapons, and training with Shields.</li><li>Gain the Barbarian’s level 1 features, which are listed in the Barbarian Features table.</li></ul>",
+          "name": "야만전사 (Barbarian)",
+          "description": "<blockquote><p>원시적 분노의 맹렬한 전사</p></blockquote><h3>핵심 야만전사 특성</h3><table class=\"core-class-traits\"><tbody><tr><th scope=\"row\"><p>주 능력치</p></th><td><p>근력</p></td></tr><tr><th><p><strong>생명력 주사위</strong></p></th><td><p>야만전사 레벨당 D12</p></td></tr><tr><th><p><strong>저항 판정 숙련</strong></p></th><td><p>근력 및 건강</p></td></tr><tr><th><p><strong>기술 숙련</strong></p></th><td><p><em>다음 중 2개 선택:</em> 동물 조련, 운동, 위협, 자연, 감지, 생존</p></td></tr><tr><th><p><strong>무기 숙련</strong></p></th><td><p>단순 무기 및 군용 무기</p></td></tr><tr><th><p><strong>방어구 숙련</strong></p></th><td><p>경갑, 중갑, 방패</p></td></tr><tr><th><p><strong>시작 장비</strong></p></th><td><p><em>A 또는 B 선택:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepGreataxe00]{대형 도끼}, 4 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepHandaxe000]{손도끼}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagExplorersPa]{탐험가의 팩}, 및 [[/award 15GP]]; 또는 (B) [[/award 75GP]]</p></td></tr></tbody></table><p>야만전사는 다중우주의 원시적 힘으로부터 기원을 받아 분노 상태를 발현하는 강력한 전사입니다. 이 분노는 단순한 감정을 넘어 포식자의 사나움, 폭풍의 분노, 바다의 격변을 형상화합니다.</p><p>일부 야만전사는 분노를 사령이나 존경받는 조상으로 여기며, 또 다른 이들은 세계의 고통과 혼란, 혹은 자신만의 깊은 본성의 표현으로 봅니다. 야만전사에게 분노는 전투 능력뿐만 아니라 비상한 반사 신경과 예리한 감각을 강화하는 힘입니다.</p><p>야만전사는 종종 공동체의 보호자이자 지도자로서 역할을 하며, 자신이 위험에 뛰어듦으로써 동료들을 보호합니다. 그들의 용기는 모험에 완벽히 어울리는 자질입니다.</p><h2>야만전사가 되려면 …</h2><h3>레벨 1 캐릭터로 시작할 경우</h3><ul><li>핵심 야만전사 특성 표의 모든 특성을 획득합니다.</li><li>레벨 1 야만전사의 특징을 획득합니다 (야만전사 특징 표 참고).</li></ul><h3>다중 직업으로 선택할 경우</h3><ul><li>핵심 야만전사 특성 표에서 생명력 주사위, 군용 무기 숙련, 방패 숙련을 획득합니다.</li><li>레벨 1 야만전사의 특징을 획득합니다 (야만전사 특징 표 참고).</li></ul>",
           "advancement": {
             "Rage Damage": {
-              "title": "Rage Damage"
+              "title": "분노 피해 (Rage Damage)"
             },
             "Weapon Masteries Known": {
-              "title": "Weapon Masteries Known"
+              "title": "숙련한 무기 (Weapon Masteries Known)"
             },
             "Class Features": {
-              "title": "Class Features"
+              "title": "직업 특징 (Class Features)"
             },
             "Primal Knowledge": {
-              "title": "Primal Knowledge",
-              "hint": "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1."
+              "title": "원시 지식 (Primal Knowledge)",
+              "hint": "야만전사 레벨 1에서 선택할 수 있는 기술 목록에서 추가로 하나를 숙련합니다."
             },
             "Epic Boon": {
-              "title": "Epic Boon"
+              "title": "서사적 은총 (Epic Boon)"
             },
             "Primal Champion": {
-              "title": "Primal Champion",
-              "hint": "You embody primal power. Your Strength and Constitution scores increase by 4, to a maximum of 25."
+              "title": "원시 챔피언 (Primal Champion)",
+              "hint": "당신은 원시적인 힘을 체현합니다. 근력과 건강 능력치가 4 증가하며, 최대 25까지 도달할 수 있습니다."
             },
             "Brutal Strike": {
-              "title": "Brutal Strike"
+              "title": "야만적인 일격 (Brutal Strike)"
             },
             "Saving Throws Proficiencies": {
-              "title": "Saving Throws Proficiencies"
+              "title": "저항 판정 숙련 (Saving Throws Proficiencies)"
             },
             "Skill Proficiencies": {
-              "title": "Skill Proficiencies"
+              "title": "기술 숙련 (Skill Proficiencies)"
             },
             "Weapon Proficiencies": {
-              "title": "Weapon Proficiencies"
+              "title": "무기 숙련 (Weapon Proficiencies)"
             },
             "Armor Training": {
-              "title": "Armor Training"
+              "title": "방어구 숙련 (Armor Training)"
             },
             "Weapon Mastery": {
-              "title": "Weapon Mastery",
-              "hint": "Your training with weapons allows you to use the mastery properties of additional weapons."
+              "title": "무기 숙련 (Weapon Mastery)",
+              "hint": "추가적인 무기의 숙련 속성을 사용할 수 있도록 훈련받습니다."
             },
             "Rages": {
-              "title": "Rages"
+              "title": "분노 (Rages)"
             }
           }
         },
         "Rage": {
-          "name": "Rage",
-          "description": "<p>You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a Bonus Action if you aren’t wearing Heavy armor.</p><p>You can enter your Rage the number of times shown for your Barbarian level in the Rages column of the Barbarian Features table (currently [[lookup @scale.barbarian.rages]]). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p><p>While active, your Rage follows the rules below.</p><p><strong>Damage Resistance.</strong> You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p><p><strong>Rage Damage.</strong> When you make an attack using Strength—with either a weapon or an Unarmed Strike—and deal damage to the target, you gain a bonus to the damage that increases as you gain levels as a Barbarian, as shown in the Rage Damage column of the Barbarian Features table.</p><p><strong>Strength Advantage.</strong> You have Advantage on Strength checks and Strength saving throws.</p><p><strong>No Concentration or Spells.</strong> You can’t maintain Concentration, and you can’t cast spells.</p><p><strong>Duration.</strong> The Rage lasts until the end of your next turn, and it ends early if you don Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:</p><ul><li>Make an attack roll against an enemy.</li><li>Force an enemy to make a saving throw.</li><li>Take a Bonus Action to extend your Rage.</li></ul><p>Each time the Rage is extended, it lasts until the end of your next turn. You can maintain a Rage for up to 10 minutes.</p><section class=\"secret\" id=\"secret-o72MSFMdhSQC7kYa\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the Resistance and additional damage. This feature will also automatically recharge your Rage uses on a Short and Long Rest.</p></section>",
+          "name": "분노(Rage)",
+          "description": "<p>당신은 '분노(Rage)'라는 원시적인 힘을 몸에 불어넣어 엄청난 힘과 회복력을 얻을 수 있습니다. 중갑을 착용하고 있지 않다면 보너스 액션으로 분노에 들어갈 수 있습니다.</p><p>당신은 야만용사 레벨에 따라 야만용사 특성 표의 분노 횟수 열(Rages column)에 표시된 횟수만큼 분노를 사용할 수 있습니다(현재 [[lookup @scale.barbarian.rages]]). 짧은 휴식을 마치면 소모한 분노를 1회 회복하며, 긴 휴식을 마치면 모든 소모한 분노를 회복합니다.</p><p>분노가 활성화된 동안 아래 규칙이 적용됩니다.</p><p><strong>피해 저항.</strong> 타격(Bludgeoning), 관통(Piercing), 참격(Slashing) 피해에 대한 저항을 가집니다.</p><p><strong>분노 피해.</strong> 근력(Strength)을 사용한 공격(무기 또는 비무장 공격)으로 적에게 피해를 줄 경우, 야만용사 특성 표의 분노 피해 열(Rage Damage column)에 표시된 값만큼 추가 피해를 입힙니다.</p><p><strong>근력 우위.</strong> 근력 판정과 근력 저항 판정에서 우위를 가집니다.</p><p><strong>집중 및 주문 불가.</strong> 집중을 유지할 수 없으며, 주문을 시전할 수도 없습니다.</p><p><strong>지속 시간.</strong> 분노는 다음 턴이 끝날 때까지 지속되며, 중갑을 착용하거나 무력화(Incapacitated) 상태가 되면 조기에 종료됩니다. 다음 턴에 분노가 아직 유지되고 있다면, 아래 방법 중 하나를 수행하여 한 라운드 더 연장할 수 있습니다.</p><ul><li>적을 대상으로 공격 굴림을 수행합니다.</li><li>적에게 저항 판정을 강요합니다.</li><li>보너스 액션을 사용하여 분노를 연장합니다.</li></ul><p>분노를 연장할 때마다 다음 턴이 끝날 때까지 지속됩니다. 최대 10분 동안 유지할 수 있습니다.</p><section class=\"secret\" id=\"secret-o72MSFMdhSQC7kYa\"><p><strong>Foundry 메모</strong></p><p>이 기능은 저항과 추가 피해를 자동화하는 활성 효과를 포함합니다. 또한 짧은 휴식과 긴 휴식 시 자동으로 분노 사용 횟수를 회복합니다.</p></section>",
           "activities": {
             "Expend Rage": {
-              "name": "Expend Rage"
+              "name": "분노 소모(Expend Rage)"
             }
           },
           "effects": {
             "Rage": {
-              "name": "Rage"
+              "name": "분노(Rage)"
             }
           }
         },
         "Unarmored Defense": {
-          "name": "Unarmored Defense",
-          "description": "<p>While you aren’t wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain this benefit.</p>",
+          "name": "비무장 방어(Unarmored Defense)",
+          "description": "<p>아머를 착용하고 있지 않을 경우, 기본 방어도(AC)는 10 + 민첩 수정치 + 건강 수정치로 계산됩니다. 방패를 사용할 경우에도 이 혜택을 받을 수 있습니다.</p>",
           "effects": {
             "Unarmored Defense": {
-              "name": "Unarmored Defense"
+              "name": "비무장 방어(Unarmored Defense)"
             }
           }
         },
         "Weapon Mastery": {
-          "name": "Weapon Mastery",
-          "description": "<p>Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial Melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p><p>When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.</p>"
+          "name": "무기 숙련(Weapon Mastery)",
+          "description": "<p>당신은 무기를 다루는 훈련을 통해 단순 무기 또는 군용 근접 무기 중 두 종류를 선택하여 숙련 속성을 사용할 수 있습니다. 예를 들어 대도(Greataxe)와 손도끼(Handaxe)를 선택할 수 있습니다. 긴 휴식을 마칠 때마다 무기 연습을 하여 선택한 무기 중 하나를 변경할 수 있습니다.</p><p>야만용사 레벨이 오르면, 야만용사 특성 표의 무기 숙련 열(Weapon Mastery column)에 표시된 대로 더 많은 종류의 무기에 대한 숙련 속성을 사용할 수 있습니다.</p>"
         },
         "Unarmed Strike": {
-          "name": "Unarmed Strike"
+          "name": "비무장 공격(Unarmed Strike)"
         }
       }
     },
     "Bard": {
-      "name": "Bard",
-      "tokenName": "Bard",
-      "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBard000000000]{Bard}</td><td>Performing</td><td>Charisma</td><td>High</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgEntertainer]{Entertainer}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspChthonicTie]{Tiefling, Chthonic}</td><td>Halfling, Giant</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdBard000000]{Bard}</td><td>8</td><td>14</td><td>12</td><td>13</td><td>10</td><td>15</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Neutral</td><td>Selfish</td></tr><tr><td>Evil</td><td>Greedy</td></tr></tbody></table>",
+      "name": "바드(Bard)",
+      "tokenName": "바드(Bard)",
+      "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{1단계: 직업 선택}</caption><thead><tr><th scope=\"col\">직업</th><th scope=\"col\">좋아하는 것</th><th scope=\"col\">주요 능력치</th><th scope=\"col\">복잡도</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBard000000000]{바드(Bard)}</td><td>공연</td><td>매력(Charisma)</td><td>높음</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{2단계: 출신 결정}</caption><thead><tr><th scope=\"col\">배경</th><th scope=\"col\">종족</th><th scope=\"col\">언어</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgEntertainer]{연예인(Entertainer)}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspChthonicTie]{티플링(Tiefling), 저승의 혈통(Chthonic)}</td><td>하플링(Halfling), 거인(Giant)</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{3단계: 능력치 결정}</caption><thead><tr><th scope=\"col\">직업</th><th scope=\"col\">힘</th><th scope=\"col\">민첩</th><th scope=\"col\">건강</th><th scope=\"col\">지능</th><th scope=\"col\">지혜</th><th scope=\"col\">매력</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdBard000000]{바드(Bard)}</td><td>8</td><td>14</td><td>12</td><td>13</td><td>10</td><td>15</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{4단계: 성향 선택}</caption><thead><tr><th scope=\"col\">성향</th><th scope=\"col\">성격</th></tr></thead><tbody><tr><td>중립(Neutral)</td><td>이기적(Selfish)</td></tr><tr><td>악(Evil)</td><td>탐욕스러움(Greedy)</td></tr></tbody></table>",
       "items": {
         "Lute": {
-          "name": "Lute",
-          "description": "<p><strong>Ability:</strong> Charisma</p><p class=\"phb-meta\"><strong>Utilize:</strong> Play a known tune (DC 10), or improvise a song (DC 15)</p>",
+          "name": "루트(Lute)",
+          "description": "<p><strong>능력:</strong> 매력(Charisma)</p><p class=\"phb-meta\"><strong>사용법:</strong> 알고 있는 곡 연주(DC 10), 또는 즉흥적인 노래 만들기(DC 15)</p>",
           "activities": {
             "Play a Known Tune": {
-              "name": "Play a Known Tune"
+              "name": "알고 있는 곡 연주(Play a Known Tune)"
             },
             "Improvise a Song": {
-              "name": "Improvise a Song"
+              "name": "즉흥적인 노래 만들기(Improvise a Song)"
             }
           }
         },
         "Costume": {
-          "name": "Costume",
-          "description": "<p>While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents.</p>"
+          "name": "의상(Costume)",
+          "description": "<p>의상을 입고 있을 때, 그것이 나타내는 사람이나 사람 유형을 흉내 낼 때 능력 체크에 우위를 가집니다.</p>"
         },
         "Mirror": {
-          "name": "Mirror",
-          "description": "<p>A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal.</p>"
+          "name": "거울(Mirror)",
+          "description": "<p>휴대용 강철 거울은 개인 화장용으로 유용하지만, 또한 모서리 뒤를 엿보거나 빛을 반사하여 신호를 보내는 데 유용합니다.</p>"
         },
         "Perfume": {
-          "name": "Perfume",
-          "description": "<p>Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself.</p>"
+          "name": "향수(Perfume)",
+          "description": "<p>향수는 4온스 병에 담겨 있습니다. 향수를 자신에게 바른 후 1시간 동안, 자신으로부터 5피트 이내에 있는 냉담한 인간형에게 설득(Charisma(Persuasion)) 체크에 우위를 가집니다.</p>"
         },
         "Clothes, Traveler’s": {
-          "name": "Clothes, Traveler’s",
-          "description": "<p>Traveler’s Clothes are resilient garments designed for travel in various environments.</p>"
+          "name": "여행자의 의상(Clothes, Traveler’s)",
+          "description": "<p>여행자의 의상은 다양한 환경에서 여행을 위해 설계된 내구성이 뛰어난 의류입니다.</p>"
         },
         "Leather Armor": {
-          "name": "Leather Armor"
+          "name": "가죽 갑옷(Leather Armor)"
         },
         "Dagger": {
-          "name": "Dagger"
+          "name": "단검(Dagger)"
         },
         "Entertainer’s Pack": {
-          "name": "Entertainer’s Pack",
-          "description": "<p>An Entertainer’s Pack contains the following items: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{Backpack}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{Bedroll}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000]{Bell}, @UUID[Compendium.dnd5e.items.Item.UkWdyJYQTfVX2cJW]{Bullseye Lantern}, 3 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costumes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000]{Mirror}, 8 flasks of @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{Oil}, 9 days of @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]{Rations}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]{Tinderbox}, and @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{Waterskin}.</p>"
+          "name": "연예인의 배낭(Entertainer’s Pack)",
+          "description": "<p>연예인의 배낭에는 다음 항목들이 포함됩니다: @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBackpack000]{배낭(Backpack)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBedroll0000]{침낭(Bedroll)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBell0000000]{종(Bell)}, @UUID[Compendium.dnd5e.items.Item.UkWdyJYQTfVX2cJW]{집중 랜턴(Bullseye Lantern)}, 3 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{의상(Costumes)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000]{거울(Mirror)}, 8병의 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagOil00000000]{기름(Oil)}, 9일 분량의 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRations0000]{양식(Rations)}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagTinderbox00]{불쏘시개(Tinderbox)}, 및 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagWaterskin00]{물통(Waterskin)}.</p>"
         },
         "Flute": {
-          "name": "Flute",
-          "description": "<p><strong>Ability:</strong> Charisma</p><p class=\"phb-meta\"><strong>Utilize:</strong> Play a known tune (DC 10), or improvise a song (DC 15)</p>",
+          "name": "플루트(Flute)",
+          "description": "<p><strong>능력치:</strong> 카리스마(Charisma)</p><p class=\"phb-meta\"><strong>활용:</strong> 알려진 곡 연주(DC 10), 또는 즉흥 곡 연주(DC 15)</p>",
           "activities": {
             "Play a Known Tune": {
-              "name": "Play a Known Tune"
+              "name": "알려진 곡 연주(Play a Known Tune)"
             },
             "Improvise a Song": {
-              "name": "Improvise a Song"
+              "name": "즉흥 곡 연주(Improvise a Song)"
             }
           }
         },
         "Dancing Lights": {
-          "name": "Dancing Lights",
-          "description": "<p>You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius.</p><p>As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell’s range.</p>",
+          "name": "춤추는 빛(Dancing Lights)",
+          "description": "<p>범위 내에 최대 4개의 횃불 크기 빛을 만들어내며, 이를 횃불, 랜턴 또는 떠 있는 빛의 구체로 나타낼 수 있습니다. 또한, 이 네 개의 빛을 하나의 빛나는 중간 크기 형태로 합쳐, 대체로 인간형처럼 보이게 할 수 있습니다. 어떤 형태를 선택하든, 각 빛은 10피트 반경 내에서 희미한 빛을 발산합니다.</p><p>보너스 액션으로 빛을 최대 60피트까지 이동시킬 수 있습니다. 빛은 서로 20피트 이내에 있어야 하며, 빛이 범위를 초과하면 사라집니다.</p>",
           "activities": {
             "Create Lights": {
-              "name": "Create Lights"
+              "name": "빛 만들기(Create Lights)"
             },
             "Move Lights": {
-              "name": "Move Lights"
+              "name": "빛 이동(Move Lights)"
             }
           }
         },
         "Vicious Mockery": {
-          "name": "Vicious Mockery",
-          "description": "<p>You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>",
+          "name": "악의적인 조롱(Vicious Mockery)",
+          "description": "<p>범위 내에서 볼 수 있거나 들을 수 있는 생명체에게 마법적인 조롱을 퍼붓습니다. 대상은 지혜 저항 판정을 통과하지 못하면 1d6의 정신적 피해를 입고, 그 다음 턴이 끝날 때까지 다음 공격 굴림에서 불리한 판정을 받습니다.</p><p><strong>주문 업그레이드.</strong> 피해는 5레벨에서 1d6(2d6), 11레벨에서 1d6(3d6), 17레벨에서 1d6(4d6)로 증가합니다.</p>",
           "effects": {
             "Mocked": {
-              "name": "Mocked",
-              "description": "<p>The target has Disadvantage on the next attack roll it makes before the end of its next turn.</p>"
+              "name": "조롱 당함(Mocked)",
+              "description": "<p>대상은 그 다음 턴이 끝날 때까지 다음 공격 굴림에서 불리한 판정을 받습니다.</p>"
             }
           }
         },
         "Charm Person": {
-          "name": "Charm Person",
-          "description": "<p>One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the &amp;Reference[charmed apply=false] condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p><p><strong>Using a Higher-Level Spell Slot.</strong> You can target one additional creature for each spell slot level above 1.</p>",
+          "name": "매혹(Charm Person)",
+          "description": "<p>범위 내에서 볼 수 있는 인간형 하나가 지혜 저항 판정을 합니다. 만약 당신이나 당신의 동료가 그것과 싸우고 있다면 우위를 가집니다. 실패한 경우, 대상은 주문이 끝날 때까지 또는 당신이나 당신의 동료가 그것에게 피해를 입힐 때까지 &amp;Reference[charmed apply=false]{매혹} 상태가 됩니다. 매혹된 생명체는 당신에게 우호적입니다. 주문이 끝나면 대상은 자신이 당신에게 매혹되었음을 알게 됩니다.</p><p><strong>더 높은 주문 슬롯 사용.</strong> 1레벨 이상의 주문 슬롯을 사용할 경우, 추가로 하나의 생명체를 더 대상으로 삼을 수 있습니다.</p>",
           "effects": {
             "Charmed": {
-              "name": "Charmed",
-              "description": "<p>the target has the &amp;Reference[charmed apply=false] condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.</p>"
+              "name": "매혹(Charmed)",
+              "description": "<p>대상은 주문이 끝날 때까지 또는 당신이나 당신의 동료가 그것에게 피해를 입힐 때까지 &amp;Reference[charmed apply=false]{매혹} 상태가 됩니다. 매혹된 생명체는 당신에게 우호적입니다. 주문이 끝나면 대상은 자신이 당신에게 매혹되었음을 알게 됩니다.</p>"
             }
           }
         },
         "Color Spray": {
-          "name": "Color Spray",
-          "description": "<p>You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the &amp;Reference[blinded apply=false] condition until the end of your next turn.</p>",
+          "name": "컬러 스프레이(Color Spray)",
+          "description": "<p>눈부시고 다채로운 빛의 배열을 발사합니다. 당신을 원점으로 하는 15피트 원뿔 내에 있는 각 생명체는 체력 저항 판정을 해야 하며, 실패할 경우 다음 턴이 끝날 때까지 &amp;Reference[blinded apply=false]{실명} 상태가 됩니다.</p>",
           "effects": {
             "Blinded": {
-              "name": "Blinded"
+              "name": "실명(Blinded)"
             }
           }
         },
         "Dissonant Whispers": {
-          "name": "Dissonant Whispers",
-          "description": "<p>One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d6 for each spell slot level above 1.</p>"
+          "name": "불협화음의 속삭임(Dissonant Whispers)",
+          "description": "<p>당신이 볼 수 있는 범위 내에서 선택한 하나의 생명체가 머릿속에서 불협화음의 멜로디를 듣습니다. 대상을 지혜 저항 판정하게 하며, 실패한 경우 3d6의 정신적 피해를 입고 즉시 반응을 사용해 가능한 한 당신과 멀어지도록 가장 안전한 길로 이동해야 합니다. 성공한 경우 피해는 절반만 입습니다.</p><p><strong>더 높은 주문 슬롯 사용.</strong> 1레벨 이상의 주문 슬롯을 사용할 경우, 피해는 슬롯 레벨마다 1d6씩 증가합니다.</p>"
         },
         "Healing Word": {
-          "name": "Healing Word",
-          "description": "<p>A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.</p><p><strong>Using a Higher-Level Spell Slot.</strong> The healing increases by 2d4 for each spell slot level above 1.</p>"
+          "name": "치료의 단어(Healing Word)",
+          "description": "<p>범위 내에서 볼 수 있는 하나의 생명체가 2d4와 당신의 주문 능력치 보정치를 합한 만큼 생명력을 회복합니다.</p><p><strong>더 높은 주문 슬롯 사용.</strong> 1레벨 이상의 주문 슬롯을 사용할 경우, 치유량은 슬롯 레벨마다 2d4씩 증가합니다.</p>"
         },
         "Bedroll": {
-          "name": "Bedroll",
-          "description": "<p>A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the <em>Dungeon Master</em> <em>’s Guide</em>).</p>"
+          "name": "침낭(Bedroll)",
+          "description": "<p>침낭은 작은 또는 중간 크기의 생명체 하나가 잘 수 있습니다. 침낭에 있을 때, 극한 추위에 대한 저항 판정에서 자동으로 성공합니다 (참고: <em>던전 마스터</em> <em>의 안내서</em>).</p>"
         },
         "Bell": {
-          "name": "Bell",
-          "description": "<p>When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.</p>"
+          "name": "종(Bell)",
+          "description": "<p>종을 활용 행동으로 울리면 60피트 거리까지 들을 수 있는 소리가 나옵니다.</p>"
         },
         "Bullseye Lantern": {
-          "name": "Bullseye Lantern",
-          "description": "<p>A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>"
+          "name": "불스아이 랜턴(Bullseye Lantern)",
+          "description": "<p>불스아이 랜턴은 60피트 범위에 밝은 빛을 비추고, 추가로 60피트까지 희미한 빛을 비춥니다. 켜면 1피트의 기름 한 병(1 pint)으로 6시간 동안 불이 지속됩니다.</p>"
         },
         "Oil": {
-          "name": "Oil",
-          "description": "<p>You can douse a creature, object, or space with Oil or use it as fuel, as detailed below.</p><p><strong>Dousing a Creature or an Object.</strong> When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra [[/damage 5 type=fire]] damage from burning oil.</p><p><strong>Dousing a Space.</strong> You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn.</p><p><strong>Fuel.</strong> Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn’t need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.</p>",
+          "name": "기름(Oil)",
+          "description": "<p>기름을 생명체, 물체 또는 공간에 뿌리거나 연료로 사용할 수 있습니다. 자세한 내용은 아래를 참조하세요.</p><p><strong>생명체나 물체에 기름 뿌리기.</strong> 공격 행동을 할 때, 공격 대신 기름병을 던질 수 있습니다. 자신으로부터 20피트 이내의 생명체나 물체를 목표로 하며, 목표는 덱스 저항 판정을 해야 합니다(DC 8 + 덱스 보정치 + 숙련 보너스). 실패할 경우 기름에 덮여집니다. 기름이 마르기 전(1분 후), 목표가 화염 피해를 받으면 타는 기름으로 추가적인 [[/damage 5 type=fire]] 화염 피해를 입습니다.</p><p><strong>공간에 기름 뿌리기.</strong> 활용 행동을 통해 평평한 땅에 5피트 정사각형 면적 내에 기름병을 붓는 것으로 기름을 뿌릴 수 있습니다. 불이 붙으면 기름은 2라운드(또는 12초) 동안 타며, 이 구역에 들어가거나 그 턴을 마친 생명체에게 5의 화염 피해를 입힙니다. 한 턴에 한 생명체는 이 피해를 한 번만 받습니다.</p><p><strong>연료.</strong> 기름은 램프나 랜턴의 연료로 사용됩니다. 불이 붙으면 기름병 하나는 램프나 랜턴에서 6시간 동안 타며, 이 시간은 연속적이지 않아도 됩니다. 불이 꺼지면(활용 행동을 통해) 다시 불을 붙여 총 6시간 동안 타도록 할 수 있습니다.</p>",
           "activities": {
             "Throw": {
-              "name": "Throw"
+              "name": "투척(Throw)"
             },
             "Douse Space": {
-              "name": "Douse Space"
+              "name": "공간에 뿌리기(Douse Space)"
             }
           }
         },
         "Rations": {
-          "name": "Rations",
-          "description": "<p>Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See “Malnutrition” in the rules glossary for the risks of not eating.</p>"
+          "name": "비상식량(Rations)",
+          "description": "<p>비상식량은 여행 준비가 된 음식으로, 육포, 건조 과일, 하드택, 견과류 등을 포함합니다. 먹지 않으면 발생할 수 있는 위험은 규칙 용어집의 “영양실조(Malnutrition)”를 참조하세요.</p>"
         },
         "Tinderbox": {
-          "name": "Tinderbox",
-          "description": "<p>A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.</p>",
+          "name": "성냥통(Tinderbox)",
+          "description": "<p>성냥통은 석영, 불강철, 그리고 성냥을 담은 작은 용기입니다(보통 가벼운 기름에 적신 마른 천). 양초, 램프, 랜턴, 횃불 또는 기타 연료가 노출된 물체에 불을 붙이는 데 1회 보너스 행동이 필요합니다. 다른 불을 붙이려면 1분이 걸립니다.</p>",
           "activities": {
             "Light": {
-              "name": "Light"
+              "name": "불붙이기(Light)"
             }
           }
         },
         "Waterskin": {
-          "name": "Waterskin",
-          "description": "<p>A Waterskin holds up to 4 pints. If you don’t drink sufficient water, you risk &amp;Reference[dehydration].</p>"
+          "name": "물주머니(Waterskin)",
+          "description": "<p>물주머니는 최대 4 pint의 물을 담을 수 있습니다. 충분한 양의 물을 마시지 않으면 &amp;Reference[dehydration] 상태에 이를 위험이 있습니다.</p>"
         },
         "Water (Pint)": {
-          "name": "Water (Pint)",
-          "description": "<p>If you don’t drink sufficient water, you risk &amp;Reference[dehydration].</p>",
+          "name": "물(Pint)",
+          "description": "<p>충분한 양의 물을 마시지 않으면 &amp;Reference[dehydration]{탈수} 상태에 이를 위험이 있습니다.</p>",
           "activities": {
             "Consume": {
-              "name": "Consume"
+              "name": "마시기(Consume)"
             }
           }
         },
         "Tiefling, Chthonic": {
-          "name": "Tiefling, Chthonic",
-          "description": "<p>Tieflings are either born in the Lower Planes or have fiendish ancestors who originated there. A tiefling (pronounced TEE-fling) is linked by blood to a devil, a demon, or some other Fiend. This connection to the Lower Planes is the tiefling’s fiendish legacy, which comes with the promise of power yet has no effect on the tiefling’s moral outlook.</p><p>A tiefling chooses whether to embrace or lament their fiendish legacy.</p><h3 data-anchor=\"chthonic\">Chthonic</h3><p>Tieflings who have the chthonic legacy feel not only the tug of Carceri but also the greed of Gehenna and the gloom of Hades. Some of these tieflings look cadaverous. Others possess the unearthly beauty of a succubus, or they have physical features in common with a night hag, a yugoloth, or some other Neutral Evil fiendish ancestor.</p><h3 data-anchor=\"tiefling-traits\">Tiefling Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size: </strong>Medium (about 4–7 feet tall) or Small (about 3–4 feet tall), chosen when you select this species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Tiefling, you have the following special traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a range of 60 feet.</p><p><strong>Fiendish Legacy.</strong> You are the recipient of a legacy that grants you supernatural abilities.</p><p>When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p><p><strong>Otherworldly Presence.</strong> You know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy} cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy trait.</p><table><caption>Fiendish Legacies</caption><thead><tr><td>Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead><tbody><tr><td>You have Resistance to Necrotic damage.You also know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{Chill Touch} cantrip.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False Life}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{Ray of Enfeeblement}</td></tr></tbody></table>",
+          "name": "티플링(Tiefling), 타닉(chthonic)",
+          "description": "<p>티플링(Tiefling)은 하위 차원에서 태어났거나 그곳에서 유래한 악마적인 조상을 가진 존재입니다. 티플링은 악마, 마귀 또는 다른 악마와 혈연적으로 연결되어 있습니다. 하위 차원과의 이 연결은 티플링의 악마적인 유산이며, 그 힘을 약속하지만 티플링의 도덕적 관점에는 영향을 미치지 않습니다.</p><p>티플링은 자신의 악마적인 유산을 받아들일지 아니면 애도할지를 선택할 수 있습니다.</p><h3 data-anchor=\"chthonic\">Chthonic</h3><p>Chthonic 유산을 가진 티플링은 카르세리(Carceri)의 끌어당김뿐만 아니라 게헤나(Gehenna)의 탐욕과 하데스(Hades)의 우울함을 느낍니다. 이러한 티플링 중 일부는 시체와 같은 외모를 가집니다. 다른 이들은 서큐버스(succubus)의 비현실적인 아름다움을 지니거나, 밤의 마녀(night hag), 유골로스(yugoloth), 또는 다른 중립적 악(Neutral Evil) 악마 조상을 닮은 신체적 특징을 가지고 있습니다.</p><h3 data-anchor=\"tiefling-traits\">Tiefling Traits</h3><p><strong>생물 유형:</strong> 휴머노이드</p><p><strong>크기:</strong> 중형(약 4~7피트 높이) 또는 소형(약 3~4피트 높이), 이 종족을 선택할 때 선택</p><p><strong>이동 속도:</strong> 30피트</p><p>티플링은 다음과 같은 특별한 특성을 가집니다.</p><p><strong>어두운 시야(Darkvision).</strong> 60피트 범위의 어두운 시야를 가집니다.</p><p><strong>악마의 유산(Fiendish Legacy).</strong> 당신은 초자연적인 능력을 부여하는 유산의 수혜자입니다.</p><p>3레벨과 5레벨에 도달하면, 표에 나와 있는 대로 고급 마법을 배우게 됩니다. 그 마법은 항상 준비된 상태입니다. 이 마법은 마법 슬롯 없이 한 번 사용할 수 있으며, 장시간 휴식을 마친 후 다시 사용할 수 있습니다. 또한, 해당 마법은 적절한 수준의 마법 슬롯을 사용하여 시전할 수 있습니다. 마법을 시전할 때 지능, 지혜 또는 매력 중 하나를 마법 능력치로 사용합니다(유산을 선택할 때 능력치를 선택). </p><p><strong>비현실적인 존재(Otherworldly Presence).</strong> 당신은 <@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{기적술}>를 아는 마법사를 지니고 있습니다. 이 특성으로 마법을 시전할 때, 그 마법은 당신이 악마의 유산(Fiendish Legacy) 특성에 사용한 동일한 마법 능력치를 사용합니다.</p><table><caption>악마의 유산</caption><thead><tr><td>1레벨</td><td>3레벨</td><td>5레벨</td></tr></thead><tbody><tr><td>당신은 사령 피해에 대한 저항을 가집니다. 또한 <@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{냉랭한 접촉}>를 아는 마법사를 지니고 있습니다.</td><td><@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{거짓 목숨}></td><td><@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{무력화 광선}></td></tr></tbody></table>",
           "advancement": {
             "lskxIeib6rIreZ1h": {
-              "hint": "Medium (about 4-7 feet tall) or Small (about 3-4 feet tall)"
+              "hint": "중형(약 4~7피트 높이) 또는 소형(약 3~4피트 높이)"
             },
             "Tiefling Traits": {
-              "title": "Tiefling Traits"
+              "title": "티플링 특성(Tiefling Traits)"
             },
             "Otherworldly Presence": {
               "title": "Otherworldly Presence"
