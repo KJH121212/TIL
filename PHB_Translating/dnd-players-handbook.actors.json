@@ -84,7 +84,7 @@
         },
         "Claw": {
           "name": "발톱(Claw)",
-          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트입니다. <em>히트:</em> 1d10 + 3 + 주문의 레벨 만큼 베기 피해를 주고, 대상은 영혼의 다음 턴 시작 전까지 히트 포인트를 회복할 수 없습니다.</p>",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트입니다. <em>히트:</em> 1d10 + 3 + 주문의 레벨 만큼 참격 피해를 주고, 대상은 영혼의 다음 턴 시작 전까지 히트 포인트를 회복할 수 없습니다.</p>",
           "effects": {
             "Blocked Healing": {
               "name": "회복 차단(Blocked Healing)"
@@ -605,8 +605,8 @@
           }
         },
         "Tiefling, Chthonic": {
-          "name": "티플링(Tiefling), 타닉(chthonic)",
-          "description": "<p>티플링(Tiefling)은 하위 차원에서 태어났거나 그곳에서 유래한 악마적인 조상을 가진 존재입니다. 티플링은 악마, 마귀 또는 다른 악마와 혈연적으로 연결되어 있습니다. 하위 차원과의 이 연결은 티플링의 악마적인 유산이며, 그 힘을 약속하지만 티플링의 도덕적 관점에는 영향을 미치지 않습니다.</p><p>티플링은 자신의 악마적인 유산을 받아들일지 아니면 애도할지를 선택할 수 있습니다.</p><h3 data-anchor=\"chthonic\">Chthonic</h3><p>Chthonic 유산을 가진 티플링은 카르세리(Carceri)의 끌어당김뿐만 아니라 게헤나(Gehenna)의 탐욕과 하데스(Hades)의 우울함을 느낍니다. 이러한 티플링 중 일부는 시체와 같은 외모를 가집니다. 다른 이들은 서큐버스(succubus)의 비현실적인 아름다움을 지니거나, 밤의 마녀(night hag), 유골로스(yugoloth), 또는 다른 중립적 악(Neutral Evil) 악마 조상을 닮은 신체적 특징을 가지고 있습니다.</p><h3 data-anchor=\"tiefling-traits\">Tiefling Traits</h3><p><strong>생물 유형:</strong> 휴머노이드</p><p><strong>크기:</strong> 중형(약 4~7피트 높이) 또는 소형(약 3~4피트 높이), 이 종족을 선택할 때 선택</p><p><strong>이동 속도:</strong> 30피트</p><p>티플링은 다음과 같은 특별한 특성을 가집니다.</p><p><strong>어두운 시야(Darkvision).</strong> 60피트 범위의 어두운 시야를 가집니다.</p><p><strong>악마의 유산(Fiendish Legacy).</strong> 당신은 초자연적인 능력을 부여하는 유산의 수혜자입니다.</p><p>3레벨과 5레벨에 도달하면, 표에 나와 있는 대로 고급 마법을 배우게 됩니다. 그 마법은 항상 준비된 상태입니다. 이 마법은 마법 슬롯 없이 한 번 사용할 수 있으며, 장시간 휴식을 마친 후 다시 사용할 수 있습니다. 또한, 해당 마법은 적절한 수준의 마법 슬롯을 사용하여 시전할 수 있습니다. 마법을 시전할 때 지능, 지혜 또는 매력 중 하나를 마법 능력치로 사용합니다(유산을 선택할 때 능력치를 선택). </p><p><strong>비현실적인 존재(Otherworldly Presence).</strong> 당신은 <@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{기적술}>를 아는 마법사를 지니고 있습니다. 이 특성으로 마법을 시전할 때, 그 마법은 당신이 악마의 유산(Fiendish Legacy) 특성에 사용한 동일한 마법 능력치를 사용합니다.</p><table><caption>악마의 유산</caption><thead><tr><td>1레벨</td><td>3레벨</td><td>5레벨</td></tr></thead><tbody><tr><td>당신은 사령 피해에 대한 저항을 가집니다. 또한 <@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{냉랭한 접촉}>를 아는 마법사를 지니고 있습니다.</td><td><@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{거짓 목숨}></td><td><@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{무력화 광선}></td></tr></tbody></table>",
+          "name": "티플링(Tiefling), 지하(chthonic)",
+          "description": "<p>티플링(Tiefling)은 하위 차원에서 태어났거나 그곳에서 유래한 악마적인 조상을 가진 존재입니다. 티플링은 악마, 마귀 또는 다른 악마와 혈연적으로 연결되어 있습니다. 하위 차원과의 이 연결은 티플링의 악마적인 유산이며, 그 힘을 약속하지만 티플링의 도덕적 관점에는 영향을 미치지 않습니다.</p><p>티플링은 자신의 악마적인 유산을 받아들일지 아니면 애도할지를 선택할 수 있습니다.</p><h3 data-anchor=\"chthonic\">Chthonic</h3><p>지하(Chthonic) 유산을 가진 티플링은 카르세리(Carceri)의 끌어당김뿐만 아니라 게헤나(Gehenna)의 탐욕과 하데스(Hades)의 우울함을 느낍니다. 이러한 티플링 중 일부는 시체와 같은 외모를 가집니다. 다른 이들은 서큐버스(succubus)의 비현실적인 아름다움을 지니거나, 밤의 마녀(night hag), 유골로스(yugoloth), 또는 다른 중립적 악(Neutral Evil) 악마 조상을 닮은 신체적 특징을 가지고 있습니다.</p><h3 data-anchor=\"tiefling-traits\">Tiefling Traits</h3><p><strong>생물 유형:</strong> 휴머노이드</p><p><strong>크기:</strong> 중형(약 4~7피트 높이) 또는 소형(약 3~4피트 높이), 이 종족을 선택할 때 선택</p><p><strong>이동 속도:</strong> 30피트</p><p>티플링은 다음과 같은 특별한 특성을 가집니다.</p><p><strong>어두운 시야(Darkvision).</strong> 60피트 범위의 어두운 시야를 가집니다.</p><p><strong>악마의 유산(Fiendish Legacy).</strong> 당신은 초자연적인 능력을 부여하는 유산의 수혜자입니다.</p><p>3레벨과 5레벨에 도달하면, 표에 나와 있는 대로 고급 마법을 배우게 됩니다. 그 마법은 항상 준비된 상태입니다. 이 마법은 마법 슬롯 없이 한 번 사용할 수 있으며, 장시간 휴식을 마친 후 다시 사용할 수 있습니다. 또한, 해당 마법은 적절한 수준의 마법 슬롯을 사용하여 시전할 수 있습니다. 마법을 시전할 때 지능, 지혜 또는 매력 중 하나를 마법 능력치로 사용합니다(유산을 선택할 때 능력치를 선택). </p><p><strong>비현실적인 존재(Otherworldly Presence).</strong> 당신은 <@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{기적술}>를 아는 마법사를 지니고 있습니다. 이 특성으로 마법을 시전할 때, 그 마법은 당신이 악마의 유산(Fiendish Legacy) 특성에 사용한 동일한 마법 능력치를 사용합니다.</p><table><caption>악마의 유산</caption><thead><tr><td>1레벨</td><td>3레벨</td><td>5레벨</td></tr></thead><tbody><tr><td>당신은 사령 피해에 대한 저항을 가집니다. 또한 <@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{냉랭한 접촉}>를 아는 마법사를 지니고 있습니다.</td><td><@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{거짓 목숨}></td><td><@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{무력화 광선}></td></tr></tbody></table>",
           "advancement": {
             "lskxIeib6rIreZ1h": {
               "hint": "중형(약 4~7피트 높이) 또는 소형(약 3~4피트 높이)"
@@ -615,360 +615,360 @@
               "title": "티플링 특성(Tiefling Traits)"
             },
             "Otherworldly Presence": {
-              "title": "Otherworldly Presence"
+              "title": "이세계의 존재 (Otherworldly Presence)"
             },
             "Chthonic Tiefling Traits": {
-              "title": "Chthonic Tiefling Traits",
-              "hint": "You have Resistance to Necrotic damage."
+              "title": "지하 티플링 특성 (Chthonic Tiefling Traits)",
+              "hint": "당신은 사령 (Necrotic) 피해에 대한 저항력을 가지고 있습니다."
             },
             "pIi692Cevlw7qZRe": {
-              "title": "Chthonic Tiefling Traits",
-              "hint": "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait."
+              "title": "지하 티플링 특성 (Chthonic Tiefling Traits)",
+              "hint": "당신은 이 특성으로 시전하는 주문에 대해 지능 (Intelligence), 지혜 (Wisdom), 또는 매력 (Charisma) 중 하나를 시전 능력으로 사용합니다."
             },
             "DU7Y6D1IJSSgObJK": {
-              "title": "Chthonic Tiefling Traits",
-              "hint": "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait."
+              "title": "지하 티플링 특성 (Chthonic Tiefling Traits)",
+              "hint": "당신은 이 특성으로 시전하는 주문에 대해 지능 (Intelligence), 지혜 (Wisdom), 또는 매력 (Charisma) 중 하나를 시전 능력으로 사용합니다."
             },
             "R0k1RmQximNOQw1R": {
-              "title": "Chthonic Tiefling Traits",
-              "hint": "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait."
+              "title": "지하 티플링 특성 (Chthonic Tiefling Traits)",
+              "hint": "당신은 이 특성으로 시전하는 주문에 대해 지능 (Intelligence), 지혜 (Wisdom), 또는 매력 (Charisma) 중 하나를 시전 능력으로 사용합니다."
             }
           }
         },
         "Thaumaturgy": {
-          "name": "Thaumaturgy",
-          "description": "<p>You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.</p><p><strong>Altered Eyes.</strong> You alter the appearance of your eyes for 1 minute.</p><p><strong>Booming Voice.</strong> Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on [[/check ability=cha skill=itm]] checks.</p><p><strong>Fire Play.</strong> You cause flames to flicker, brighten, dim, or change color for 1 minute.</p><p><strong>Invisible Hand.</strong> You instantaneously cause an unlocked door or window to fly open or slam shut.</p><p><strong>Phantom Sound.</strong> You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</p><p><strong>Tremors.</strong> You cause harmless tremors in the ground for 1 minute.</p>",
+          "name": "기적술 (Thaumaturgy)",
+          "description": "<p>당신은 사정거리 내에서 사소한 기적을 일으킵니다. 아래 효과 중 하나를 사정거리 내에서 생성할 수 있습니다. 이 주문을 여러 번 시전하면, 1분 동안 지속되는 효과를 최대 세 개까지 활성화할 수 있습니다.</p><p><strong>변화한 눈 (Altered Eyes).</strong> 당신의 눈동자 외형이 1분 동안 변합니다.</p><p><strong>울리는 목소리 (Booming Voice).</strong> 당신의 목소리가 평소보다 최대 세 배 더 크게 울려 퍼지며, 1분 동안 지속됩니다. 지속시간 동안 [[/check ability=cha skill=itm]]{매력} 판정에 이점을 가집니다.</p><p><strong>불꽃 조작 (Fire Play).</strong> 당신은 불꽃을 깜빡이게 하거나, 밝게 하거나, 어둡게 하거나, 색을 변화시킬 수 있으며, 1분 동안 지속됩니다.</p><p><strong>보이지 않는 손 (Invisible Hand).</strong> 잠겨 있지 않은 문이나 창문을 순간적으로 열거나 닫을 수 있습니다.</p><p><strong>환영의 소리 (Phantom Sound).</strong> 번개 소리, 까마귀 울음소리, 불길한 속삭임과 같은 소리를 사정거리 내에서 순간적으로 생성할 수 있습니다.</p><p><strong>지진 (Tremors).</strong> 1분 동안 땅에 해를 끼치지 않는 미세한 진동을 일으킵니다.</p>",
           "activities": {
             "Cast": {
-              "name": "Cast"
+              "name": "시전 (Cast)"
             }
           }
         },
         "Otherworldly Presence": {
-          "name": "Otherworldly Presence",
-          "description": "<p>You know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy} cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish legacy trait.</p><section id=\"secret-i3PjM9HLuO2Xcae7\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>When you're granted this spell it will allow you to choose your spellcasting ability.</p></section>"
+          "name": "이계적 존재감 (Otherworldly Presence)",
+          "description": "<p>당신은 @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{기적술 (Thaumaturgy)} 소마법을 알고 있습니다. 이 특성으로 주문을 시전할 때, 당신의 악마적 유산 (Fiendish Legacy) 특성과 동일한 주문 시전 능력을 사용합니다.</p><section id=\"secret-i3PjM9HLuO2Xcae7\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>이 주문을 부여받으면 주문 시전 능력을 선택할 수 있습니다.</p></section>"
         },
         "Fiendish Legacy, Chthonic": {
-          "name": "Fiendish Legacy, Chthonic",
-          "description": "<p>You are the recipient of a legacy that grants you supernatural abilities.</p><p>When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).</p><h3 data-anchor=\"chthonic\">Chthonic</h3><p>Tieflings who have the chthonic legacy feel not only the tug of Carceri but also the greed of Gehenna and the gloom of Hades. Some of these tieflings look cadaverous. Others possess the unearthly beauty of a succubus, or they have physical features in common with a night hag, a yugoloth, or some other Neutral Evil fiendish ancestor.</p><table><caption>Chthonic Legacy Traits</caption><thead><tr><td>Level 1</td><td>Level 3</td><td>Level 5</td></tr></thead><tbody><tr><td>You have Resistance to Necrotic damage.You also know the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{Chill Touch} cantrip.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False Life}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{Ray of Enfeeblement}</td></tr></tbody></table><section class=\"secret\" id=\"secret-GmBAOZVbkBYItbCL\"><p><strong>Foundry Note</strong></p><p>The Resistance and spells are granted to you automatically and you will be prompted to choose the spellcasting ability during advancement.</p></section>"
+          "name": "악마적 유산, 지하계(Fiendish Legacy, Chthonic)",
+          "description": "<p>당신은 초자연적인 능력을 부여하는 유산을 받았습니다.</p><p>당신이 캐릭터 레벨 3과 5에 도달하면, 표에 표시된 대로 상위 수준의 주문을 배우게 됩니다. 이 주문은 항상 준비된 상태입니다. 주문 슬롯 없이 한 번 시전할 수 있으며, 긴 휴식을 마치면 다시 이 방식으로 시전할 수 있습니다. 또한, 해당 레벨에 적합한 주문 슬롯을 사용하여 주문을 시전할 수도 있습니다. 이 특성으로 시전하는 주문의 주문 시전 능력은 지능(Intelligence), 지혜(Wisdom), 또는 매력(Charisma) 중 하나를 선택할 수 있습니다.</p><h3 data-anchor=\"chthonic\">지하계(Chthonic)</h3><p>지하계 유산을 지닌 티플링들은 카르세리(Carceri)의 당기는 힘뿐만 아니라 게헨나(Gehenna)의 탐욕과 하데스(Hades)의 음울함도 느낍니다. 일부 티플링들은 시체처럼 창백한 모습을 하고 있습니다. 다른 이들은 서큐버스와 같은 초자연적인 아름다움을 지녔거나, 밤의 마녀(night hag), 유골로스(yugoloth), 또는 다른 중립 악(N.E.) 성향의 악마적 조상을 닮은 특징을 가지고 있습니다.</p><table><caption>지하계 유산 특성</caption><thead><tr><td>레벨 1</td><td>레벨 3</td><td>레벨 5</td></tr></thead><tbody><tr><td>당신은 사령(Necrotic) 피해에 대한 저항을 가집니다. 또한, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]{칠 터치(Chill Touch)} 소마법을 알고 있습니다.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{거짓된 생명(False Life)}</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]{쇠약의 광선(Ray of Enfeeblement)}</td></tr></tbody></table><section class=\"secret\" id=\"secret-GmBAOZVbkBYItbCL\"><p><strong>Foundry Note</strong></p><p>이 저항과 주문들은 자동으로 부여되며, 레벨업 시 주문 시전 능력을 선택하라는 안내가 표시됩니다.</p></section>"
         },
         "Entertainer": {
-          "name": "Entertainer",
-          "description": "<p><strong>Ability Scores:</strong> Strength, Dexterity, Charisma</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftMusician000]{Musician}</p><p><strong>Skill Proficiencies:</strong> Acrobatics and Performance</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> <em>Musical Instrument</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) Musical Instrument (same as above), 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{Costumes}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000]{Mirror}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000]{Perfume}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes}, 11 GP; or (B) 50 GP</p><p>You spent much of your youth following roving fairs and carnivals, performing odd jobs for musicians and acrobats in exchange for lessons. You may have learned how to walk a tightrope, how to play a lute in a distinct style, or how to recite poetry with impeccable diction. To this day, you thrive on applause and long for the stage.</p>",
+          "name": "광대(Entertainer)",
+          "description": "<p><strong>능력치:</strong> 근력, 민첩, 매력</p><p><strong>재주:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftMusician000]{음악가(Musician)}</p><p><strong>숙련 기술:</strong> 곡예(Acrobatics), 공연(Performance)</p><p><strong>도구 숙련:</strong> <em>한 종류의</em> <em>악기</em> <em>선택</em></p><p><strong>장비:</strong> <em>A 또는 B 중 선택:</em> (A) 악기(위에서 선택한 것과 동일), 2벌의 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCostume0000]{공연 의상}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagMirror00000]{거울}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPerfume0000]{향수}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{여행자용 옷}, 11 GP; 또는 (B) 50 GP</p><p>당신은 젊은 시절을 떠돌이 축제와 유랑극단을 따라다니며, 음악가와 곡예사들에게 잡일을 도와주는 대가로 배움을 얻으며 보냈습니다. 외줄 타기를 익혔을 수도 있고, 독특한 스타일로 류트를 연주하는 법을 배웠거나, 시를 완벽한 발음으로 낭독하는 기술을 익혔을지도 모릅니다. 지금도 박수갈채 속에서 살아가며 무대를 갈망합니다.</p>",
           "advancement": {
             "Background Ability Score Improvement": {
-              "title": "Background Ability Score Improvement",
-              "hint": "Your background allows you to increase your Strength, Dexterity, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+              "title": "배경 능력치 향상(Background Ability Score Improvement)",
+              "hint": "당신의 배경으로 인해 근력, 민첩, 매력 중에서 하나를 2 증가시키고, 다른 하나를 1 증가시키거나, 세 개 모두를 1씩 증가시킬 수 있습니다. 어떤 경우에도 능력치는 20을 초과할 수 없습니다."
             },
             "Background Proficiencies": {
-              "title": "Background Proficiencies",
-              "hint": "Your background grants you proficiency in Acrobatics and Performance. It also grants you proficiency with one kind of Musical Instrument."
+              "title": "배경 숙련(Background Proficiencies)",
+              "hint": "이 배경은 곡예(Acrobatics)와 공연(Performance) 숙련을 부여합니다. 또한 한 종류의 악기 숙련을 제공합니다."
             },
             "Background Feat": {
-              "title": "Background Feat",
-              "hint": "Your background grants you the Musician feat."
+              "title": "배경 재주(Background Feat)",
+              "hint": "이 배경은 음악가(Musician) 재주를 제공합니다."
             },
             "Instrument Training": {
-              "title": "Instrument Training",
-              "hint": "Granted by Origin Feat: Musician. You gain proficiency with three Musical Instruments of your choice."
+              "title": "악기 훈련(Instrument Training)",
+              "hint": "기원 재주: 음악가(Musician)로 인해 부여됩니다. 당신은 세 가지 악기를 선택하여 숙련을 얻습니다."
             },
             "Choose Languages": {
-              "title": "Choose Languages",
-              "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table."
+              "title": "언어 선택(Choose Languages)",
+              "hint": "당신의 캐릭터는 최소한 세 개의 언어를 압니다: 공용어(Common)와 추가로 표준 언어(Standard Languages) 목록에서 두 개를 선택하거나 주사위를 굴려 결정합니다."
             }
           }
         },
         "Musician": {
-          "name": "Musician",
-          "description": "<p>You gain the following benefits.</p><p><strong>Instrument Training.</strong> You gain proficiency with three Musical Instruments of your choice.</p><p><strong>Encouraging Song.</strong> As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus (currently [[lookup @prof]]).</p><section class=\"secret\" id=\"secret-uSBAbHsB2VxFaHwm\"><p><strong>Foundry Note</strong></p><p>This feature does not automatically grant the proficiencies. You can toggle the \"Edit\" mode in the <strong>\"</strong>Details\" tab of your sheet and click on the cog next to \"Tools\" underneath your Skills to choose your Musical Instrument proficiencies.</p></section>"
+          "name": "음악가 (Musician)",
+          "description": "<p>당신은 다음과 같은 혜택을 받습니다.</p><p><strong>악기 훈련 (Instrument Training).</strong> 당신은 원하는 세 가지 악기에 대한 숙련을 얻습니다.</p><p><strong>격려의 노래 (Encouraging Song).</strong> 짧은 휴식 또는 긴 휴식을 마칠 때, 당신은 숙련된 악기를 연주하여 그 소리를 들은 아군들에게 영웅적 영감을 부여할 수 있습니다. 이 방법으로 영향을 줄 수 있는 아군의 수는 당신의 숙련 보너스와 같습니다.</p><section class=\"secret\" id=\"secret-uSBAbHsB2VxFaHwm\"><p><strong>Foundry Note</strong></p><p>이 기능은 자동으로 숙련을 부여하지 않습니다. 캐릭터 시트의 <strong>\"Details\"</strong> 탭에서 \"편집(Edit)\" 모드를 활성화한 후, 기술 아래에 있는 \"도구(Tools)\" 섹션의 톱니바퀴를 클릭하여 악기 숙련을 선택하세요.</p></section>"
         },
         "Bard": {
-          "name": "Bard",
-          "description": "<blockquote><p>An Inspiring Performer of Music, Dance, and Magic</p></blockquote><h3>Core Bard Traits</h3><table class=\"core-class-traits\"><tbody><tr><th><p><strong>Primary Ability</strong></p></th><td><p>Charisma</p></td></tr><tr><th><p><strong>Hit Point Die</strong></p></th><td><p>D8 per Bard level</p></td></tr><tr><th><p><strong>Saving Throw Proficiencies</strong></p></th><td><p>Dexterity and Charisma</p></td></tr><tr><th><p><strong>Skill Proficiencies</strong></p></th><td><p><em>Choose any 3 skills</em></p></td></tr><tr><th><p><strong>Weapon Proficiencies</strong></p></th><td><p>Simple weapons</p></td></tr><tr><th><p><strong>Tool Proficiencies</strong></p></th><td><p><em>Choose 3 Musical Instruments</em></p></td></tr><tr><th><p><strong>Armor Training</strong></p></th><td><p>Light armor</p></td></tr><tr><th><p><strong>Starting Equipment</strong></p></th><td><p><em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmLeatherArm]{Leather Armor}, 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{Daggers}, Musical Instrument of your choice, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagEntertainer]{Entertainer's Pack}, and [[/award 19gp]]; or (B) [[/award 90GP]]</p></td></tr></tbody></table><p><strong>Invoking magic through music, dance,</strong> and verse, Bards are expert at inspiring others, soothing hurts, disheartening foes, and creating illusions. Bards believe the multiverse was spoken into existence and that remnants of its Words of Creation still resound and glimmer on every plane of existence. Bardic magic attempts to harness those words, which transcend any language.</p><p>Anything can inspire a new song or tale, so Bards are fascinated by almost everything. They become masters of many things, including performing music, working magic, and making jests.</p><p>A Bard's life is spent traveling, gathering lore, telling stories, and living on the gratitude of audiences, much like any other entertainer. But Bards' depth of knowledge and mastery of magic sets them apart.</p><aside class=\"notable\"><h3>A Bard's Repertoire</h3><p>Does your Bard beat a drum while chanting the deeds of ancient heroes? Strum a lute while crooning romantic tunes? Perform arias of stirring power? Recite dramatic monologues from classic tragedies? Use the rhythm of a folk dance to coordinate the movement of allies in battle? Compose naughty limericks?</p><p>When you play a Bard, consider the style of artistic performance you favor, the moods you might invoke, and the themes that inspire your own creations. Are your poems inspired by moments of natural beauty, or are they brooding reflections on loss? Do you prefer lofty hymns or rowdy tavern songs? Are you drawn to laments for the fallen or celebrations of joy? Do you dance merry jigs or perform elaborate interpretive choreography? Do you focus on one style of performance or strive to master them all?</p></aside><h2>Becoming a Bard …</h2><h3>As a Level 1 Character</h3><ul><li>Gain all the traits in the Core Bard Traits table.</li><li>Gain the Bard's level 1 features, which are listed in the Bard Features table.</li></ul><h3>As a Multiclass Character</h3><ul><li>Gain the following traits from the Core Bard Traits table: Hit Point Die, proficiency in one skill of your choice, proficiency with one Musical Instrument of your choice, and training with Light armor.</li><li>Gain the Bard's level 1 features, which are listed in the Bard Features table. See the multiclassing rules in chapter 2 to determine your available spell slots.</li></ul>",
+          "name": "바드 (Bard)",
+          "description": "<blockquote><p>음악, 춤, 마법으로 영감을 주는 공연가</p></blockquote><h3>핵심 바드 특성</h3><table class=\"core-class-traits\"><tbody><tr><th><p><strong>주요 능력치</strong></p></th><td><p>매력 (Charisma)</p></td></tr><tr><th><p><strong>생명력 주사위</strong></p></th><td><p>Bard 레벨당 d8</p></td></tr><tr><th><p><strong>저항 판정 숙련</strong></p></th><td><p>민첩 (Dexterity) 및 매력 (Charisma)</p></td></tr><tr><th><p><strong>기술 숙련</strong></p></th><td><p><em>아무 기술이나 3개 선택</em></p></td></tr><tr><th><p><strong>무기 숙련</strong></p></th><td><p>단순 무기</p></td></tr><tr><th><p><strong>도구 숙련</strong></p></th><td><p><em>악기 3개 선택</em></p></td></tr><tr><th><p><strong>방어구 훈련</strong></p></th><td><p>경갑</p></td></tr><tr><th><p><strong>시작 장비</strong></p></th><td><p><em>A 또는 B 선택:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbarmLeatherArm]{가죽 갑옷 (Leather Armor)}, 2개의 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000]{단검 (Dagger)}, 선택한 악기, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagEntertainer]{광대의 배낭 (Entertainer's Pack)}, 그리고 [[/award 19gp]]; 또는 (B) [[/award 90GP]]</p></td></tr></tbody></table><p><strong>음악, 춤,</strong> 그리고 시를 통해 마법을 구사하는 바드는 타인을 격려하고, 상처를 치유하며, 적의 사기를 꺾고, 환상을 만들어내는 전문가입니다. 바드는 우주가 창조의 언어로 태어났다고 믿으며, 그 잔향이 모든 차원에서 울려 퍼지고 있다고 여깁니다. 바드의 마법은 이 언어들을 활용하려는 시도입니다.</p><p>바드는 모든 것에서 영감을 얻을 수 있기 때문에 거의 모든 것에 흥미를 느낍니다. 음악 연주, 마법 사용, 농담 따먹기 등 다양한 분야에서 숙련을 쌓습니다.</p><p>바드의 삶은 여행하며 지식을 모으고, 이야기를 전하며, 청중의 감사를 받으며 살아가는 것입니다. 그러나 바드는 단순한 광대가 아니라, 깊은 지식을 갖춘 마법의 대가이기도 합니다.</p><aside class=\"notable\"><h3>바드의 공연 방식</h3><p>당신의 바드는 어떤 방식으로 공연을 하나요? 고대 영웅들의 업적을 북으로 연주하며 노래하나요? 류트를 연주하며 낭만적인 선율을 읊나요? 강렬한 감정을 담아 오페라 아리아를 부르나요? 고전 비극의 독백을 연기하나요? 전투에서 동료의 움직임을 조율하기 위해 민속 춤의 리듬을 활용하나요? 아니면 장난기 넘치는 음담패설을 즉흥적으로 읊나요?</p><p>바드를 플레이할 때, 당신이 선호하는 예술적 공연 스타일을 고려해 보세요. 어떤 감정을 불러일으키고 싶은가요? 무엇이 당신의 창작을 자극하나요? 자연의 아름다움에서 영감을 얻나요, 아니면 상실에 대한 깊은 사색을 담고 있나요? 경건한 찬송가를 좋아하나요, 아니면 떠들썩한 선술집 노래를 즐기나요? 추락한 자를 위한 애가를 부르나요, 아니면 기쁨을 찬미하는 축제를 선호하나요? 명랑한 춤을 추나요, 아니면 복잡한 해석적 안무를 펼치나요? 하나의 공연 스타일을 집중적으로 연마하나요, 아니면 모든 형태를 익히고자 하나요?</p></aside><h2>바드가 되기 …</h2><h3>레벨 1 캐릭터로서</h3><ul><li>핵심 바드 특성 테이블에 나와 있는 모든 특성을 획득합니다.</li><li>바드의 1레벨 특성을 획득합니다. 해당 특성은 바드 특성 테이블에 나와 있습니다.</li></ul><h3>다중 클래스 캐릭터로서</h3><ul><li>핵심 바드 특성 테이블에서 다음 특성을 얻습니다: 생명력 주사위, 원하는 기술 하나의 숙련, 원하는 악기 하나의 숙련, 경갑 방어구 훈련.</li><li>바드의 1레벨 특성을 획득합니다. 해당 특성은 바드 특성 테이블에 나와 있습니다. 사용 가능한 주문 슬롯은 챕터 2의 다중 클래스 규칙을 참조하세요.</li></ul>",
           "advancement": {
             "Class Features": {
-              "title": "Class Features"
+              "title": "직업 특성 (Class Features)"
             },
             "Max Prepared Spells": {
-              "title": "Max Prepared Spells"
+              "title": "최대 준비 주문 (Max Prepared Spells)"
             },
             "Cantrips Known": {
-              "title": "Cantrips Known"
+              "title": "익힌 소마법 (Cantrips Known)"
             },
             "Inspiration Die": {
-              "title": "Inspiration Die"
+              "title": "영감 주사위 (Inspiration Die)"
             },
             "Expertise": {
-              "title": "Expertise"
+              "title": "전문 기술 (Expertise)"
             },
             "Epic Boon": {
-              "title": "Epic Boon"
+              "title": "서사적 은총 (Epic Boon)"
             },
             "Words of Creation": {
-              "title": "Words of Creation"
+              "title": "창조의 언어 (Words of Creation)"
             },
             "Saving Throw Proficiencies": {
-              "title": "Saving Throw Proficiencies"
+              "title": "저항 판정 숙련 (Saving Throw Proficiencies)"
             },
             "Skill Proficiencies": {
-              "title": "Skill Proficiencies"
+              "title": "기술 숙련 (Skill Proficiencies)"
             },
             "Weapon Proficiencies": {
-              "title": "Weapon Proficiencies"
+              "title": "무기 숙련 (Weapon Proficiencies)"
             },
             "Tool Proficiencies": {
-              "title": "Tool Proficiencies"
+              "title": "도구 숙련 (Tool Proficiencies)"
             },
             "Armor Training": {
-              "title": "Armor Training"
+              "title": "방어구 훈련 (Armor Training)"
             }
           }
         },
         "Chill Touch": {
-          "name": "Chill Touch",
-          "description": "<p>Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can’t regain Hit Points until the end of your next turn.</p><p><strong>Cantrip Upgrade.</strong> The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).</p>",
+          "name": "섬뜩한 접촉(Chill Touch)",
+          "description": "<p>무덤의 냉기를 불러일으키며, 사거리 내의 대상을 대상으로 근접 소마법 공격을 시도합니다. 적중 시, 대상은 1d10 사령 피해를 입고, 다음 턴이 끝날 때까지 체력을 회복할 수 없습니다.</p><p><strong>소마법 업그레이드.</strong> 피해는 5레벨(2d10), 11레벨(3d10), 17레벨(4d10)에서 1d10씩 증가합니다.</p>",
           "effects": {
             "Blocked Healing": {
-              "name": "Blocked Healing",
-              "description": "<p>The target can’t regain Hit Points until the end of your next turn.</p>"
+              "name": "저지된 회복(Blocked Healing)",
+              "description": "<p>대상은 당신의 다음 턴이 끝날 때까지 체력을 회복할 수 없습니다.</p>"
             }
           }
         },
         "Bardic Inspiration": {
-          "name": "Bardic Inspiration",
-          "description": "<p>You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which starts as a d6 (currently, [[lookup @scale.bard.inspiration.die]]).</p><p><strong>Using Bardic Inspiration.</strong> As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.</p><p>Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.</p><p><strong>Number of Uses.</strong> You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p><p><strong>At Higher Levels. </strong>Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at level 10, and a d12 at level 15.</p><section class=\"secret\" id=\"secret-PtUXhUXS84HSdaew\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for tracking when a character has Bardic Inspiration to use.</p><p>Recovery is set to long rest (for levels before @UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdFontOfInsp]{Font of Inspiration} is gained). Please manually adjust as required.</p></section>",
+          "name": "바드의 영감(Bardic Inspiration)",
+          "description": "<p>당신은 말, 음악, 또는 춤을 통해 초자연적으로 다른 이들을 영감을 줄 수 있습니다. 이 영감은 당신의 바드적 영감(Bardic Inspiration)(Bardic Inspiration) 주사위로 나타내며, 처음에는 d6(현재 [[lookup @scale.bard.inspiration.die]])로 시작합니다.</p><p><strong>바드적 영감(Bardic Inspiration) 사용하기.</strong> 보너스 행동으로, 당신은 자신으로부터 60피트 이내에 있는, 당신을 보고 들을 수 있는 다른 생물을 영감을 줄 수 있습니다. 그 생물은 당신의 바드적 영감(Bardic Inspiration) 주사위 중 하나를 얻게 됩니다. 한 생물은 한 번에 하나의 바드적 영감(Bardic Inspiration) 주사위만 가질 수 있습니다.</p><p>그 생물이 다음 시간 이내에 D20 테스트에서 실패할 경우, 그 생물은 바드적 영감(Bardic Inspiration) 주사위를 굴리고 나온 숫자를 d20에 추가할 수 있어, 실패를 성공으로 바꿀 수 있습니다. 바드적 영감(Bardic Inspiration) 주사위는 굴려졌을 때 소모됩니다.</p><p><strong>사용 횟수.</strong> 당신은 자신의 매력 수치만큼(최소 한 번) 바드적 영감(Bardic Inspiration) 주사위를 부여할 수 있으며, 장기 휴식을 마친 후 모든 소모된 사용 횟수를 회복합니다.</p><p><strong>더 높은 레벨에서.</strong> 당신의 바드적 영감(Bardic Inspiration) 주사위는 특정 바드 레벨에 도달하면 변화합니다. 바드적 영감(Bardic Inspiration) 주사위는 레벨 5에서 d8, 레벨 10에서 d10, 레벨 15에서 d12로 변합니다.</p><section class=\"secret\" id=\"secret-PtUXhUXS84HSdaew\"><p><strong>Foundry Note</strong></p><p>이 기능은 바드적 영감(Bardic Inspiration)을 사용할 수 있는지 추적하는 활성 효과를 포함합니다.</p><p>회복은 장기 휴식으로 설정되어 있습니다(@UUID[Compendium.dnd-players-handbook.classes.Item.phbbrdFontOfInsp]{영감의 원천}을 얻기 전 레벨). 필요한 경우 수동으로 조정하십시오.</p></section>",
           "activities": {
             "Inspire": {
-              "name": "Inspire",
-              "roll": "Bardic Inspiration"
+              "name": "영감을 주기(Inspire)",
+              "roll": "바드적 영감(Bardic Inspiration)"
             }
           },
           "effects": {
             "Inspired": {
-              "name": "Inspired",
-              "description": "<p>You have received Bardic Inspiration. Once within the next hour when you fail a D20 Test, you can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.</p>"
+              "name": "영감을 받기(Inspired)",
+              "description": "<p>당신은 바드적 영감(Bardic Inspiration)을 받았습니다. 다음 1시간 내에 D20 검사를 실패할 경우, 바드적 영감(Bardic Inspiration) 주사위를 굴려 나온 숫자를 d20에 더할 수 있습니다. 이로 인해 실패를 성공으로 바꿀 수 있습니다. 바드적 영감(Bardic Inspiration) 주사위는 굴린 후 소모됩니다.</p>"
             }
           }
         },
         "Spellcasting": {
-          "name": "Spellcasting",
-          "description": "<p>You have learned to cast spells through your bardic arts. See @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.mh3akteBDiLegqFK]{chapter 7} for the rules on spellcasting. The information below details how you use those rules with Bard spells, which appear in the @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.wwia6Wwo4BgE9GSI]{Bard spell list}.</p><p><strong>Cantrips.</strong> You know two cantrips of your choice from the Bard spell list. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]{Dancing Lights}</em> and <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplViciousMoc]{Vicious Mockery}</em> are recommended.</p><p>Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the Bard spell list.</p><p>When you reach Bard levels 4 and 10, you learn another cantrip of your choice from the Bard spell list, as shown in the Cantrips column of the @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBard000000000.JournalEntryPage.V8pqIWlaL9GhY61t#class-features]{Bard Features} table.</p><p><strong>Spell Slots.</strong> The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p><p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Bard spell list. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCharmPerso]{Charm Person}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplColorSpray]{Color Spray}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDissonantW]{Dissonant Whispers}</em>, and <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHealingWor]{Healing Word} </em>are recommended.</p><p>The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p><p>If another Bard feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you.</p><p><strong>Changing Your Prepared Spells. </strong>Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.</p><p><strong>Spellcasting Ability. </strong>Charisma is your spellcasting ability for your Bard spells.</p><p><strong>Spellcasting Focus. </strong>You can use a Musical Instrument as a Spellcasting Focus for your Bard spells.</p>"
+          "name": "주문 시전(Spellcasting)",
+          "description": "<p>당신은 바드의 예술을 통해 주문을 시전하는 방법을 배웠습니다. 주문 시전에 대한 규칙은 @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.mh3akteBDiLegqFK]{챕터 7}을 참조하십시오. 아래의 정보는 당신이 이 규칙을 바드 주문에 어떻게 적용하는지에 대한 세부 사항을 다룹니다. 해당 주문은 @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.wwia6Wwo4BgE9GSI]{바드 주문 목록}에 나와 있습니다.</p><p><strong>소마법.</strong> 당신은 바드 주문 목록에서 선택한 두 가지 소마법을 알고 있습니다. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]{춤추는 불빛}</em>과 <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplViciousMoc]{잔혹한 모욕}</em>을 추천합니다.</p><p>바드 레벨을 얻을 때마다 당신은 기존의 소마법 중 하나를 바드 주문 목록에서 선택한 다른 소마법으로 교체할 수 있습니다.</p><p>바드 레벨 4와 10에 도달하면, 당신은 바드 주문 목록에서 선택한 또 다른 소마법을 배웁니다. 이는 @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbBard000000000.JournalEntryPage.V8pqIWlaL9GhY61t#class-features]{바드 특징} 표의 소마법 열에 나와 있습니다.</p><p><strong>주문 슬롯.</strong> 바드 특징 표는 당신이 1레벨 이상의 주문을 시전하기 위한 주문 슬롯의 수를 보여줍니다. 긴 휴식을 마친 후 모든 소모된 슬롯을 회복합니다.</p><p><strong>1레벨 이상의 준비된 주문.</strong> 당신은 이 기능을 통해 시전 가능한 1레벨 이상의 주문 목록을 준비합니다. 시작할 때, 바드 주문 목록에서 1레벨 주문 4개를 선택하십시오. <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCharmPerso]{인간형 매혹}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplColorSpray]{색 분사}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDissonantW]{불화의 속삭임}</em>, <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHealingWor]{치유의 단어}</em>를 추천합니다.</p><p>당신의 레벨이 오를 때마다, 준비할 수 있는 주문의 수가 증가하며, 이는 바드 특징 표의 준비된 주문 열에 나와 있습니다. 그 수가 증가할 때마다 바드 주문 목록에서 추가 주문을 선택하여 준비된 주문 목록에 추가하십시오. 선택한 주문은 당신이 주문 슬롯을 가진 레벨에 해당하는 주문이어야 합니다. 예를 들어, 당신이 3레벨 바드이라면, 준비된 주문 목록에 1레벨과 2레벨 주문을 6개까지 선택할 수 있습니다.</p><p>다른 바드 특징이 항상 준비된 주문을 제공하는 경우, 그 주문은 이 기능으로 준비할 수 있는 주문 수에 포함되지 않지만, 그 주문은 여전히 당신에게 바드 주문으로 간주됩니다.</p><p><strong>준비된 주문 변경.</strong> 바드 레벨을 얻을 때마다, 당신은 준비된 주문 목록에서 하나의 주문을 선택하여 다른 바드 주문으로 교체할 수 있습니다.</p><p><strong>주문 시전 능력.</strong> 카리스마는 당신의 바드 주문의 주문 시전 능력입니다.</p><p><strong>주문 시전 집중.</strong> 당신은 바드 주문을 위한 주문 시전 집중 도구로 악기를 사용할 수 있습니다.</p>"
         }
       }
     },
     "Bat": {
-      "name": "Bat",
-      "tokenName": "Bat",
+      "name": "박쥐(Bat)",
+      "tokenName": "박쥐(Bat)",
       "items": {
         "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 1 Piercing damage.</p>"
+          "name": "깨물기(Bite)",
+          "description": "<p><em>근접 공격 굴림:</em> +4, 사거리 5피트. <em>명중:</em> 1 관통 피해.</p>"
         }
       }
     },
     "Beast of the Land": {
-      "name": "Beast of the Land",
-      "tokenName": "Beast of the Land",
+      "name": "대지의 짐승(Beast of the Land)",
+      "tokenName": "대지의 짐승(Beast of the Land)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbrgrPrimalComp caption=false]</p>",
       "items": {
         "Primal Bond": {
-          "name": "Primal Bond",
-          "description": "<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p><section class=\"secret\" id=\"secret-CfXBtyjBnCMQ2fmp\"><p><strong>Foundry Note</strong></p><p>This bonus has been included in the beast's global bonuses.</p></section>"
+          "name": "원시의 결속(Primal Bond)",
+          "description": "<p>짐승이 수행하는 능력 검사나 저항 판정에 당신의 숙련 보너스를 추가합니다.</p><section class=\"secret\" id=\"secret-CfXBtyjBnCMQ2fmp\"><p><strong>Foundry Note</strong></p><p>이 보너스는 짐승의 글로벌 보너스에 포함되었습니다.</p></section>"
         },
         "Beast’s Strike": {
-          "name": "Beast’s Strike",
-          "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the &amp;Reference[prone] condition if it is a Large or smaller creature.</p><section class=\"secret\" id=\"secret-EslplTbdjSBUKz5n\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> and <strong>Charging Attack</strong> activities will allow you to choose the damage type in the roll dialog. You should choose one damage type and use it consistently until resummoning your companion.</p><p>The <strong>Charging Attack</strong> activity includes the additional damage.</p><p>Additionally, they have force as a damage option which should only be used once you reach level 7 and get the @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrExceptiona]{Exceptional Training} feature.</p></section>",
+          "name": "짐승의 일격(Beast’s Strike)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트. <em>명중:</em> 1d8 + 2와 당신의 지혜 수정치만큼의 타격 피해 (타격 시 짐승을 소환할 때 선택한 피해 유형이 적용됨). 짐승이 목표를 향해 직선으로 최소 20피트를 이동했다면, 목표는 추가로 1d6 피해를 같은 유형으로 받으며, 목표가 크기가 대형 이하라면 넘어짐(Prone) 상태가 됩니다.</p><section class=\"secret\" id=\"secret-EslplTbdjSBUKz5n\"><p><strong>Foundry 메모</strong></p><p><strong>공격</strong> 및 <strong>돌격 공격</strong> 활동을 통해 당신은 피해 유형을 굴림 대화상자에서 선택할 수 있습니다. 하나의 피해 유형을 선택한 후, 동료를 다시 소환할 때까지 일관되게 사용해야 합니다.</p><p><strong>돌격 공격</strong> 활동은 추가 피해를 포함합니다.</p><p>또한, 그들은 7레벨에 도달하고 @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrExceptiona]{예외 훈련} 특징을 얻은 후 사용할 수 있는 피해 옵션으로 힘(Force)을 가지고 있습니다.</p></section>",
           "activities": {
             "Charging Attack": {
-              "name": "Charging Attack"
+              "name": "돌격공격(Charging Attack)"
             }
           }
         }
       }
     },
     "Beast of the Sea": {
-      "name": "Beast of the Sea",
-      "tokenName": "Beast of the Sea",
+      "name": "바다의 짐승(Beast of the Sea)",
+      "tokenName": "바다의 짐승",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbrgrPrimalComp caption=false]</p>",
       "items": {
         "Amphibious": {
-          "name": "Amphibious",
-          "description": "<p> The beast can breathe air and water.</p>"
+          "name": "양서류",
+          "description": "<p>이 짐승은 공기와 물속에서 모두 숨을 쉴 수 있습니다.</p>"
         },
         "Primal Bond": {
-          "name": "Primal Bond",
-          "description": "<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p><section class=\"secret\" id=\"secret-pNoLkUZKFbyzHTbF\"><p><strong>Foundry Note</strong></p><p>This bonus has been included in the beast's global bonuses.</p></section>"
+          "name": "원시의 결속(Primal Bond)",
+          "description": "<p>짐승이 수행하는 능력 검사나 저항 판정에 당신의 숙련 보너스를 추가합니다.</p><section class=\"secret\" id=\"secret-pNoLkUZKFbyzHTbF\"><p><strong>Foundry Note</strong></p><p>이 보너스는 짐승의 글로벌 보너스에 포함되었습니다.</p></section>"
         },
         "Beast’s Strike": {
-          "name": "Beast’s Strike",
-          "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the &amp;Reference[grappled] condition (escape DC equals your spell save DC).</p><section class=\"secret\" id=\"secret-zGW1whEmGkycnc94\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> activity will allow you to choose the damage type in the roll dialog. You should choose one damage type and use it consistently until resummoning your companion.</p><p>Additionally, they have force as a damage option which should only be used once you reach level 7 and get the @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrExceptiona]{Exceptional Training} feature.</p></section>"
+          "name": "짐승의 일격(Beast’s Strike)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트. <em>명중:</em> 1d6 + 2와 당신의 지혜 수정치만큼의 타격 피해 또는 관통 피해(타격 시 짐승을 소환할 때 선택한 피해 유형이 적용됨). 목표는 붙잡힘(Grappled) 상태가 되며, 탈출 DC는 당신의 주문 내성 DC와 같습니다.</p><section class=\"secret\" id=\"secret-zGW1whEmGkycnc94\"><p><strong>Foundry Note</strong></p><p><strong>공격</strong> 활동을 통해 피해 유형을 굴림 대화상자에서 선택할 수 있습니다. 하나의 피해 유형을 선택한 후, 동료를 다시 소환할 때까지 일관되게 사용해야 합니다.</p><p>또한, 그들은 7레벨에 도달하고 @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrExceptiona]{예외 훈련} 특징을 얻은 후 사용할 수 있는 피해 옵션으로 힘(Force)을 가지고 있습니다.</p></section>"
         }
       }
     },
     "Beast of the Sky": {
-      "name": "Beast of the Sky",
-      "tokenName": "Beast of the Sky",
+      "name": "하늘의 짐승 (Beast of the Sky)",
+      "tokenName": "하늘의 짐승 (Beast of the Sky)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.classes.Item.phbrgrPrimalComp caption=false]</p>",
       "items": {
         "Flyby": {
-          "name": "Flyby",
-          "description": "<p> The beast doesn’t provoke Opportunity Attacks when it flies out of an enemy’s reach.</p>"
+          "name": "비행 돌파 (Flyby)",
+          "description": "<p>이 짐승은 적의 사거리 밖으로 날아갈 때 기회 공격을 유발하지 않습니다.</p>"
         },
         "Primal Bond": {
-          "name": "Primal Bond",
-          "description": "<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p><section class=\"secret\" id=\"secret-beTIv7xucaHGX104\"><p><strong>Foundry Note</strong></p><p>This bonus has been included in the beast's global bonuses.</p></section>"
+          "name": "원시의 결속 (Primal Bond)",
+          "description": "<p>짐승이 수행하는 능력 검사나 저항 판정에 당신의 숙련 보너스를 추가합니다.</p><section class=\"secret\" id=\"secret-beTIv7xucaHGX104\"><p><strong>Foundry 메모</strong></p><p>이 보너스는 짐승의 글로벌 보너스에 포함되었습니다.</p></section>"
         },
         "Beast’s Strike": {
-          "name": "Beast’s Strike",
-          "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d4 + 3 plus your Wisdom modifier Slashing damage.</p><section class=\"secret\" id=\"secret-leD612ZFvb4YFHCk\"><p><strong>Foundry Note</strong></p><p>The <strong>Attack</strong> activity will allow you to choose the damage type in the roll dialog. You should choose one damage type and use it consistently until resummoning your companion.</p><p>Additionally, they have force as a damage option which should only be used once you reach level 7 and get the @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrExceptiona]{Exceptional Training} feature.</p></section>"
+          "name": "짐승의 일격 (Beast’s Strike)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리 5피트. <em>명중:</em> 1d4 + 3과 당신의 지혜 수정치만큼의 참격 피해.</p><section class=\"secret\" id=\"secret-leD612ZFvb4YFHCk\"><p><strong>Foundry 메모</strong></p><p><strong>공격</strong> 활동을 통해 피해 유형을 굴림 대화상자에서 선택할 수 있습니다. 하나의 피해 유형을 선택한 후, 동료를 다시 소환할 때까지 일관되게 사용해야 합니다.</p><p>또한, 그들은 7레벨에 도달하고 @UUID[Compendium.dnd-players-handbook.classes.Item.phbrgrExceptiona]{예외 훈련 (Exceptional Training)} 특징을 얻은 후 사용할 수 있는 피해 옵션으로 힘(Force)을 가지고 있습니다.</p></section>"
         }
       }
     },
     "Beholderkin Spirit": {
-      "name": "Beholderkin Spirit",
-      "tokenName": "Aberrant Spirit",
+      "name": "감시자 혈통 영혼 (Beholderkin Spirit)",
+      "tokenName": "변칙적 영혼 (Aberrant Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonAber caption=false]</p>",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격 (Multiattack)",
+          "description": "<p>이 영혼은 이 주문의 레벨을 반으로 나눈 값(내림)만큼 공격을 수행합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화(Activate)"
             }
           }
         },
         "Eye Ray": {
-          "name": "Eye Ray",
-          "description": "<p> <em>Ranged Attack Roll:</em> Bonus equals your spell attack modifier, range 150 ft. <em>Hit:</em> 1d8 + 3 + the spell’s level Psychic damage.</p>",
+          "name": "눈 광선 (Eye Ray)",
+          "description": "<p><em>원거리 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리는 150피트. <em>명중:</em> 1d8 + 3 + 주문 레벨만큼의 정신 피해.</p>",
           "activities": {
             "Attack": {
-              "name": "Attack"
+              "name": "공격 (Attack)"
             }
           }
         }
       }
     },
     "Bestial Air Spirit": {
-      "name": "Bestial Air Spirit",
-      "tokenName": "Bestial Spirit",
+      "name": "야수의 공기 영혼 (Bestial Air Spirit)",
+      "tokenName": "야수 영혼 (Bestial Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
       "items": {
         "Flyby": {
-          "name": "Flyby",
-          "description": "<p> The spirit doesn’t provoke Opportunity Attacks when it flies out of an enemy’s reach.</p>"
+          "name": "비행 돌파 (Flyby)",
+          "description": "<p>이 영혼은 적의 사거리에서 날아 나갈 때 기회 공격을 유발하지 않습니다.</p>"
         },
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격 (Multiattack)",
+          "description": "<p>이 영혼은 이 주문의 레벨을 반으로 나눈 값(내림)만큼 [[/item Rend]] 공격을 수행합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Rend": {
-          "name": "Rend",
-          "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
+          "name": "찢어발기기 (Rend)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리는 5피트. <em>명중:</em> 1d8 + 4 + 주문 레벨만큼의 관통 피해.</p>"
         }
       }
     },
     "Bestial Land Spirit": {
-      "name": "Bestial Land Spirit",
-      "tokenName": "Bestial Spirit",
+      "name": "야수의 대지 영혼 (Bestial Land Spirit)",
+      "tokenName": "야수 영혼 (Bestial Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
       "items": {
         "Pack Tactics": {
-          "name": "Pack Tactics",
-          "description": "<p> The spirit has Advantage on an attack roll against a creature if at least one of the spirit’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
+          "name": "무리 전술 (Pack Tactics)",
+          "description": "<p>이 영혼은 공격 대상 5피트 이내에 행동 불능 상태가 아닌 아군이 최소 한 명 이상 있을 경우, 공격 굴림에 이점을 받습니다.</p>"
         },
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격 (Multiattack)",
+          "description": "<p>이 영혼은 이 주문의 레벨을 반으로 나눈 값(내림)만큼 [[/item Rend]] 공격을 수행합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Rend": {
-          "name": "Rend",
-          "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
+          "name": "찢어발기기 (Rend)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리는 5피트. <em>명중:</em> 1d8 + 4 + 주문 레벨만큼의 관통 피해.</p>"
         }
       }
     },
     "Bestial Spirit": {
-      "name": "Bestial Spirit",
-      "tokenName": "Bestial Spirit",
+      "name": "야수 영혼 (Bestial Spirit)",
+      "tokenName": "야수 영혼 (Bestial Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
       "items": {
         "Flyby": {
-          "name": "Flyby",
-          "description": "<p> The spirit doesn’t provoke Opportunity Attacks when it flies out of an enemy’s reach.</p>"
+          "name": "비행 돌파 (Flyby)",
+          "description": "<p>이 영혼은 적의 사거리에서 벗어날 때 기회 공격을 유발하지 않습니다.</p>"
         },
         "Pack Tactics": {
-          "name": "Pack Tactics",
-          "description": "<p> The spirit has Advantage on an attack roll against a creature if at least one of the spirit’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
+          "name": "무리 전술 (Pack Tactics)",
+          "description": "<p>이 영혼은 공격 대상 5피트 이내에 행동 불능 상태가 아닌 아군이 최소 한 명 이상 있을 경우, 공격 굴림에 이점을 받습니다.</p>"
         },
         "Water Breathing": {
-          "name": "Water Breathing",
-          "description": "<p> The spirit can breathe only underwater.</p>"
+          "name": "수중 호흡 (Water Breathing)",
+          "description": "<p>이 영혼은 오직 물속에서만 숨을 쉴 수 있습니다.</p>"
         },
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>이 영혼은 이 주문의 레벨을 반으로 나눈 값(내림)만큼 [[/item Rend]] 공격을 수행합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Rend": {
-          "name": "Rend",
-          "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
+          "name": "찢어발기기 (Rend)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리는 5피트. <em>명중:</em> 1d8 + 4 + 주문 레벨만큼의 관통 피해.</p>"
         }
       }
     },
     "Bestial Water Spirit": {
-      "name": "Bestial Water Spirit",
-      "tokenName": "Bestial Spirit",
+      "name": "야수 수령 (Bestial Water Spirit)",
+      "tokenName": "야수 영혼 (Bestial Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonBeas caption=false]</p>",
       "items": {
         "Pack Tactics": {
-          "name": "Pack Tactics",
-          "description": "<p> The spirit has Advantage on an attack roll against a creature if at least one of the spirit’s allies is within 5 feet of the creature and the ally doesn’t have the Incapacitated condition.</p>"
+          "name": "무리 전술 (Pack Tactics)",
+          "description": "<p>이 영혼은 공격 대상 5피트 이내에 행동 불능 상태가 아닌 아군이 최소 한 명 이상 있을 경우, 공격 굴림에 이점을 받습니다.</p>"
         },
         "Water Breathing": {
-          "name": "Water Breathing",
-          "description": "<p> The spirit can breathe only underwater.</p>"
+          "name": "수중 호흡 (Water Breathing)",
+          "description": "<p>이 영혼은 오직 물속에서만 숨을 쉴 수 있습니다.</p>"
         },
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of [[/item Rend]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>이 영혼은 이 주문의 레벨을 반으로 나눈 값(내림)만큼 [[/item Rend]] 공격을 수행합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화(Activate)"
             }
           }
         },
         "Rend": {
-          "name": "Rend",
-          "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Piercing damage.</p>"
+          "name": "찢어발기기 (Rend)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 같으며, 사거리는 5피트. <em>명중:</em> 1d8 + 4 + 주문 레벨만큼의 관통 피해.</p>"
         }
       }
     },
     "Bigby's Hand": {
-      "name": "Bigby's Hand",
-      "tokenName": "Bigby's Hand",
+      "name": "비그비의 손 (Bigby's Hand)",
+      "tokenName": "비그바의 손 (Bigby's Hand)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplBigbysHand caption=false]</p>",
       "items": {
         "Clenched Fist": {
-          "name": "Clenched Fist",
-          "description": "<p> The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage.</p>"
+          "name": "움켜쥔 주먹(Clenched Fist)",
+          "description": "<p>이 손은 5피트 이내의 대상을 강타합니다. 근접 주문 공격을 수행하십시오. 명중 시, 대상은 5d8의 역장 피해를 받습니다.</p>"
         },
         "Forceful Hand": {
-          "name": "Forceful Hand",
-          "description": "<p>The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it.</p>",
+          "name": "강력한 손(Forceful Hand)",
+          "description": "<p>이 손은 5피트 이내에 있는 거대 크기 이하의 크리처를 밀어내려고 시도합니다. 대상은 근력 내성 굴림에 성공해야 하며, 실패할 경우 손에 의해 5피트 + (당신의 주문 시전 능력 수정치 × 5) 피트만큼 밀려납니다. 손은 대상과 함께 움직이며 5피트 이내에 머뭅니다.</p>",
           "activities": {
             "save": {
               "chatFlavor": "[[5 + 5 * @flags.dnd5e.summon.mod]] foot push"
@@ -976,262 +976,262 @@
           }
         },
         "Grasping Hand": {
-          "name": "Grasping Hand",
-          "description": "<p>The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the &amp;Reference[Grappled] condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier.</p><h3>Grapple Escape Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{Strength (Athletics)} [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]{Dexterity (Acrobatics)}</p>",
+          "name": "붙잡는 손(Grasping Hand)",
+          "description": "<p>이 손은 5피트 이내에 있는 거대 크기 이하의 크리처를 붙잡으려 시도합니다. 대상은 민첩 내성 굴림에 성공해야 하며, 실패할 경우 &amp;Reference[붙잡힘 (Grappled)] 상태가 되고, 탈출 DC는 당신의 주문 내성 DC와 같습니다. 손이 대상을 붙잡고 있는 동안, 당신은 보너스 액션을 사용하여 손이 대상을 으스러뜨리도록 할 수 있으며, 이때 대상은 4d6 + 당신의 주문 시전 능력 수정치만큼의 타격 피해를 받습니다.</p><h3>붙잡기 탈출 판정</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{근력 (운동)} [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]{민첩 (곡예)}</p>",
           "activities": {
             "Grapple": {
-              "name": "Grapple"
+              "name": "붙잡기 (Grapple)"
             },
             "Crush": {
-              "name": "Crush",
-              "condition": "has a creature grappled"
+              "name": "짓누르기 (Crush)",
+              "condition": "크리처를 붙잡고 있음."
             }
           }
         },
         "Interposing Hand": {
-          "name": "Interposing Hand",
-          "description": "<p>The hand grants you &amp;Reference[HalfCover] against attacks and other effects that originate from its space or that pass through it. In addition, its space counts as &amp;Reference[DifficultTerrain] for your enemies.</p>",
+          "name": "가로막는 손(Interposing Hand)",
+          "description": "<p>이 손은 공격과 그 공간에서 발생하거나 통과하는 다른 효과에 대해 당신에게 &amp;Reference[HalfCover]{부분 엄폐}를 제공합니다. 또한, 이 손의 공간은 적에게 &amp;Reference[DifficultTerrain]{험지}로 간주됩니다.</p>",
           "activities": {
             "Interpose": {
-              "name": "Interpose"
+              "name": "방해 (Interpose)"
             }
           },
           "effects": {
             "Half Cover": {
-              "name": "Half Cover"
+              "name": "부분 엄폐(Half Cover)"
             },
             "Interposed": {
-              "name": "Interposed",
-              "description": "<p>Granting you &amp;Reference[HalfCover] from attacks or effects that pass through its space.</p>"
+              "name": "방해 (Interpose)",
+              "description": "<p>그 공간을 통과하는 공격이나 효과로부터 당신에게 &amp;Reference[HalfCover]{부분 엄폐}를 제공합니다.</p>"
             }
           }
         }
       }
     },
     "Black Bear": {
-      "name": "Black Bear",
-      "tokenName": "Black Bear",
+      "name": "흑곰 (Black Bear)",
+      "tokenName": "흑곰 (Black Bear)",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The bear makes two [[/item Rend]] attacks.</p>",
+          "name": "다중 공격(Multiattack)",
+          "description": "<p>곰은 [[/item Rend]] 공격을 두 번 합니다.</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Rend": {
-          "name": "Rend",
-          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 5 (1d6 + 2) Slashing damage.</p>"
+          "name": "찢어발기기 (Rend)",
+          "description": "<p> <em>근접 공격 굴림:</em> +4, 사거리 5피트. <em>명중:</em> 5 (1d6 + 2) 참격 피해.</p>"
         }
       }
     },
     "Boar": {
-      "name": "Boar",
-      "tokenName": "Boar",
+      "name": "멧돼지 (Boar)",
+      "tokenName": "멧돼지 (Boar)",
       "items": {
         "Bloodied Fury": {
-          "name": "Bloodied Fury",
-          "description": "<p> While Bloodied, the boar has Advantage on attack rolls.</p>"
+          "name": "피의 분노(Bloodied Fury)",
+          "description": "<p>피가 많이 흘린 상태에서는, 멧돼지는 공격 굴림에 유리합니다.</p>"
         },
         "Gore": {
-          "name": "Gore",
-          "description": "<p><em>Melee Attack Roll: </em>+3, reach 5 ft. <em>Hit: </em>4 (1d6 + 1) Piercing damage. If the boar moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and, if it is Large or smaller, has the &amp;Reference[Prone] condition.</p>",
+          "name": "뿔로 찌르기 (Gore)",
+          "description": "<p><em>근접 공격 굴림: </em>+3, 사거리 5피트. <em>명중: </em>4 (1d6 + 1) 관통 피해. 멧돼지가 목표를 향해 최소 20피트 직선으로 이동한 후 명중하면, 목표는 추가로 3 (1d6) 관통 피해를 입고, 크기가 대형 이하인 경우 &amp;Reference[Prone]{넘어짐} 상태가 됩니다.</p>",
           "activities": {
             "Charging Attack": {
-              "name": "Charging Attack"
+              "name": "차지 어택 (Charging Attack)"
             }
           }
         }
       }
     },
     "Brown Bear": {
-      "name": "Brown Bear",
-      "tokenName": "Brown Bear",
+      "name": "갈색 곰 (Brown Bear)",
+      "tokenName": "갈색 곰 (Brown Bear)",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The bear makes one [[/item Bite]] attack and one [[/item Claw]] attack.</p>",
+          "name": "다중 공격 (Multiattack)",
+          "description": "<p>곰은 한 번 [[/item Bite]]  공격과 한 번 [[/item Claw]]  공격을 합니다.</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Bite": {
-          "name": "Bite",
-          "description": "<p><em>Melee Attack Roll:</em> +5, reach 5 ft. <em>Hit:</em> 7 (1d8 + 3) Piercing damage.</p>"
+          "name": "깨물기(Bite)",
+          "description": "<p><em>근접 공격 굴림:</em> +5, 사거리 5피트. <em>명중:</em> 7 (1d8 + 3) 관통 피해.</p>"
         },
         "Claw": {
-          "name": "Claw",
-          "description": "<p><em>Melee Attack Roll: </em>+5, reach 5 ft. <em>Hit:</em> 5 (1d4 + 3) Slashing damage, and the target has the &amp;Reference[prone] condition if it is Huge or smaller.</p>"
+          "name": "발톱(Claw)",
+          "description": "<p><em>근접 공격 굴림: </em>+5, 사거리 5피트. <em>명중:</em> 5 (1d4 + 3) 참격 피해, 그리고 목표가 대형 이하일 경우 &amp;Reference[Prone]{넘어짐} 상태가 됩니다.</p>"
         }
       }
     },
     "Camel": {
-      "name": "Camel",
-      "tokenName": "Camel",
+      "name": "낙타 (Camel)",
+      "tokenName": "낙타 (Camel)",
       "items": {
         "Bite": {
-          "name": "Bite",
-          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 4 (1d4 + 2) Bludgeoning damage.</p>"
+          "name": "깨물기(Bite)",
+          "description": "<p><em>근접 공격 굴림:</em> +4, 사거리 5피트. <em>명중:</em> 4 (1d4 + 2) 타격 피해.</p>"
         }
       }
     },
     "Cat": {
-      "name": "Cat",
-      "tokenName": "Cat",
+      "name": "고양이 (Cat)",
+      "tokenName": "고양이 (Cat)",
       "items": {
         "Jumper": {
-          "name": "Jumper",
-          "description": "<p>The cat’s jump distance is determined using its Dexterity rather than its Strength.</p>"
+          "name": "도약 (Jumper)",
+          "description": "<p>고양이의 점프 거리는 힘이 아니라 민첩성으로 결정됩니다.</p>"
         },
         "Scratch": {
-          "name": "Scratch",
-          "description": "<p> <em>Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 1 Slashing damage.</p>"
+          "name": "할퀴기 (Scratch)",
+          "description": "<p><em>근접 공격 굴림:</em> +4, 범위 5 ft. <em>명중:</em> 1 참격 피해.</p>"
         }
       }
     },
     "Celestial Spirit": {
-      "name": "Celestial Spirit",
-      "tokenName": "Celestial Spirit",
+      "name": "천상의 영혼 (Celestial Spirit)",
+      "tokenName": "천상의 영혼 (Celestial Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCele caption=false]</p>",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격 (Multiattack)",
+          "description": "<p>영혼은 이 주문의 레벨의 절반(내림)만큼의 공격을 합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Radiant Bow": {
-          "name": "Radiant Bow",
-          "description": "<p><em>(Avenger Only)</em></p><p><em>Ranged Attack Roll</em>: Bonus equals your spell attack modifier, range 600 ft. <em>Hit:</em> 2d6 + 2 + the spell’s level Radiant damage.</p>"
+          "name": "광휘의 활 (Radiant Bow)",
+          "description": "<p><em>(복수자 전용)</em></p><p><em>원거리 공격 굴림</em>: 보너스는 당신의 주문 공격 수정치와 동일, 사거리 600 ft. <em>명중:</em> 2d6 + 2 + 주문의 레벨만큼 빛나는 피해.</p>"
         },
         "Radiant Mace": {
-          "name": "Radiant Mace",
-          "description": "<p><em>(Defender Only)</em></p><p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d10 + 3 + the spell’s level Radiant damage, and the spirit can choose itself or another creature it can see within 10 feet of the target. The chosen creature gains [[/healing 1d10 type=temphp]]{1d10 Temporary Hit Points}.</p>",
+          "name": "광휘의 철퇴 (Radiant Mace)",
+          "description": "<p><em>(수호자 전용)</em></p><p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 동일, 범위 5 ft. <em>명중:</em> 1d10 + 3 + 주문의 레벨만큼 빛나는 피해, 그리고 영혼은 자신이나 자신이 볼 수 있는 10피트 이내의 다른 생명체를 선택할 수 있습니다. 선택된 생명체는 [[/healing 1d10 type=temphp]]{1d10 임시 체력}을 얻습니다.</p>",
           "activities": {
             "Temporary Healing": {
-              "name": "Temporary Healing"
+              "name": "일시적 치유"
             }
           }
         },
         "Healing Touch": {
-          "name": "Healing Touch",
-          "description": "<p> The spirit touches another creature. The target regains Hit Points equal to 2d8 + the spell’s level.</p>"
+          "name": "치유의 손길(Healing Touch)",
+          "description": "<p>영혼이 다른 생명체를 만집니다. 목표는 2d8 + 주문의 레벨만큼 체력을 회복합니다.</p>"
         }
       }
     },
     "Celestial Steed": {
-      "name": "Celestial Steed",
-      "tokenName": "Otherworldly Steed",
+      "name": "천상의 말 (Celestial Steed)",
+      "tokenName": "이계의 말 (Otherworldly Steed)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplFindSteed0 caption=false]</p>",
       "items": {
         "Life Bond": {
-          "name": "Life Bond",
-          "description": "<p> When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you’re within 5 feet of it.</p>"
+          "name": "생명의 결속 (Life Bond)",
+          "description": "<p>당신이 레벨 1 이상의 주문으로 체력을 회복할 때, 당신이 5피트 이내에 있으면 말도 동일한 수의 체력을 회복합니다.</p>"
         },
         "Otherworldly Slam": {
-          "name": "Otherworldly Slam",
-          "description": "<p><em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 plus the spell’s level of Radiant damage.</p>"
+          "name": "이계의 강타 (Otherworldly Slam)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 동일, 범위 5 ft. <em>명중:</em> 1d8 + 주문의 레벨만큼 빛나는 피해.</p>"
         },
         "Healing Touch": {
-          "name": "Healing Touch",
-          "description": "<p> One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.</p>"
+          "name": "치유의 손길 (Healing Touch)",
+          "description": "<p>말의 5피트 이내에 있는 한 생명체는 2d8 + 주문의 레벨만큼 체력을 회복합니다.</p>"
         }
       }
     },
     "Clay Construct Spirit": {
-      "name": "Clay Construct Spirit",
-      "tokenName": "Construct Spirit",
+      "name": "점토 골렘 정령 (Clay Construct Spirit)",
+      "tokenName": "골렘 정령 (Construct Spirit)",
       "description": "<p>@Embed[Compendium.dnd-players-handbook.spells.Item.phbsplSummonCons caption=false]</p>",
       "items": {
         "Multiattack": {
-          "name": "Multiattack",
-          "description": "<p>The spirit makes a number of [[/item Slam]] attacks equal to half this spell’s level (round down).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Number of attacks}</p>",
+          "name": "다중 공격 (Multiattack)",
+          "description": "<p>정령은 [[/item Slam]] 공격을 주문 레벨의 절반(내림)만큼 수행합니다.</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{공격 횟수}</p>",
           "activities": {
             "Activate": {
-              "name": "Activate"
+              "name": "활성화 (Activate)"
             }
           }
         },
         "Slam": {
-          "name": "Slam",
-          "description": "<p> <em>Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 5 ft. <em>Hit:</em> 1d8 + 4 + the spell’s level Bludgeoning damage.</p>"
+          "name": "강타 (Slam)",
+          "description": "<p><em>근접 공격 굴림:</em> 보너스는 당신의 주문 공격 수정치와 동일, 범위 5 ft. <em>명중:</em> 1d8 + 4 + 주문의 레벨만큼 타격 피해.</p>"
         },
         "Berserk Lashing": {
-          "name": "Berserk Lashing",
-          "description": "<p><em>Trigger:</em> The spirit takes damage from a creature. <em>Response:</em> The spirit makes a [[/item Slam]] attack against that creature if possible, or the spirit moves up to half its Speed toward that creature without provoking Opportunity Attacks.</p>",
+          "name": "광폭 채찍질 (Berserk Lashing)",
+          "description": "<p><em>발동 조건:</em> 정령이 어떤 개체로부터 피해를 받음. <em>반응:</em> 정령은 가능하면 해당 개체에게 [[/item Slam]] 공격을 가하거나, 해당 개체를 향해 이동 속도의 절반만큼 기회 공격을 유발하지 않고 이동합니다.</p>",
           "activities": {
             "utility": {
-              "condition": "the spirit takes damage from a creature"
+              "condition": "정령이 어떤 개체로부터 피해를 받음"
             }
           }
         }
       }
     },
     "Cleric": {
-      "name": "Cleric",
-      "tokenName": "Cleric",
-      "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{Step 1: Choose a Class}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Likes</th><th scope=\"col\">Primary Ability</th><th scope=\"col\">Complexity</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCleric0000000]{Cleric}</td><td>Gods</td><td>Wisdom</td><td>Average</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{Step 2: Determine Origin}</caption><thead><tr><th scope=\"col\">Background</th><th scope=\"col\">Species</th><th scope=\"col\">Languages</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgGuard000000]{Guard}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspDwarf000000]{Dwarf}</td><td>Common Sign Language, Dwarvish</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{Step 3: Determine Ability Scores}</caption><thead><tr><th scope=\"col\">Class</th><th scope=\"col\">Str.</th><th scope=\"col\">Dex.</th><th scope=\"col\">Con.</th><th scope=\"col\">Int.</th><th scope=\"col\">Wis.</th><th scope=\"col\">Cha.</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbclcCleric0000]{Cleric}</td><td>14</td><td>8</td><td>13</td><td>10</td><td>15</td><td>12</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{Step 4: Choose an Alignment}</caption><thead><tr><th scope=\"col\">Alignment</th><th scope=\"col\">Personality</th></tr></thead><tbody><tr><td>Lawful</td><td>Loyal</td></tr><tr><td>Good</td><td>Helpful</td></tr></tbody></table>",
+      "name": "성직자 (Cleric)",
+      "tokenName": "성직자 (Cleric)",
+      "description": "<table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.5ay66aAVgkgRH7qH]{1단계: 직업 선택}</caption><thead><tr><th scope=\"col\">직업</th><th scope=\"col\">선호</th><th scope=\"col\">주요 능력치</th><th scope=\"col\">복잡성</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCleric0000000]{성직자}</td><td>신</td><td>지혜</td><td>보통</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.t1WP9VEevo4TOTXw]{2단계: 기원 결정}</caption><thead><tr><th scope=\"col\">배경</th><th scope=\"col\">종족</th><th scope=\"col\">언어</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbbgGuard000000]{경비병}</td><td>@UUID[Compendium.dnd-players-handbook.origins.Item.phbspDwarf000000]{드워프}</td><td>보통 수화, 드워프어</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.9o8NbQ1Ph2xCxlQh]{3단계: 능력치 결정}</caption><thead><tr><th scope=\"col\">직업</th><th scope=\"col\">근력</th><th scope=\"col\">민첩</th><th scope=\"col\">건강</th><th scope=\"col\">지능</th><th scope=\"col\">지혜</th><th scope=\"col\">매력</th></tr></thead><tbody><tr><td>@UUID[Compendium.dnd-players-handbook.classes.Item.phbclcCleric0000]{성직자}</td><td>14</td><td>8</td><td>13</td><td>10</td><td>15</td><td>12</td></tr></tbody></table><table><caption>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbCreatingAChar.JournalEntryPage.6ThVICG0QSRy7L0F]{4단계: 성향 선택}</caption><thead><tr><th scope=\"col\">성향</th><th scope=\"col\">성격</th></tr></thead><tbody><tr><td>질서</td><td>충성스러움</td></tr><tr><td>선</td><td>도움이 됨</td></tr></tbody></table>",
       "items": {
         "Guard": {
-          "name": "Guard",
-          "description": "<p><strong>Ability Scores:</strong> Strength, Intelligence, Wisdom</p><p><strong>Feat:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftAlert000000]{Alert}</p><p><strong>Skill Proficiencies:</strong> Athletics and Perception</p><p><strong>Tool Proficiency:</strong> <em>Choose one kind of</em> <em>Gaming Set</em></p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{Spear}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightCross]{Light Crossbow}, 20 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBolts00000]{Bolts}, Gaming Set (same as above), @UUID[Compendium.dnd5e.items.Item.wjHtGnd05SPdURqE]{Hooded Lantern}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000]{Manacles}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]{Quiver}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes}, 12 GP; or (B) 50 GP</p><p>Your feet ache when you remember the countless hours you spent at your post in the tower. You were trained to keep one eye looking outside the wall, watching for marauders sweeping from the nearby forest, and your other eye looking inside the wall, searching for cutpurses and troublemakers.</p>",
+          "name": "경비병 (Guard)",
+          "description": "<p><strong>능력치:</strong> 근력, 지능, 지혜</p><p><strong>재주:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftAlert000000]{경계 (Alert)}</p><p><strong>숙련 기술:</strong> 운동 및 감지</p><p><strong>숙련 도구:</strong> <em>하나의</em> <em>보드게임 세트 선택</em></p><p><strong>장비:</strong> <em>A 또는 B 선택:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepSpear00000]{창}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepLightCross]{라이트 크로스보우}, 20 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbamoBolts00000]{화살}, 보드게임 세트 (위와 동일), @UUID[Compendium.dnd5e.items.Item.wjHtGnd05SPdURqE]{두건 랜턴}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagManacles000]{수갑}, @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagQuiver00000]{화살통}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{여행자 옷}, 12 GP; 또는 (B) 50 GP</p><p>수많은 시간을 망루에서 보냈던 기억 때문에 발이 저려옵니다. 벽 바깥쪽을 바라보며 숲에서 몰려오는 약탈자들을 감시하는 한편, 벽 안쪽에서는 소매치기와 말썽꾼들을 주의 깊게 지켜보는 훈련을 받았습니다.</p>",
           "advancement": {
             "Background Ability Score Improvement": {
-              "title": "Background Ability Score Improvement",
-              "hint": "Your background allows you to increase your Strength, Intelligence, and Wisdom scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+              "title": "배경 능력치 향상 (Background Ability Score Improvement)",
+              "hint": "당신의 배경은 근력, 지능, 지혜 점수를 증가시킬 수 있도록 합니다. 한 능력치를 2 증가시키고, 다른 하나를 1 증가시키거나, 세 능력치를 각각 1 증가시킬 수 있습니다. 이 증가로 인해 능력치가 20을 초과할 수는 없습니다."
             },
             "Background Proficiencies": {
-              "title": "Background Proficiencies",
-              "hint": "Your background grants you proficiency in Athletics and Perception. It also grants you proficiency with a Gaming Set."
+              "title": "배경 숙련(Background Proficiencies)",
+              "hint": "당신의 배경은 운동과 감지 기술 숙련을 제공합니다. 또한 보드게임 세트 숙련을 제공합니다."
             },
             "Background Feat": {
-              "title": "Background Feat",
-              "hint": "Your backgrounds grants you the Alert feat."
+              "title": "배경 재주 (Background Feat)",
+              "hint": "당신의 배경은 '경계 (Alert)' 재주를 제공합니다."
             }
           }
         },
         "Alert": {
-          "name": "Alert",
-          "description": "<p>You gain the following benefits.</p><p><strong>Initiative Proficiency.</strong> When you roll Initiative, you can add your Proficiency Bonus to the roll.</p><p><strong>Initiative Swap.</strong> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can’t make this swap if you or the ally has the &amp;Reference[Incapacitated] condition.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature automatically includes the bonus to your Initiative.</p></section>",
+          "name": "경계심(Alert)",
+          "description": "<p>다음과 같은 혜택을 얻습니다.</p><p><strong>선제공격 숙련.</strong> 선제공격(Initiative) 굴림을 할 때 숙련 보너스를 추가할 수 있습니다.</p><p><strong>선제공격 교체.</strong> 선제공격 굴림을 한 직후, 같은 전투에 참여한 자발적인 아군과 선제공격 값을 교체할 수 있습니다. 다만, 본인이나 아군이 &amp;Reference[Incapacitated]{무력화} 상태일 경우 교체할 수 없습니다.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>이 특성은 자동으로 선제공격 보너스를 적용합니다.</p></section>",
           "effects": {
             "Alert": {
-              "name": "Alert"
+              "name": "경계 (Alert)"
             }
           }
         },
         "Dwarf": {
-          "name": "Dwarf",
-          "description": "<p>Dwarves were raised from the earth in the elder days by a deity of the forge. Called by various names on different worlds—Moradin, Reorx, and others—that god gave dwarves an affinity for stone and metal and for living underground. The god also made them resilient like the mountains, with a life span of about 350 years.</p><p>Squat and often bearded, the original dwarves carved cities and strongholds into mountainsides and under the earth. Their oldest legends tell of conflicts with the monsters of mountaintops and the Underdark, whether those monsters were towering giants or subterranean horrors. Inspired by those tales, dwarves of any culture often sing of valorous deeds—especially of the little overcoming the mighty.</p><p>On some worlds in the multiverse, the first settlements of dwarves were built in hills or mountains, and the families who trace their ancestry to those settlements call themselves hill dwarves or mountain dwarves, respectively. The Greyhawk and Dragonlance settings have such communities.</p><h3 data-anchor=\"dwarf-traits\">Dwarf Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size: </strong>Medium (about 4–5 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p>As a Dwarf, you have these special traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a range of 120 feet.</p><p><strong>Dwarven Resilience.</strong> You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p><p><strong>Dwarven Toughness.</strong> Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p><p><strong>Stonecunning.</strong> As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked.You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>",
-          "advancement": {
+          "name": "드워프(Dwarf)",
+          "description": "<p>드워프는 태고의 시대에 대장장이 신에 의해 대지에서 태어났습니다. 세계마다 그 신의 이름은 모라딘(Moradin), 리오락스(Reorx) 등으로 불리며, 드워프들에게 돌과 금속, 지하 생활에 대한 친화력을 부여했습니다. 또한, 산처럼 강인한 존재로 창조되어 약 350년의 수명을 가집니다.</p><p>키가 작고 종종 수염을 기르는 드워프들은 산기슭과 지하에 도시와 요새를 건설했습니다. 가장 오래된 전설에서는 거대한 괴물이나 지하의 공포들과 벌인 전투를 이야기하며, 이런 이야기들은 드워프들이 용맹을 찬양하는 노래를 즐겨 부르게 했습니다.</p><p>멀티버스의 일부 세계에서는 최초의 드워프 정착지가 언덕이나 산에 세워졌고, 그 후손들은 언덕 드워프(Hill Dwarf) 또는 산 드워프(Mountain Dwarf)로 불립니다. 그레이호크(Greyhawk)와 드래곤랜스(Dragonlance) 세계관에서 이런 공동체를 찾을 수 있습니다.</p><h3 data-anchor=\"dwarf-traits\">드워프 특성</h3><p><strong>생명체 유형:</strong> 인간형(Humanoid)</p><p><strong>크기:</strong> 중형(Medium) (약 4~5피트)</p><p><strong>이동 속도:</strong> 30피트</p><p>드워프는 다음과 같은 특성을 가집니다.</p><p><strong>어둠시야(Darkvision).</strong> 120피트 범위의 어둠시야를 가집니다.</p><p><strong>드워프의 강인함(Dwarven Resilience).</strong> 독(Poison) 피해에 대한 저항(Resistance)을 가집니다. 또한, 중독(Poisoned) 상태를 피하거나 끝내기 위한 내성 굴림에 이점을 받습니다.</p><p><strong>드워프의 튼튼함(Dwarven Toughness).</strong> 최대 생명점이 1 증가하며, 레벨을 올릴 때마다 추가로 1 증가합니다.</p><p><strong>석재 감각(Stonecunning).</strong> 보너스 액션으로 60피트 범위의 지진 감각(Tremorsense)을 10분 동안 얻습니다. 이 능력을 사용하려면 석재 표면 위에 있거나 석재 표면을 접촉해야 합니다. 해당 석재는 자연석이거나 가공된 것일 수 있습니다. 이 능력은 숙련 보너스만큼 사용할 수 있으며, 긴 휴식을 마칠 때 모든 사용 횟수를 회복합니다.</p>",
+            "advancement": {
             "6HdONjMD4UozXSfC": {
-              "hint": "Medium (about 4–5 feet tall)"
+              "hint": "중형(Medium) (약 4~5피트)"
             },
             "Dwarf Traits": {
-              "title": "Dwarf Traits"
+              "title": "드워프 특성(Dwarf Traits)"
             },
             "Dwarven Resilience": {
-              "title": "Dwarven Resilience",
-              "hint": "You have Resistance to Poison damage."
+              "title": "드워프의 강인함(Dwarven Resilience)",
+              "hint": "독(Poison) 피해에 대한 저항(Resistance)을 가집니다."
             }
           }
         },
         "Dwarven Resilience": {
-          "name": "Dwarven Resilience",
-          "description": "<p>You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition.</p><section id=\"secret-EDaMIgklKLK2il2D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>You will automatically be granted Resistance to Poison damage but not Advantage on saving throws to avoid/end the Poisoned condition.</p></section>"
+          "name": "드워프의 강인함(Dwarven Resilence)",
+          "description": "<p>독(Poison) 피해에 대한 저항(Resistance)을 가집니다. 또한, 중독(Poisoned) 상태를 피하거나 끝내기 위한 내성 굴림에 이점을 받습니다.</p><section id=\"secret-EDaMIgklKLK2il2D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>독 피해에 대한 저항은 자동으로 적용되지만, 중독 상태를 피하거나 끝내기 위한 내성 굴림의 이점은 자동으로 적용되지 않습니다.</p></section>"    
         },
         "Dwarven Toughness": {
-          "name": "Dwarven Toughness",
-          "description": "<p>Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p><section class=\"secret\" id=\"secret-FK9DFLudP5EzEss9\"><p><strong>Foundry Note</strong></p><p>The Hit Point maximum increase is handled automatically each level.</p></section>",
+          "name": "드워프의 터프함(Dwarven Toughness)",
+          "description": "<p>최대 히트 포인트가 1 증가하며, 레벨이 오를 때마다 추가로 1씩 증가합니다.</p><section class=\"secret\" id=\"secret-FK9DFLudP5EzEss9\"><p><strong>Foundry Note</strong></p><p>최대 히트 포인트 증가는 각 레벨마다 자동으로 적용됩니다.</p></section>",
           "effects": {
             "Dwarven Toughness": {
-              "name": "Dwarven Toughness"
+              "name": "드워프의 터프함(Dwarven Toughness)"
             }
           }
         },
