@@ -1,350 +1,338 @@
 {
-  "label": "Character Classes",
+  "label": "캐릭터 직업(Character Classes)",
   "mapping": {
     "advancement": {
       "path": "system.advancement",
-      "converter": "advancement"
+      "converter": "진급(advancement)"
     },
     "rangeActivities": {
       "path": "system.activities",
-      "converter": "rangeActivities"
+      "converter": "범위 활동(rangeActivities)"
     },
     "effects": {
       "path": "effects",
-      "converter": "effects"
+      "converter": "효과(effects)"
     },
     "activities": {
       "path": "system.activities",
-      "converter": "activities"
+      "converter": "활동(activities)"
     },
     "distanceAdvancement": {
       "path": "system.advancement",
-      "converter": "distanceAdvancement"
+      "converter": "거리 진급(distanceAdvancement)"
     },
     "range": {
       "path": "system.range",
-      "converter": "range"
+      "converter": "범위(range)"
     }
-  },
-  "folders": {
-    "Clockwork Sorcery": "Clockwork Sorcery",
-    "Subclass Features": "Subclass Features",
-    "Class Features": "Class Features",
-    "Circle of Stars": "Circle of Stars",
-    "Warrior of Mercy": "Warrior of Mercy",
-    "Fey Wanderer": "Fey Wanderer",
-    "Psi Warrior": "Psi Warrior",
-    "Metamagic Options": "Metamagic Options",
-    "Warrior of the Open Hand": "Warrior of the Open Hand",
-    "Champion": "Champion",
-    "Celestial Patron": "Celestial Patron",
-    "Eldritch Invocation Options": "Eldritch Invocation Options",
-    "Illusionist": "Illusionist",
-    "Aberrant Sorcery": "Aberrant Sorcery",
-    "Eldritch Knight": "Eldritch Knight",
-    "Assassin": "Assassin",
-    "Hunter": "Hunter",
-    "Archfey Patron": "Archfey Patron",
-    "Arcane Trickster": "Arcane Trickster",
-    "Circle of Moon": "Circle of Moon",
-    "Light Domain": "Light Domain",
-    "Dance": "Dance",
-    "Warrior of the Elements": "Warrior of the Elements",
-    "Trickery Domain": "Trickery Domain",
-    "Circle of Land": "Circle of Land",
-    "Valor": "Valor",
-    "Abjurer": "Abjurer",
-    "Evoker": "Evoker",
-    "Path of the World Tree": "Path of the World Tree",
-    "Lore": "Lore",
-    "Oath of Glory": "Oath of Glory",
-    "Path of the Berserker": "Path of the Berserker",
-    "Path of the Zealot": "Path of the Zealot",
-    "Gloom Stalker": "Gloom Stalker",
-    "Thief": "Thief",
-    "Path of the Wild Heart": "Path of the Wild Heart",
-    "Great Old One Patron": "Great Old One Patron",
-    "Fiend Patron": "Fiend Patron",
-    "Oath of the Ancients": "Oath of the Ancients",
-    "Battle Master": "Battle Master",
-    "Beast Master": "Beast Master",
-    "War Domain": "War Domain",
-    "Life Domain": "Life Domain",
-    "Soulknife": "Soulknife",
-    "Wild Magic Sorcery": "Wild Magic Sorcery",
-    "Glamour": "Glamour",
-    "Oath of Devotion": "Oath of Devotion",
-    "Maneuver Options": "Maneuver Options",
-    "Warrior of Shadow": "Warrior of Shadow",
-    "Circle of Sea": "Circle of Sea",
-    "Diviner": "Diviner",
-    "Oath of Vengeance": "Oath of Vengeance",
-    "Draconic Sorcery": "Draconic Sorcery",
-    "Barbarian": "Barbarian",
-    "Paladin": "Paladin",
-    "Rogue": "Rogue",
-    "Wizard": "Wizard",
-    "Sorcerer": "Sorcerer",
-    "Ranger": "Ranger",
-    "Monk": "Monk",
-    "Fighter": "Fighter",
-    "Druid": "Druid",
-    "Cleric": "Cleric",
-    "Warlock": "Warlock",
-    "Bard": "Bard"
+  },  "folders": {
+    "Clockwork Sorcery": "기계 마법(Clockwork Sorcery)",
+    "Subclass Features": "하위 직업 특징(Subclass Features)",
+    "Class Features": "직업 특징(Class Features)",
+    "Circle of Stars": "별의 의회(Circle of Stars)",
+    "Warrior of Mercy": "자비의 전사(Warrior of Mercy)",
+    "Fey Wanderer": "요정 방랑자(Fey Wanderer)",
+    "Psi Warrior": "염동 전사(Psi Warrior)",
+    "Metamagic Options": "초마법 선택지(Metamagic Options)",
+    "Warrior of the Open Hand": "열린 손의 전사(Warrior of the Open Hand)",
+    "Champion": "챔피언(Champion)",
+    "Celestial Patron": "천상의 후원자(Celestial Patron)",
+    "Eldritch Invocation Options": "기괴한 주입 선택지(Eldritch Invocation Options)",
+    "Illusionist": "환술사(Illusionist)",
+    "Aberrant Sorcery": "이형 마법(Aberrant Sorcery)",
+    "Eldritch Knight": "기괴한 기사(Eldritch Knight)",
+    "Assassin": "암살자(Assassin)",
+    "Hunter": "사냥꾼(Hunter)",
+    "Archfey Patron": "고대 요정 후원자(Archfey Patron)",
+    "Arcane Trickster": "비전의 장난꾼(Arcane Trickster)",
+    "Circle of Moon": "달의 의회(Circle of Moon)",
+    "Light Domain": "빛의 영역(Light Domain)",
+    "Dance": "춤(Dance)",
+    "Warrior of the Elements": "원소의 전사(Warrior of the Elements)",
+    "Trickery Domain": "속임수 영역(Trickery Domain)",
+    "Circle of Land": "대지의 의회(Circle of Land)",
+    "Valor": "용맹(Valor)",
+    "Abjurer": "방호술사(Abjurer)",
+    "Evoker": "방출술사(Evoker)",
+    "Path of the World Tree": "세계수의 길(Path of the World Tree)",
+    "Lore": "지식(Lore)",
+    "Oath of Glory": "영광의 서약(Oath of Glory)",
+    "Path of the Berserker": "광전사의 길(Path of the Berserker)",
+    "Path of the Zealot": "광신도의 길(Path of the Zealot)",
+    "Gloom Stalker": "어둠 추적자(Gloom Stalker)",
+    "Thief": "도둑(Thief)",
+    "Path of the Wild Heart": "야성의 심장(Path of the Wild Heart)",
+    "Great Old One Patron": "위대한 고대 존재 후원자(Great Old One Patron)",
+    "Fiend Patron": "악마 후원자(Fiend Patron)",
+    "Oath of the Ancients": "고대의 서약(Oath of the Ancients)",
+    "Battle Master": "전투의 달인(Battle Master)",
+    "Beast Master": "야수 조련사(Beast Master)",
+    "War Domain": "전쟁의 영역(War Domain)",
+    "Life Domain": "생명의 영역(Life Domain)",
+    "Soulknife": "영혼칼(Soulknife)",
+    "Wild Magic Sorcery": "야생 마법(Wild Magic Sorcery)",
+    "Glamour": "매혹(Glamour)",
+    "Oath of Devotion": "헌신의 서약(Oath of Devotion)",
+    "Maneuver Options": "기동 선택지(Maneuver Options)",
+    "Warrior of Shadow": "그림자의 전사(Warrior of Shadow)",
+    "Circle of Sea": "바다의 의회(Circle of Sea)",
+    "Diviner": "예언자(Diviner)",
+    "Oath of Vengeance": "복수의 서약(Oath of Vengeance)",
+    "Draconic Sorcery": "용혈 마법(Draconic Sorcery)",
+    "Barbarian": "야만인(Barbarian)",
+    "Paladin": "성기사(Paladin)",
+    "Rogue": "도적(Rogue)",
+    "Wizard": "마법사(Wizard)",
+    "Sorcerer": "소서러(Sorcerer)",
+    "Ranger": "레인저(Ranger)",
+    "Monk": "몽크(Monk)",
+    "Fighter": "파이터(Fighter)",
+    "Druid": "드루이드(Druid)",
+    "Cleric": "클레릭(Cleric)",
+    "Warlock": "워락(Warlock)",
+    "Bard": "바드(Bard)"
   },
   "entries": {
     "Aberrant Sorcery": {
-      "name": "Aberrant Sorcery",
-      "description": "<blockquote><p>Wield Unnatural Psionic Power</p></blockquote><p>An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you. Will this power shine from you as a hopeful beacon to others? Or will you be a terror to those who feel the stab of your mind?</p><p>Perhaps a psychic wind from the Astral Plane carried psionic energy to you, or you were exposed to the Far Realm’s warping influence. Alternatively, you were implanted with a mind flayer tadpole, but your transformation into a mind flayer never occurred; now the tadpole’s psionic power is yours. However you acquired this power, your mind is aflame with it.</p>",
+      "name": "이형 마법(Aberrant Sorcery)",
+      "description": "<blockquote><p>비정상적인 염동 능력을 휘두르다(Wield Unnatural Psionic Power)</p></blockquote><p>이형 존재의 영향이 당신의 정신을 감싸, 염동력을 부여했습니다. 이제 당신은 이 힘으로 다른 이들의 정신에 손을 뻗고, 세계를 변화시킬 수 있습니다. 이 힘을 희망의 등불로 삼을 것인가, 아니면 정신을 꿰뚫는 공포가 될 것인가요?</p><p>아스트랄 차원(Astral Plane)에서 불어온 염동의 바람에 노출되었거나, 극지계(Far Realm)의 변이 영향에 노출되었을지도 모릅니다. 또는 마인드 플레이어의 올챙이에 감염되었지만, 완전히 변이하지 않고 살아남아, 그 힘만을 얻었을 수도 있습니다. 어떤 방법이든, 당신의 정신은 염동력으로 불타오릅니다.</p>",
       "advancement": {
         "Subclass Features": {
-          "title": "Subclass Features"
+          "title": "하위 직업 특징(Subclass Features)"
         },
         "Psionic Spells": {
-          "title": "Psionic Spells",
-          "hint": "When you reach a Sorcerer level specified in the Psionic Spells table, you thereafter always have the listed spells prepared."
+          "title": "염동 주문(Psionic Spells)",
+          "hint": "Psionic Spells 표에 지정된 소서러 레벨에 도달하면, 표에 나열된 주문을 항상 준비한 상태로 갖게 됩니다."
         },
         "Psychic Defenses": {
-          "title": "Psychic Defenses",
-          "hint": "You have Resistance to Psychic damage."
+          "title": "정신 방어(Psychic Defenses)",
+          "hint": "당신은 정신 피해(Psychic damage)에 저항(Resistance)을 가집니다."
         }
       }
     },
     "Abjuration Savant": {
-      "name": "Abjuration Savant",
-      "description": "<p>Choose two Wizard spells from the @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Abjuration school} (change the Grouping mode for easier selection), each of which must be no higher than level 2, and add them to your spellbook for free.</p><p>In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Abjuration school to your spellbook for free. The chosen spell must be of a level for which you have spell slots.</p>"
+      "name": "방호술 대가(Abjuration Savant)",
+      "description": "<p>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{방호학파(Abjuration school)} 소속 위저드 주문 중 2개를 선택해(그룹 모드를 변경하면 선택이 편리합니다) 자신의 주문책에 무료로 추가합니다. 선택한 주문은 2레벨 이하이어야 합니다.</p><p>또한, 이 직업에서 새 주문 슬롯 레벨에 접근할 때마다, 방호학파 주문 중 하나를 무료로 주문책에 추가할 수 있습니다. 선택한 주문은 준비 가능한 레벨이어야 합니다.</p>"
     },
     "Abjure Foes": {
-      "name": "Abjure Foes",
-      "description": "<p>As a Magic action, you can expend one use of this class’s Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the &amp;Reference[Frightened] condition for 1 minute or until it takes any damage. While Frightened in this way, a target can do only one of the following on its turns: move, take an action, or take a Bonus Action.</p><section class=\"secret\" id=\"secret-lu2BuwFj2pnJ367b\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which applies the Frightened condition.</p></section>",
+      "name": "적을 퇴치하다(Abjure Foes)",
+      "description": "<p>마법 행동(Magic action)으로 이 직업의 채널 디비니티(Channel Divinity) 사용을 소모하여 적들을 경외감으로 압도할 수 있습니다. 성표(Holy Symbol)나 무기를 내보이며, 60피트 내에 볼 수 있는 개체 중 자신의 매력(Charisma) 수정치(최소 1명)만큼의 수를 대상으로 지정할 수 있습니다. 각 대상은 지혜(Wisdom) 내성 굴림에 실패하면 1분 동안 또는 피해를 입을 때까지 &amp;Reference[Frightened] 상태가 됩니다. 이렇게 겁에 질린 대상은 자신의 차례에 이동, 행동, 보너스 행동 중 하나만 수행할 수 있습니다.</p><section class=\"secret\" id=\"secret-lu2BuwFj2pnJ367b\"><p><strong>Foundry Note</strong></p><p>이 특징은 Frightened 상태를 적용하는 활성 효과(Active Effect)를 포함합니다.</p></section>",
       "effects": {
         "Abjured": {
-          "name": "Abjured"
+          "name": "퇴치됨(Abjured)"
         }
       }
     },
     "Abjurer": {
-      "name": "Abjurer",
-      "description": "<blockquote><p>Shield Companions and Banish Foes</p></blockquote><p>Your study of magic is focused on spells that block, banish, or protect—ending harmful effects, banishing evil influences, and protecting the weak. Abjurers are sought when baleful spirits require exorcism, when locations must be guarded against magical spying, and when portals to other planes of existence must be closed. Adventuring parties value Abjurers for the protection they provide against a variety of hostile magic and other attacks.</p>",
+      "name": "방호술사(Abjurer)",
+      "description": "<blockquote><p>동료를 보호하고 적을 추방하다(Shield Companions and Banish Foes)</p></blockquote><p>당신은 해로운 효과를 끝내고, 사악한 영향을 추방하며, 약한 이를 보호하는 주문을 연구하는 데 집중했습니다. 방호술사는 악령 퇴마, 마법 감시로부터의 보호, 이계 포탈 봉인 등에 필수적인 존재로 인정받습니다. 모험가 파티는 방호술사가 제공하는 다양한 적대적 마법과 공격으로부터의 보호를 소중히 여깁니다.</p>",
       "advancement": {
         "Subclass Features": {
-          "title": "Subclass Features"
+          "title": "하위 직업 특징(Subclass Features)"
         },
         "Spell Breaker": {
-          "title": "Spell Breaker",
-          "hint": "You always have the Counterspell and Dispel Magic spells prepared."
+          "title": "주문 차단(Spell Breaker)",
+          "hint": "당신은 카운터스펠(Counterspell)과 디스펠 매직(Dispel Magic) 주문을 항상 준비한 상태로 갖습니다."
         }
       }
     },
     "Acrobatic Movement": {
-      "name": "Acrobatic Movement",
-      "description": "<p>While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.</p>"
+      "name": "곡예 이동(Acrobatic Movement)",
+      "description": "<p>갑옷을 착용하거나 방패를 들지 않은 상태일 때, 당신은 자신의 차례 동안 수직 표면이나 액체 위를 넘어지지 않고 이동할 수 있습니다.</p>"
     },
     "Action Surge": {
-      "name": "Action Surge",
-      "description": "<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.</p><p>Once you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn.</p><section id=\"secret-nYOY8k3V38g8mZIS\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes a limited use that increases automatically at level 17.</p></section>"
+      "name": "액션 쇄도(Action Surge)",
+      "description": "<p>잠시 동안 자신의 한계를 넘어설 수 있습니다. 자신의 차례에, 마법 행동(Magic action)을 제외하고 추가로 1회의 행동(Action)을 수행할 수 있습니다.</p><p>이 특성을 사용하면 짧은 휴식(Short Rest)이나 긴 휴식(Long Rest)을 끝마칠 때까지 다시 사용할 수 없습니다. 17레벨이 되면, 한 번의 차례에 한 번만 사용할 수 있지만, 휴식 전까지 총 2회 사용할 수 있게 됩니다.</p><section id=\"secret-nYOY8k3V38g8mZIS\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>이 특성은 레벨 17에서 자동으로 사용 횟수가 증가하는 제한된 사용량을 포함합니다.</p></section>"
     },
     "Additional Fighting Style": {
-      "name": "Additional Fighting Style",
-      "description": "<p>You gain another @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Fighting Style feat} of your choice.</p>"
+      "name": "추가 전투 스타일(Additional Fighting Style)",
+      "description": "<p>@UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{전투 스타일 재주(Fighting Style feat)}를 추가로 하나 선택합니다.</p>"
     },
     "Agonizing Blast": {
-      "name": "Agonizing Blast",
-      "description": "<blockquote><p>Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</p></blockquote><p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.</p><p><strong>Repeatable. </strong>You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p><section class=\"secret\" id=\"secret-e2JfbLoZ7SLiWlcU\"><p><strong>Foundry Note</strong></p><p>The change to your cantrip will have to be made manually by adding \"@abilities.cha.mod\" to the \"Bonus\" field of your spell's damage.</p></section>"
+      "name": "고뇌의 발사(Agonizing Blast)",
+      "description": "<blockquote><p>전제 조건: 2레벨 이상의 워락, 피해를 주는 워락 소마법</p></blockquote><p>자신이 알고 있는 워락 소마법 중 피해를 주는 하나를 선택합니다. 그 주문의 피해 굴림에 자신의 매력(Charisma) 수정치를 추가할 수 있습니다.</p><p><strong>반복 가능(Repeatable).</strong> 이 인보케이션을 여러 번 얻을 수 있습니다. 매번 다른 유효한 소마법을 선택해야 합니다.</p><section class=\"secret\" id=\"secret-e2JfbLoZ7SLiWlcU\"><p><strong>Foundry Note</strong></p><p>소마법에 이 변화를 적용하려면 주문의 피해 \"Bonus\" 항목에 \"@abilities.cha.mod\"를 수동으로 추가해야 합니다.</p></section>"
     },
     "Ambush": {
-      "name": "Ambush",
-      "description": "<p>When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.</p>",
+      "name": "매복(Ambush)",
+      "description": "<p>민첩(은신)(Dexterity (Stealth)) 판정이나 선제권 굴림을 할 때, 우월성 주사위(Superiority Die)를 하나 소모하여 그 주사위를 굴려 판정에 추가할 수 있습니다. 단, 무능력(Incapacitated) 상태가 아니어야 합니다.</p>",
       "activities": {
         "utility": {
-          "roll": "Bonus"
+          "roll": "보너스(Bonus)"
         }
       }
     },
     "Animal Speaker": {
-      "name": "Animal Speaker",
-      "description": "<p>You can cast the @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBeastSense]{Beast Sense} and @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{Speak with Animals} spells but only as Rituals. Wisdom is your spellcasting ability for them.</p><section class=\"secret\" id=\"secret-BXxC4W21QpMgqgeQ\"><p><strong>Foundry Note</strong></p><p>When you advance to level 3 these spells are added to your Spells tab as Rituals using your Wisdom modifier.</p></section>"
+      "name": "동물 화자(Animal Speaker)",
+      "description": "<p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBeastSense]{야수 감지(Beast Sense)}와 @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{동물과 대화(Speak with Animals)} 주문을 의식(Ritual)으로만 시전할 수 있습니다. 두 주문의 시전 능력은 지혜(Wisdom)입니다.</p><section class=\"secret\" id=\"secret-BXxC4W21QpMgqgeQ\"><p><strong>Foundry Note</strong></p><p>3레벨에 도달하면 이 주문들이 지혜 수정치를 사용하여 의식 주문으로 주문 탭에 추가됩니다.</p></section>"
     },
     "Aquatic Affinity": {
-      "name": "Aquatic Affinity",
-      "description": "<p>The size of the Emanation created by your Wrath of the Sea increases to 10 feet.</p><p>In addition, you gain a Swim Speed equal to your Speed.</p><section id=\"secret-LWG2vV8HTOk84VXW\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The size of the emanation increases automatically but this feature does not automatically add the Swim Speed.</p></section>"
+      "name": "수중 친화(Aquatic Affinity)",
+      "description": "<p>바다의 분노(Wrath of the Sea)로 생성하는 방사(Emanation)의 크기가 10피트로 증가합니다.</p><p>또한, 자신의 속도와 같은 수영 속도(Swim Speed)를 얻습니다.</p><section id=\"secret-LWG2vV8HTOk84VXW\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>방사의 크기는 자동으로 증가하지만 수영 속도는 수동으로 추가해야 합니다.</p></section>"
     },
     "Arcane Apotheosis": {
-      "name": "Arcane Apotheosis",
-      "description": "<p>While your Innate Sorcery feature is active, you can use one Metamagic option on each of your turns without spending Sorcery Points on it.</p><section class=\"secret\" id=\"secret-iZWf2qqSDxd9o6eN\"><p><strong>Foundry Note</strong></p><p>Uncheck the Consumption option when using the Metamagic option you would like to use for free.</p></section>"
+      "name": "비전 승화(Arcane Apotheosis)",
+      "description": "<p>타고난 마법(Innate Sorcery) 특성이 활성화된 동안, 매 턴마다 하나의 메타매직(Metamagic) 옵션을 소서리 포인트(Sorcery Points) 소모 없이 사용할 수 있습니다.</p><section class=\"secret\" id=\"secret-iZWf2qqSDxd9o6eN\"><p><strong>Foundry Note</strong></p><p>무료로 사용하려는 메타매직 옵션을 사용할 때 'Consumption' 항목의 체크를 해제하세요.</p></section>"
     },
     "Arcane Charge": {
-      "name": "Arcane Charge",
-      "description": "<p>When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action.</p>"
+      "name": "비전 돌진(Arcane Charge)",
+      "description": "<p>액션 쇄도(Action Surge)를 사용할 때, 볼 수 있는 비점유 공간으로 최대 30피트까지 순간이동할 수 있습니다. 추가 행동 전후에 순간이동할 수 있습니다.</p>"
     },
     "Arcane Recovery": {
-      "name": "Arcane Recovery",
-      "description": "<p>You can regain some of your magical energy by studying your spellbook. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Wizard level (round up), and none of the slots can be level 6 or higher. For example, if you’re a level 4 Wizard, you can recover up to two levels’ worth of spell slots, regaining either one level 2 spell slot or two level 1 spell slots.</p><p>Once you use this feature, you can’t do so again until you finish a Long Rest.</p><p><strong>Combined Level Available:</strong> [[(@classes.wizard.levels / 2)]]</p><section id=\"secret-cO6X083GFJ1W4071\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Since you can select the slots you will have to manually adjust your available slots. This feature can be used to track the one-time use though.</p></section>"
+      "name": "비전 회복(Arcane Recovery)",
+      "description": "<p>자신의 주문책(Spellbook)을 연구하여 마법 에너지를 일부 회복할 수 있습니다. 짧은 휴식(Short Rest)을 마치면, 소모한 주문 슬롯 중에서 회복할 수 있습니다. 회복할 수 있는 주문 슬롯의 총 레벨은 자신의 위저드 레벨의 절반(반올림)을 넘을 수 없으며, 6레벨 이상의 슬롯은 회복할 수 없습니다. 예를 들어 4레벨 위저드라면, 레벨 2 주문 슬롯 1개 또는 레벨 1 주문 슬롯 2개를 회복할 수 있습니다.</p><p>이 특성은 긴 휴식(Long Rest)을 마칠 때까지 다시 사용할 수 없습니다.</p><p><strong>회복 가능한 총 레벨:</strong> [[(@classes.wizard.levels / 2)]]</p><section id=\"secret-cO6X083GFJ1W4071\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>회복할 슬롯을 직접 선택해야 하므로 사용자가 수동으로 슬롯을 조정해야 합니다. 이 특성은 일회성 사용량을 추적하는 데 사용될 수 있습니다.</p></section>"
     },
     "Arcane Trickster": {
-      "name": "Arcane Trickster",
-      "description": "<blockquote><p>Enhance Stealth with Arcane Spells</p></blockquote><p>Some Rogues enhance their fine-honed skills of stealth and agility with spells, learning magical tricks to aid them in their trade. Some Arcane Tricksters use their talents as pickpockets and burglars, while others are pranksters.</p>",
+      "name": "비전 장난꾼(Arcane Trickster)",
+      "description": "<blockquote><p>비전 마법으로 은신 능력을 강화하다(Enhance Stealth with Arcane Spells)</p></blockquote><p>일부 도적(Rogue)들은 자신들의 은신과 민첩성 능력을 마법으로 강화하여, 그들의 일에 도움을 주는 마법적 속임수를 익힙니다. 어떤 비전 장난꾼들은 소매치기나 도둑질에 능하고, 또 다른 이들은 장난꾸러기입니다.</p>",
       "advancement": {
         "Subclass Features": {
-          "title": "Subclass Features"
+          "title": "하위 직업 특징(Subclass Features)"
         },
         "Max Prepared Spells": {
-          "title": "Max Prepared Spells"
+          "title": "최대 준비 주문(Max Prepared Spells)"
         },
         "Spellcasting": {
-          "title": "Spellcasting"
+          "title": "주문 시전(Spellcasting)"
         }
       }
     },
     "Arcane Ward": {
-      "name": "Arcane Ward",
-      "description": "<p>You can weave magic around yourself for protection. When you cast an Abjuration spell with a spell slot, you can simultaneously use a strand of the spell’s magic to create a magical ward on yourself that lasts until you finish a Long Rest. The ward has a Hit Point maximum equal to twice your Wizard level plus your Intelligence modifier. Whenever you take damage, the ward takes the damage instead, and if you have any Resistances or Vulnerabilities, apply them before reducing the ward’s Hit Points. If the damage reduces the ward to 0 Hit Points, you take any remaining damage. While the ward has 0 Hit Points, it can’t absorb damage, but its magic remains.</p><p>Whenever you cast an Abjuration spell with a spell slot, the ward regains a number of Hit Points equal to twice the level of the spell slot. Alternatively, as a Bonus Action, you can expend a spell slot, and the ward regains a number of Hit Points equal to twice the level of the spell slot expended.</p><p>Once you create the ward, you can’t create it again until you finish a Long Rest.</p><section class=\"secret\" id=\"secret-ri6EwokQGNpRCXyI\"><p><strong>Foundry Note</strong></p><p>Track the HP of the Ward with the number of uses on this item.</p><p>The <strong>Create Ward</strong> activity has 1 use per Long Rest and updates the Arcane Ward to have full uses (\"HP\").</p><p>The <strong>Damage Ward</strong> activity will reduce the Ward's uses (\"HP\") by the amount of damage given.</p><p>The <strong>Restore Ward HP After Casting Spell</strong> activity can be used after you use an Abjuration spell. Set the scale value to the spell slot level you used to restore the correct number of uses (\"HP\").</p><p>The <strong>Expend Spell Slot for Ward</strong> activity allows you to choose a spell slot level, expends it, and restores the correct number of uses (\"HP\").</p></section>",
+      "name": "비전 수호(Arcane Ward)",
+      "description": "<p>자신을 보호하기 위해 마법을 짤 수 있습니다. 주문 슬롯을 사용하여 방호(Abjuration) 계열 주문을 시전할 때, 동시에 마법의 가닥을 이용해 자신에게 마법 수호막을 생성할 수 있으며, 이는 긴 휴식이 끝날 때까지 지속됩니다. 수호막은 최대 체력이 '마법사 레벨 × 2 + 지능 수정치'가 됩니다. 피해를 받을 때 수호막이 대신 피해를 흡수합니다. 저항이나 취약이 있을 경우 수호막의 체력을 깎기 전에 적용합니다. 수호막이 체력 0이 되면 남은 피해를 자신이 받습니다. 수호막이 0이 되어도 마법은 남아 있습니다.</p><p>주문 슬롯을 사용해 방호 주문을 시전할 때마다, 수호막은 '주문 슬롯 레벨 × 2'만큼 체력을 회복합니다. 또는 보너스 액션으로 주문 슬롯을 소모해 수호막을 회복시킬 수도 있습니다.</p><p>한 번 수호막을 만든 이후에는 긴 휴식을 마치기 전까지 다시 만들 수 없습니다.</p>",
       "activities": {
         "Create Ward": {
-          "name": "Create Ward",
-          "condition": "When you cast an Abjuration spell with a spell slot"
+          "name": "수호막 생성(Create Ward)",
+          "condition": "주문 슬롯을 사용해 방호 주문을 시전할 때"
         },
         "Damage Ward": {
-          "name": "Damage Ward"
+          "name": "수호막 피해(Damage Ward)"
         },
         "Restore Ward HP After Casting Spell": {
-          "name": "Restore Ward HP After Casting Spell",
-          "condition": "When you cast an Abjuration spell with a spell slot"
+          "name": "주문 시전 후 수호막 회복(Restore Ward HP After Casting Spell)",
+          "condition": "주문 슬롯을 사용해 방호 주문을 시전할 때"
         },
         "Expend Spell Slot for Ward": {
-          "name": "Expend Spell Slot for Ward"
+          "name": "수호막을 위한 주문 슬롯 소모(Expend Spell Slot for Ward)"
         }
       }
     },
     "Archdruid": {
-      "name": "Archdruid",
-      "description": "<p>The vitality of nature constantly blooms within you, granting you the following benefits.</p><p><strong>Evergreen Wild Shape.</strong> Whenever you roll Initiative and have no uses of Wild Shape left, you regain one expended use of it.</p><p><strong>Nature Magician.</strong> You can convert uses of Wild Shape into a spell slot (no action required). Choose a number of your unexpended uses of Wild Shape and convert them into a single spell slot, with each use contributing 2 spell levels. For example, if you convert two uses of Wild Shape, you produce a level 4 spell slot. Once you use this benefit, you can't do so again until you finish a Long Rest.</p><p><strong>Longevity.</strong> The primal magic that you wield causes you to age more slowly. For every ten years that pass, your body ages only one year.</p><section class=\"secret\" id=\"secret-qKoW7fFZUwKC0IOG\"><p><strong>Foundry Note</strong></p><p>This feature does not automate regaining a use of Wild Shape when rolling initiative but it does include an activity which will restore a use when activated.</p><p>The <strong>Nature Magician</strong> activity can be used to convert Wild Shape uses to spell slots.</p></section>",
+      "name": "대드루이드(Archdruid)",
+      "description": "<p>자연의 생명력이 끊임없이 당신 안에서 피어오르며 다음과 같은 혜택을 부여합니다.</p><p><strong>상록 야생 변신(Evergreen Wild Shape).</strong> 전투 개시 굴림을 했을 때 야생 변신(Wild Shape) 사용량이 남아 있지 않다면 소모한 사용량 1개를 회복합니다.</p><p><strong>자연 마법사(Nature Magician).</strong> 야생 변신 사용량을 소모하여 주문 슬롯을 생성할 수 있습니다(행동 소모 없음). 남은 야생 변신 사용량을 선택해 하나의 주문 슬롯으로 전환합니다. 각 사용량은 2 주문 레벨에 해당합니다. 예를 들어 야생 변신 2회분을 소모하면 4레벨 주문 슬롯이 생성됩니다. 이 능력은 긴 휴식을 마치기 전까지 다시 사용할 수 없습니다.</p><p><strong>장수(Longevity).</strong> 원초적 마법이 당신의 신체 노화를 느리게 합니다. 10년이 지날 때마다 실제로는 1년만 나이를 먹습니다.</p>",
       "activities": {
         "Nature Magician": {
-          "name": "Nature Magician"
+          "name": "자연 마법사(Nature Magician)"
         },
         "Recharge on Initiative": {
-          "name": "Recharge on Initiative"
+          "name": "전투 개시 시 회복(Recharge on Initiative)"
         }
       }
     },
     "Archfey Patron": {
-      "name": "Archfey Patron",
-      "description": "<blockquote><p>Bargain with Whimsical Fey</p></blockquote><p>Your pact draws on the power of the Feywild. When you choose this subclass, you might make a deal with an archfey, such as the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; or an ancient hag. Or you might call on a spectrum of Fey, weaving a web of favors and debts. Whoever they are, your patron is often inscrutable and whimsical.</p>",
+      "name": "아크페이 후원자(Archfey Patron)",
+      "description": "<blockquote><p>변덕스러운 요정과 계약하기</p></blockquote><p>당신의 계약은 페이와일드(Feywild)의 힘을 끌어옵니다. 이 서브클래스를 선택할 때, 당신은 서리 왕자(Prince of Frost), 어둠과 어둠의 여왕(Queen of Air and Darkness), 여름 궁정의 티타니아(Titania of the Summer Court) 같은 아크페이, 또는 고대 마녀와 거래했을 수 있습니다. 혹은 다양한 요정 존재들과 복잡한 은혜와 빚의 관계를 맺었을 수도 있습니다. 이들은 종종 헤아릴 수 없고 변덕스럽습니다.</p>",
       "advancement": {
         "Subclass Features": {
-          "title": "Subclass Features"
+          "title": "서브클래스 특징(Subclass Features)"
         },
         "Archfey Spells": {
-          "title": "Archfey Spells",
-          "hint": "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Archfey Spells table, you thereafter always have the listed spells prepared."
+          "title": "아크페이 주문(Archfey Spells)",
+          "hint": "후원자의 마법으로 특정 워락 레벨에 도달할 때마다 지정된 주문을 항상 준비하게 됩니다."
         },
         "Beguiling Defenses": {
-          "title": "Beguiling Defenses",
-          "hint": "Your patron teaches you how to guard your mind and body. You are immune to the Charmed condition."
+          "title": "기만적 방어(Beguiling Defenses)",
+          "hint": "당신은 매혹(Charmed) 상태에 면역이 됩니다."
         },
         "Misty Escape": {
-          "title": "Misty Escape"
+          "title": "안개 탈출(Misty Escape)"
         }
       }
     },
     "Archfey Spells": {
-      "name": "Archfey Spells",
-      "description": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Archfey Spells table, you thereafter always have the listed spells prepared.</p><table><caption>Archfey Spells</caption><thead><tr><td>Warlock Level</td><td>Spells</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCalmEmotio]{Calm Emotions}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Faerie Fire}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbPhantasmalFor]{Phantasmal Force}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSleep00000]{Sleep}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlink00000]{Blink}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPlantGrowt]{Plant Growth}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominateBe]{Dominate Beast}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterInv]{Greater Invisibility}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominatePe]{Dominate Person}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSeeming000]{Seeming}</td></tr></tbody></table><section class=\"secret\" id=\"secret-UtRaj9TxBVIgeYVi\"><p><strong>Foundry Note</strong></p><p>As you level up these spells will be granted to you automatically.</p></section>"
+      "name": "아크페이 주문(Archfey Spells)",
+      "description": "<p>후원자의 마법으로 특정 주문이 항상 준비됩니다. 워락 레벨이 특정 수치에 도달할 때, 아크페이 주문 표에 따라 준비됩니다.</p><table><caption>아크페이 주문</caption><thead><tr><td>워락 레벨</td><td>주문</td></tr></thead><tbody><tr><td>3</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCalmEmotio]{Calm Emotions}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]{Faerie Fire}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]{Misty Step}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbPhantasmalFor]{Phantasmal Force}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSleep00000]{Sleep}</td></tr><tr><td>5</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBlink00000]{Blink}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPlantGrowt]{Plant Growth}</td></tr><tr><td>7</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominateBe]{Dominate Beast}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGreaterInv]{Greater Invisibility}</td></tr><tr><td>9</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDominatePe]{Dominate Person}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSeeming000]{Seeming}</td></tr></tbody></table>"
     },
     "Armor of Shadows": {
-      "name": "Armor of Shadows",
-      "description": "<p>You can cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageArmor0]{Mage Armor} on yourself without expending a spell slot.</p><section id=\"secret-G6Bmiw5YEqEfBh2e\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Mage Armor</strong> activity is configured with the spell's effect and duration, including an Active Effect to set the spell's provided AC formula.</p></section>",
-      "activities": {
-        "Mage Armor": {
-          "name": "Mage Armor"
-        }
-      },
-      "effects": {
-        "Mage Armor": {
-          "name": "Mage Armor",
-          "description": "<p>The target's base AC becomes 13 + its Dexterity modifier.</p>"
-        }
-      }
+      "name": "그림자 갑옷(Armor of Shadows)",
+      "description": "<p>자신에게 @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMageArmor0]{마법 갑옷(Mage Armor)}을 주문 슬롯 소모 없이 시전할 수 있습니다.</p>"
     },
     "Ascendant Step": {
-      "name": "Ascendant Step",
-      "description": "<blockquote><p>Prerequisite: Level 5+ Warlock</p></blockquote><p>You can cast @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLevitate00]{Levitate} on yourself without expending a spell slot.</p>",
+      "name": "승천하는 걸음(Ascendant Step)",
+      "description": "<blockquote><p>전제 조건: 5레벨 이상의 워락</p></blockquote><p>자신에게 @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLevitate00]{부양(Levitate)} 주문을 주문 슬롯 소모 없이 시전할 수 있습니다.</p>",
       "effects": {
         "Levitating": {
-          "name": "Levitating",
-          "description": "<p>The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing.</p>"
+          "name": "부양 중(Levitating)",
+          "description": "<p>대상은 손이 닿는 고정된 물체(벽이나 천장 등)를 밀거나 당겨서만 이동할 수 있으며, 이는 등반하는 것처럼 간주합니다.</p>"
         }
       }
     },
     "Aspect of the Wilds": {
-      "name": "Aspect of the Wilds",
-      "description": "<p>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p><p><strong>Owl.</strong> You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p><p><strong>Panther. </strong>You have a Climb Speed equal to your Speed.</p><p><strong>Salmon.</strong> You have a Swim Speed equal to your Speed.</p><section class=\"secret\" id=\"secret-CKbkC1Dm8i7Nz9TV\"><p><strong>Foundry Note</strong></p><p>This feature includes an activity with an Active Effect which automates the Darkvision changes from the <strong>Owl</strong> option. The Speed changes are not automatically applied.</p></section>",
+      "name": "야생의 양상(Aspect of the Wilds)",
+      "description": "<p>다음 중 하나를 선택해 얻습니다. 긴 휴식을 마칠 때마다 선택을 변경할 수 있습니다.</p><p><strong>부엉이(Owl).</strong> 어둠시야(Darkvision) 범위가 60피트가 됩니다. 이미 어둠시야가 있다면 그 범위가 60피트 증가합니다.</p><p><strong>표범(Panther).</strong> 이동 속도와 같은 등반 속도(Climb Speed)를 가집니다.</p><p><strong>연어(Salmon).</strong> 이동 속도와 같은 수영 속도(Swim Speed)를 가집니다.</p>",
       "activities": {
         "Owl": {
-          "name": "Owl"
+          "name": "부엉이(Owl)"
         },
         "Panther": {
-          "name": "Panther"
+          "name": "표범(Panther)"
         },
         "Salmon": {
-          "name": "Salmon"
+          "name": "연어(Salmon)"
         }
       },
       "effects": {
         "Aspect of the Owl": {
-          "name": "Aspect of the Owl",
-          "description": "<p>You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>"
+          "name": "부엉이의 양상(Aspect of the Owl)",
+          "description": "<p>어둠시야가 60피트가 됩니다. 이미 어둠시야가 있다면 그 범위가 60피트 증가합니다.</p>"
         }
       }
     },
     "Assasinate": {
-      "name": "Assasinate",
-      "description": "<p>You’re adept at ambushing a target, granting you the following benefits.</p><p><strong>Initiative.</strong> You have Advantage on Initiative rolls.</p><p><strong>Surprising Strikes.</strong> During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.</p><section class=\"secret\" id=\"secret-roKwXDEMg8PmZo8U\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which automates the advantage on Initiative rolls.</p><p>The <strong>Damage</strong> activity can be used to apply extra damage equal to your level. You can choose the damage type in the roll's dialog box. Alternatively, you could add your level ([[lookup @classes.rogue.levels]]) as a situational bonus to your normal damage roll.</p></section>",
+      "name": "암살(Assasinate)",
+      "description": "<p>당신은 매복 공격에 능숙하여 다음과 같은 이점을 얻습니다.</p><p><strong>우선권.</strong> 전투 개시 굴림(initiative)에 이점을 가집니다.</p><p><strong>기습 공격.</strong> 전투의 첫 번째 라운드 동안, 아직 차례를 가지지 않은 생물에 대한 공격 굴림에 이점을 가집니다. 이 라운드에 은신 공격(Sneak Attack)으로 명중할 경우, 무기 유형과 같은 추가 피해를 자신의 로그 레벨만큼 입힙니다.</p>",
       "activities": {
         "damage": {
-          "condition": "Your Sneak Attack hits any target during the first round"
+          "condition": "첫 번째 라운드에 은신 공격이 명중했을 때"
         }
       },
       "effects": {
         "Assasinate": {
-          "name": "Assasinate",
-          "description": "<p>You have Advantage on Initiative rolls.</p>"
+          "name": "암살(Assasinate)",
+          "description": "<p>전투 개시 굴림에 이점을 가집니다.</p>"
         }
       }
     },
     "Assassin": {
-      "name": "Assassin",
-      "description": "<blockquote><p>Practice the Grim Art of Death</p></blockquote><p>An Assassin’s training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies.</p>",
+      "name": "암살자(Assassin)",
+      "description": "<blockquote><p>죽음의 암흑 기술을 연마하다</p></blockquote><p>암살자는 은신, 독물, 변장을 활용하여 적을 치명적으로 제거하는 데 초점을 맞춘 훈련을 받습니다. 이 길을 따르는 일부 로그들은 고용된 암살자, 스파이, 현상금 사냥꾼이지만, 이 하위 클래스의 능력은 다양한 괴물 적들과 맞서는 모험가들에게도 똑같이 유용합니다.</p>",
       "advancement": {
         "Subclass Features": {
-          "title": "Subclass Features"
+          "title": "하위 클래스 특성(Subclass Features)"
         },
         "Assassin's Tools": {
-          "title": "Assassin's Tools",
-          "hint": "You gain a Disguise Kit and a Poisoner’s Kit."
+          "title": "암살자 도구(Assassin's Tools)",
+          "hint": "변장 키트(Disguise Kit)와 독 제조 키트(Poisoner's Kit)를 얻습니다."
         },
         "rvg1VPVkuaZrsvIx": {
-          "title": "Assassin's Tools",
-          "hint": "You have proficiency with your Assassin's Tools."
+          "title": "암살자 도구(Assassin's Tools)",
+          "hint": "암살자 도구에 숙련(proficiency)을 가집니다."
         }
       }
     },
     "Assassin's Tools": {
-      "name": "Assassin's Tools",
-      "description": "<p>You gain a Disguise Kit and a Poisoner’s Kit, and you have proficiency with them.</p><section id=\"secret-QaK1hUaUaZqGMS7e\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The equipment and proficiencies are granted to you automatically as you level up.</p></section>"
+      "name": "암살자 도구(Assassin's Tools)",
+      "description": "<p>변장 키트(Disguise Kit)와 독 제조 키트(Poisoner's Kit)를 얻으며, 이들 도구에 숙련을 가집니다.</p>"
     },
     "Aura Expansion": {
-      "name": "Aura Expansion",
-      "description": "<p>Your Aura of Protection is now a 30-foot Emanation.</p><section id=\"secret-gH6lYObbkvAgLL2q\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The range of your auras update automatically as you level up.</p></section>"
+      "name": "오라 확장(Aura Expansion)",
+      "description": "<p>보호의 오라(Aura of Protection)가 이제 30피트 방출(Emanation) 범위로 확장됩니다.</p>"
     },
     "Aura of Alacrity": {
-      "name": "Aura of Alacrity",
-      "description": "<p>Your Speed increases by 10 feet.</p><p>In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn there, the ally’s Speed increases by 10 feet until the end of their next turn.</p><section id=\"secret-kOizvMlalbKjwbX4\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which increases your Speed by 10 feet. It does not automatically apply to creatures within your aura.</p></section>",
+      "name": "기민성의 오라(Aura of Alacrity)",
+      "description": "<p>자신의 이동 속도가 10피트 증가합니다.</p><p>또한, 자신의 보호의 오라 안으로 턴 중 처음으로 들어오거나 그 안에서 턴을 시작한 아군은 자신의 다음 턴 종료 시까지 이동 속도가 10피트 증가합니다.</p>",
       "effects": {
         "Alacrity": {
-          "name": "Alacrity"
+          "name": "기민성(Alacrity)"
         }
       }
     },
